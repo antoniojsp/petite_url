@@ -4,5 +4,5 @@ from wtforms.validators import DataRequired, Email
 
 
 class PetiteURLForm(FlaskForm):
-    name = StringField(label='Name', validators=[DataRequired()])
-    submit = SubmitField(label="Log In")
+    name = StringField(label='URL', validators=[DataRequired()])
+    submit = SubmitField(label="Submit")

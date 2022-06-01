@@ -1112,3 +1112,274 @@ werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you me
 2022-05-31 19:25:55,856 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 19:25:55] "[32mGET /40be099ad0 HTTP/1.1[0m" 302 -
 2022-05-31 19:27:30,159 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
 2022-05-31 19:27:30,727 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:27:52,943 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:27:52,959 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:28:12,085 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:28:12] "GET / HTTP/1.1" 200 -
+2022-05-31 19:28:12,134 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:28:12] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:31:53,405 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/forms.py', reloading
+2022-05-31 19:31:53,952 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:31:55,606 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:31:55,617 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:32:17,787 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:32:17] "GET / HTTP/1.1" 200 -
+2022-05-31 19:32:17,829 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:32:17] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:35:17,830 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/forms.py', reloading
+2022-05-31 19:35:18,400 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:35:19,931 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:35:19,942 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:36:21,772 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:36:21] "GET / HTTP/1.1" 200 -
+2022-05-31 19:36:21,858 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:36:21] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:36:27,778 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 19:36:27,781 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:36:27] "POST / HTTP/1.1" 200 -
+2022-05-31 19:36:27,823 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:36:27] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:37:41,707 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:37:41,709 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:37:43,376 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:37:43,387 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:37:43,410 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:37:43] "GET / HTTP/1.1" 200 -
+2022-05-31 19:37:43,463 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:37:43] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:37:46,728 INFO main Thread-4 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is an empty url
+2022-05-31 19:37:46,730 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:37:46] "POST / HTTP/1.1" 200 -
+2022-05-31 19:37:46,771 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:37:46] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:37:50,328 INFO main Thread-6 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is an empty url
+2022-05-31 19:37:50,331 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 19:37:50] "POST / HTTP/1.1" 200 -
+2022-05-31 19:37:50,383 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 19:37:50] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:37:57,101 INFO main Thread-8 : http://127.0.0.1:5000/ inserted
+2022-05-31 19:37:57,104 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 19:37:57] "POST / HTTP/1.1" 200 -
+2022-05-31 19:37:57,145 INFO werkzeug Thread-9 : 127.0.0.1 - - [31/May/2022 19:37:57] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:40:13,473 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:40:13,475 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:40:14,801 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:40:14,817 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:40:19,155 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:40:19] "GET / HTTP/1.1" 200 -
+2022-05-31 19:40:19,231 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:40:19] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:40:24,925 INFO main Thread-4 : dfdf is an empty url
+2022-05-31 19:40:24,927 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:40:24] "POST / HTTP/1.1" 200 -
+2022-05-31 19:40:24,966 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:40:24] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:40:27,457 INFO main Thread-6 :               <button type="reset" class="btn btn-success">Clear</button> is an empty url
+2022-05-31 19:40:27,466 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 19:40:27] "POST / HTTP/1.1" 200 -
+2022-05-31 19:40:27,527 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 19:40:27] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:40:31,747 INFO main Thread-8 :               <button type="reset" class="btn btn-success">Clear</button> is an empty url
+2022-05-31 19:40:31,749 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 19:40:31] "POST / HTTP/1.1" 200 -
+2022-05-31 19:40:31,796 INFO werkzeug Thread-9 : 127.0.0.1 - - [31/May/2022 19:40:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:41:04,095 INFO werkzeug Thread-10 : 127.0.0.1 - - [31/May/2022 19:41:04] "GET / HTTP/1.1" 200 -
+2022-05-31 19:41:04,153 INFO werkzeug Thread-11 : 127.0.0.1 - - [31/May/2022 19:41:04] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:41:13,367 INFO main Thread-12 : https://github.com/antoniojsp/petite_url inserted
+2022-05-31 19:41:13,371 INFO werkzeug Thread-12 : 127.0.0.1 - - [31/May/2022 19:41:13] "POST / HTTP/1.1" 200 -
+2022-05-31 19:41:13,410 INFO werkzeug Thread-13 : 127.0.0.1 - - [31/May/2022 19:41:13] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:41:18,919 INFO main Thread-14 : https://github.com/antoniojsp/petite_url inserted
+2022-05-31 19:41:18,922 INFO werkzeug Thread-14 : 127.0.0.1 - - [31/May/2022 19:41:18] "POST / HTTP/1.1" 200 -
+2022-05-31 19:41:18,952 INFO werkzeug Thread-15 : 127.0.0.1 - - [31/May/2022 19:41:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:41:20,982 INFO werkzeug Thread-16 : 127.0.0.1 - - [31/May/2022 19:41:20] "GET / HTTP/1.1" 200 -
+2022-05-31 19:41:21,020 INFO werkzeug Thread-17 : 127.0.0.1 - - [31/May/2022 19:41:21] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:43:05,664 INFO main Thread-18 : https://github.com/antoniojsp/petite_url inserted
+2022-05-31 19:43:05,668 INFO werkzeug Thread-18 : 127.0.0.1 - - [31/May/2022 19:43:05] "POST / HTTP/1.1" 200 -
+2022-05-31 19:43:05,810 INFO werkzeug Thread-19 : 127.0.0.1 - - [31/May/2022 19:43:05] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:43:19,350 INFO main Thread-20 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d inserted
+2022-05-31 19:43:19,353 INFO werkzeug Thread-20 : 127.0.0.1 - - [31/May/2022 19:43:19] "POST / HTTP/1.1" 200 -
+2022-05-31 19:43:19,402 INFO werkzeug Thread-21 : 127.0.0.1 - - [31/May/2022 19:43:19] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:43:21,319 INFO werkzeug Thread-22 : 127.0.0.1 - - [31/May/2022 19:43:21] "[32mGET /b1f05a108e HTTP/1.1[0m" 302 -
+2022-05-31 19:43:33,581 INFO main Thread-23 : https://medium.com/javarevisited/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0 inserted
+2022-05-31 19:43:33,584 INFO werkzeug Thread-23 : 127.0.0.1 - - [31/May/2022 19:43:33] "POST / HTTP/1.1" 200 -
+2022-05-31 19:43:33,664 INFO werkzeug Thread-24 : 127.0.0.1 - - [31/May/2022 19:43:33] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:43:53,741 INFO werkzeug Thread-25 : 127.0.0.1 - - [31/May/2022 19:43:53] "GET / HTTP/1.1" 200 -
+2022-05-31 19:43:53,790 INFO werkzeug Thread-26 : 127.0.0.1 - - [31/May/2022 19:43:53] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:45:27,632 INFO main Thread-29 : https://www.google.com/search?q=clear+button+wtf+forms+flask&rlz=1C5CHFA_enUS870US870&oq=clear+button+wtf+forms+flask&aqs=chrome..69i57.16210j0j4&sourceid=chrome&ie=UTF-8 inserted
+2022-05-31 19:45:27,639 INFO werkzeug Thread-29 : 127.0.0.1 - - [31/May/2022 19:45:27] "POST / HTTP/1.1" 200 -
+2022-05-31 19:45:29,284 INFO werkzeug Thread-30 : 127.0.0.1 - - [31/May/2022 19:45:29] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:45:38,739 INFO main Thread-31 : https://www.google.com/search?q=clear+button+wtf+forms+flask&rlz=1C5CHFA_enUS870US870&oq=clear+button+wtf+forms+flask&aqs=chrome..69i57.16210j0j4&sourceid=chrome&ie=UTF-8 inserted
+2022-05-31 19:45:38,741 INFO werkzeug Thread-31 : 127.0.0.1 - - [31/May/2022 19:45:38] "POST / HTTP/1.1" 200 -
+2022-05-31 19:45:38,801 INFO werkzeug Thread-32 : 127.0.0.1 - - [31/May/2022 19:45:38] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:45:40,760 INFO werkzeug Thread-33 : 127.0.0.1 - - [31/May/2022 19:45:40] "GET / HTTP/1.1" 200 -
+2022-05-31 19:45:40,820 INFO werkzeug Thread-34 : 127.0.0.1 - - [31/May/2022 19:45:40] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:49:15,972 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:49:15,974 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:49:19,790 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:49:19,866 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:49:24,376 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:49:24] "GET / HTTP/1.1" 200 -
+2022-05-31 19:49:24,445 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:49:24] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:49:47,150 INFO main Thread-4 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is an empty url
+2022-05-31 19:49:47,152 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:49:47] "POST / HTTP/1.1" 200 -
+2022-05-31 19:49:47,212 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:49:47] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:49:55,314 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 19:49:55,316 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 19:49:55] "POST / HTTP/1.1" 200 -
+2022-05-31 19:49:55,364 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 19:49:55] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:50:00,424 INFO main Thread-8 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 19:50:00,427 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 19:50:00] "POST / HTTP/1.1" 200 -
+2022-05-31 19:50:00,481 INFO werkzeug Thread-9 : 127.0.0.1 - - [31/May/2022 19:50:00] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:50:02,568 INFO main Thread-10 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 19:50:02,572 INFO werkzeug Thread-10 : 127.0.0.1 - - [31/May/2022 19:50:02] "POST / HTTP/1.1" 200 -
+2022-05-31 19:50:02,619 INFO werkzeug Thread-11 : 127.0.0.1 - - [31/May/2022 19:50:02] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:53:36,446 INFO werkzeug Thread-12 : 127.0.0.1 - - [31/May/2022 19:53:36] "GET / HTTP/1.1" 200 -
+2022-05-31 19:53:36,536 INFO werkzeug Thread-13 : 127.0.0.1 - - [31/May/2022 19:53:36] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:53:50,837 INFO main Thread-14 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 19:53:50,841 INFO werkzeug Thread-14 : 127.0.0.1 - - [31/May/2022 19:53:50] "POST / HTTP/1.1" 200 -
+2022-05-31 19:53:50,881 INFO werkzeug Thread-15 : 127.0.0.1 - - [31/May/2022 19:53:50] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:54:06,889 INFO werkzeug Thread-16 : 127.0.0.1 - - [31/May/2022 19:54:06] "GET / HTTP/1.1" 200 -
+2022-05-31 19:55:19,730 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:55:19,732 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:55:21,043 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:55:21,055 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:55:29,327 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:55:29] "GET / HTTP/1.1" 200 -
+2022-05-31 19:55:29,426 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:55:29] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:55:32,688 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 19:55:32,691 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:55:32] "POST / HTTP/1.1" 200 -
+2022-05-31 19:55:32,749 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:55:32] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:56:53,419 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:56:53,421 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:56:55,078 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:56:55,091 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:56:57,400 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:56:57] "GET / HTTP/1.1" 200 -
+2022-05-31 19:56:57,472 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:56:57] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:57:01,084 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 19:57:01,087 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:57:01] "POST / HTTP/1.1" 200 -
+2022-05-31 19:57:01,123 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:57:01] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:03:28,682 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:03:28,684 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:03:30,198 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:03:30,224 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:03:32,118 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:03:32] "GET / HTTP/1.1" 200 -
+2022-05-31 20:03:32,230 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:03:32] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:03:35,981 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 20:03:35,983 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:03:35] "POST / HTTP/1.1" 200 -
+2022-05-31 20:03:36,020 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:03:36] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:03:37,171 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:03:37] "[32mGET /72b594348a HTTP/1.1[0m" 302 -
+2022-05-31 20:03:53,004 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 20:03:53] "GET / HTTP/1.1" 200 -
+2022-05-31 20:03:53,058 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 20:03:53] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:07:35,466 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:07:35,467 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:07:36,921 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:07:36,932 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:07:36,970 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:07:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 20:07:37,051 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:07:37] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-05-31 20:07:37,055 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:07:37] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-05-31 20:07:37,163 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:07:37] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-05-31 20:07:37,430 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:07:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 20:08:03,808 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:08:03,810 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:08:05,179 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:08:05,187 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:08:07,317 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:08:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 20:08:07,369 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:08:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-05-31 20:08:07,371 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:08:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-05-31 20:08:07,432 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:08:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 20:08:07,597 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:08:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 20:08:29,487 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:08:29,488 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:08:30,933 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:08:30,940 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:08:30,976 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:08:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 20:08:31,027 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:08:31] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-05-31 20:08:31,029 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:08:31] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-05-31 20:08:31,082 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:08:31] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 20:08:31,184 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:08:31] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 20:08:44,340 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:08:44,341 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:08:45,812 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:08:45,825 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:08:45,854 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:08:45] "GET / HTTP/1.1" 200 -
+2022-05-31 20:08:45,914 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:08:45] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:09:10,278 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:09:10] "GET / HTTP/1.1" 200 -
+2022-05-31 20:09:10,343 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:09:10] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:10:08,193 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:10:08] "GET / HTTP/1.1" 200 -
+2022-05-31 20:10:08,337 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 20:10:08] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:10:18,882 INFO main Thread-8 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is an empty url
+2022-05-31 20:10:18,900 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 20:10:18] "POST / HTTP/1.1" 200 -
+2022-05-31 20:10:18,944 INFO werkzeug Thread-9 : 127.0.0.1 - - [31/May/2022 20:10:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:11:25,522 INFO werkzeug Thread-10 : 127.0.0.1 - - [31/May/2022 20:11:25] "GET / HTTP/1.1" 200 -
+2022-05-31 20:11:25,624 INFO werkzeug Thread-11 : 127.0.0.1 - - [31/May/2022 20:11:25] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:11:45,572 INFO werkzeug Thread-12 : 127.0.0.1 - - [31/May/2022 20:11:45] "GET / HTTP/1.1" 200 -
+2022-05-31 20:11:45,630 INFO werkzeug Thread-13 : 127.0.0.1 - - [31/May/2022 20:11:45] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:11:49,154 INFO main Thread-14 : https://github.com/antoniojsp/petite_url inserted
+2022-05-31 20:11:49,156 INFO werkzeug Thread-14 : 127.0.0.1 - - [31/May/2022 20:11:49] "POST / HTTP/1.1" 200 -
+2022-05-31 20:11:49,254 INFO werkzeug Thread-15 : 127.0.0.1 - - [31/May/2022 20:11:49] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:12:00,171 INFO main Thread-16 : https://github.com/antoniojsp/petite_url inserted
+2022-05-31 20:12:00,175 INFO werkzeug Thread-16 : 127.0.0.1 - - [31/May/2022 20:12:00] "POST / HTTP/1.1" 200 -
+2022-05-31 20:12:00,221 INFO werkzeug Thread-17 : 127.0.0.1 - - [31/May/2022 20:12:00] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:12:04,933 INFO main Thread-18 : https://github.com/antoniojsp/petite_url inserted
+2022-05-31 20:12:04,934 INFO werkzeug Thread-18 : 127.0.0.1 - - [31/May/2022 20:12:04] "POST / HTTP/1.1" 200 -
+2022-05-31 20:12:04,974 INFO werkzeug Thread-19 : 127.0.0.1 - - [31/May/2022 20:12:04] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:12:08,038 INFO main Thread-20 : https://github.com/antoniojsp/petite_url inserted
+2022-05-31 20:12:08,042 INFO werkzeug Thread-20 : 127.0.0.1 - - [31/May/2022 20:12:08] "POST / HTTP/1.1" 200 -
+2022-05-31 20:12:08,075 INFO werkzeug Thread-21 : 127.0.0.1 - - [31/May/2022 20:12:08] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:12:09,859 INFO werkzeug Thread-22 : 127.0.0.1 - - [31/May/2022 20:12:09] "[32mGET /89e8629ba1 HTTP/1.1[0m" 302 -
+2022-05-31 20:12:24,288 INFO main Thread-23 : https://www.tutorialspoint.com/How-to-clear-all-the-input-in-HTML-forms#:~:text=To%20clear%20all%20the%20input%20in%20an%20HTML%20form%2C%20use,the%20type%20attribute%20as%20reset. inserted
+2022-05-31 20:12:24,291 INFO werkzeug Thread-23 : 127.0.0.1 - - [31/May/2022 20:12:24] "POST / HTTP/1.1" 200 -
+2022-05-31 20:12:24,335 INFO werkzeug Thread-24 : 127.0.0.1 - - [31/May/2022 20:12:24] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:13:29,102 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:13:29,105 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:13:32,822 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:13:32,843 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:13:49,773 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:13:49] "GET / HTTP/1.1" 200 -
+2022-05-31 20:13:49,878 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:13:49] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:13:55,291 INFO main Thread-4 : dfgfsgdf is an empty url
+2022-05-31 20:13:55,292 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:13:55] "POST / HTTP/1.1" 200 -
+2022-05-31 20:13:55,346 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:13:55] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:14:04,619 INFO main Thread-6 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d inserted
+2022-05-31 20:14:04,622 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:14:04] "POST / HTTP/1.1" 200 -
+2022-05-31 20:14:04,676 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 20:14:04] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:17:56,589 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:17:56,591 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:17:57,921 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:17:57,931 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:18:02,479 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:18:02] "GET / HTTP/1.1" 200 -
+2022-05-31 20:18:02,685 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:18:02] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:18:06,350 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 20:18:06,352 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:18:06] "POST / HTTP/1.1" 200 -
+2022-05-31 20:18:06,399 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:18:06] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:18:12,699 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.gitfrr inserted
+2022-05-31 20:18:12,702 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:18:12] "POST / HTTP/1.1" 200 -
+2022-05-31 20:18:12,753 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 20:18:12] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:19:57,971 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:19:57,974 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:19:59,332 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:19:59,345 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:21:06,056 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:21:06,058 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:21:07,394 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:21:07,403 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:21:10,401 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:21:10] "GET / HTTP/1.1" 200 -
+2022-05-31 20:21:10,474 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:21:10] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:21:13,528 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 20:21:13,529 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:21:13] "POST / HTTP/1.1" 200 -
+2022-05-31 20:21:13,559 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:21:13] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:21:54,451 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-05-31 20:21:54,958 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:21:57,304 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:21:57,306 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:22:00,419 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:22:00,421 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:22:03,376 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:22:03,390 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:22:03,423 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:22:03] "GET / HTTP/1.1" 200 -
+2022-05-31 20:22:03,499 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:22:03] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:22:06,159 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 20:22:06,162 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:22:06] "POST / HTTP/1.1" 200 -
+2022-05-31 20:22:06,225 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:22:06] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:22:10,014 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 20:22:10,017 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:22:10] "POST / HTTP/1.1" 200 -
+2022-05-31 20:22:10,056 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 20:22:10] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:22:33,023 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-05-31 20:22:33,688 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:22:35,703 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:22:35,712 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:22:59,418 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:22:59,420 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:23:03,245 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:23:03,256 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:23:05,265 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:23:05] "GET / HTTP/1.1" 200 -
+2022-05-31 20:23:05,393 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:23:05] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:23:08,359 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 20:23:08,383 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:23:08] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2022-05-31 20:23:08,450 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:23:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-05-31 20:23:08,454 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 20:23:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-05-31 20:23:08,535 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 20:23:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 20:23:08,595 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 20:23:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 20:23:31,905 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 20:23:31,906 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 20:23:33,276 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 20:23:33,283 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 20:23:36,026 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 20:23:36] "GET / HTTP/1.1" 200 -
+2022-05-31 20:23:36,125 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 20:23:36] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 20:23:39,392 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-05-31 20:23:39,395 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 20:23:39] "POST / HTTP/1.1" 200 -
+2022-05-31 20:23:39,439 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 20:23:39] "[36mGET /static/index.css HTTP/1.1[0m" 304 -

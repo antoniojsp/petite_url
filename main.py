@@ -28,6 +28,8 @@ def index():
         is_valid_url = validators.url(original_url)
         url_link = ""
 
+        cform = PetiteURLForm()
+
         if is_valid_url:
             shorten_url = db.insert(original_url)
             app.logger.info(f'{original_url} inserted')
@@ -40,7 +42,7 @@ def index():
             app.logger.info(f'{original_url} is an empty url')
             flash('You need to enter a URL')
 
-        return render_template("index.html", link=url_link, github= personal_github_url, form=cform)
+        return render_template("index.html", link=url_link, github= personal_github_url, form=PetiteURLForm())
 
     return render_template("index.html", github= personal_github_url, form=cform)
 
@@ -58,6 +60,7 @@ def redirect_from_token(shorten_url_token: str):
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico',mimetype='image/vnd.microsoft.icon')
+
 
 
 if __name__ == '__main__':

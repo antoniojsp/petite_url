@@ -20,6 +20,7 @@ class TinyURLDatabase:
 
     def insert(self, entry: str) -> str:
         url_hash = hash_url(entry)
+
         try:
             mydict = {"hash_number": url_hash, "url_address": entry, "time_stamp": datetime.datetime.now()}
             self.mycol.insert_one(mydict)
@@ -35,3 +36,7 @@ class TinyURLDatabase:
             return ""
 
         return mydoc["url_address"]
+
+    def check_url_alive(self):
+        #TODO
+        pass
