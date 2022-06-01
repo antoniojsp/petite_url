@@ -1,0 +1,1114 @@
+2022-05-30 21:51:38,862 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 21:51:39,678 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:51:39] "GET / HTTP/1.1" 200 -
+2022-05-30 21:51:40,170 ERROR main Thread-2 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 47, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:51:40,196 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:51:40] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:52:23,105 INFO main Thread-3 (process_request_thread) : /Users/antonio/PycharmProjects/tinyurl_flask/venv/bin/python -m pip install --upgrade pip is an invalid url
+2022-05-30 21:52:23,109 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:52:23] "POST / HTTP/1.1" 200 -
+2022-05-30 21:52:23,668 ERROR main Thread-4 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 47, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:52:23,678 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:52:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:52:31,374 INFO main Thread-5 (process_request_thread) : https://www.disneyplus.com/video/ae2e4f38-dba6-4deb-868a-53d89aedda2d inserted
+2022-05-30 21:52:31,375 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:52:31] "POST / HTTP/1.1" 200 -
+2022-05-30 21:52:31,594 ERROR main Thread-6 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 47, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:52:31,594 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:52:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:52:44,973 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:52:44] "[32mGET /e0cc863df9 HTTP/1.1[0m" 302 -
+2022-05-30 21:53:07,528 INFO main Thread-8 (process_request_thread) : https://www.disneyplus.com/video/ae2e4f38-dba6-4deb-868a-53d89aedda2d inserted
+2022-05-30 21:53:07,530 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:53:07] "POST / HTTP/1.1" 200 -
+2022-05-30 21:53:07,801 ERROR main Thread-9 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 47, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:53:07,803 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:53:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:54:02,740 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 21:54:03,710 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:54:03] "GET / HTTP/1.1" 200 -
+2022-05-30 21:54:04,162 ERROR main Thread-2 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:54:04,172 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:54:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:56:18,949 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 21:56:21,209 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:56:21] "GET / HTTP/1.1" 200 -
+2022-05-30 21:56:21,601 ERROR main Thread-2 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:56:21,611 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:56:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:56:25,699 INFO main Thread-3 (process_request_thread) : https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application inserted
+2022-05-30 21:56:25,701 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:56:25] "POST / HTTP/1.1" 200 -
+2022-05-30 21:56:25,919 ERROR main Thread-4 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:56:25,921 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:56:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:56:28,068 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:56:28] "[32mGET /ee27a5db54 HTTP/1.1[0m" 302 -
+2022-05-30 21:56:50,073 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:56:50] "GET / HTTP/1.1" 200 -
+2022-05-30 21:56:50,345 ERROR main Thread-7 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:56:50,348 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:56:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:57:01,930 ERROR main Thread-8 (process_request_thread) : Exception on /ff [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:57:01,932 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:57:01] "[35m[1mGET /ff HTTP/1.1[0m" 500 -
+2022-05-30 21:57:02,343 ERROR main Thread-9 (process_request_thread) : Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return redirect(full_url, code=302)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/werkzeug/utils.py", line 269, in redirect
+    display_location = html.escape(location)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py", line 19, in escape
+    s = s.replace("&", "&amp;") # Must be done first!
+AttributeError: 'int' object has no attribute 'replace'
+2022-05-30 21:57:02,345 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:57:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2022-05-30 21:58:51,968 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 21:58:53,818 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:58:53] "GET /ff HTTP/1.1" 200 -
+2022-05-30 21:58:54,273 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:58:54] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:58:58,032 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:58:58] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:58:58,618 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:58:58] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:59:00,689 INFO main Thread-5 (process_request_thread) : https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application inserted
+2022-05-30 21:59:00,693 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:00] "POST / HTTP/1.1" 200 -
+2022-05-30 21:59:01,188 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:01] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:59:03,411 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:03] "[32mGET /ee27a5db54 HTTP/1.1[0m" 302 -
+2022-05-30 21:59:25,772 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:25] "GET / HTTP/1.1" 200 -
+2022-05-30 21:59:26,104 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:26] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:59:28,548 INFO main Thread-10 (process_request_thread) : https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application inserted
+2022-05-30 21:59:28,550 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:28] "POST / HTTP/1.1" 200 -
+2022-05-30 21:59:28,761 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:28] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:59:36,380 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 21:59:37,596 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:37] "GET / HTTP/1.1" 200 -
+2022-05-30 21:59:37,845 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:37] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:59:42,815 INFO main Thread-3 (process_request_thread) : https://medium.com/geekculture/9-advanced-python-concepts-you-should-know-about-945621e49550 inserted
+2022-05-30 21:59:42,817 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:42] "POST / HTTP/1.1" 200 -
+2022-05-30 21:59:43,035 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:43] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:59:45,937 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:45] "[32mGET /d327b1980f HTTP/1.1[0m" 302 -
+2022-05-30 21:59:54,371 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:54] "GET /hdfghfdgh HTTP/1.1" 200 -
+2022-05-30 21:59:54,673 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:54] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 21:59:57,971 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 21:59:57] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:03:26,907 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:03:30,849 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:03:30] "GET / HTTP/1.1" 200 -
+2022-05-30 22:03:31,202 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:03:31] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:03:37,856 INFO main Thread-3 (process_request_thread) : https://medium.com/geekculture/9-advanced-python-concepts-you-should-know-about-945621e49550 inserted
+2022-05-30 22:03:37,857 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:03:37] "POST / HTTP/1.1" 200 -
+2022-05-30 22:03:38,070 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:03:38] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:03:40,967 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:03:40] "[32mGET /d327b1980f HTTP/1.1[0m" 302 -
+2022-05-30 22:03:49,461 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:03:49] "GET /hjfgh HTTP/1.1" 200 -
+2022-05-30 22:03:49,732 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:03:49] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:06:19,990 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:06:35,965 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:06:35] "GET / HTTP/1.1" 200 -
+2022-05-30 22:06:36,275 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:06:36] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:06:39,429 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:06:39] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:06:39,663 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:06:39] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:06:53,151 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:06:53] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:07:35,607 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:07:49,778 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:07:51,386 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:07:51] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:07:51,729 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:07:51] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:07:53,869 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:07:53] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:07:54,074 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:07:54] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:08:23,521 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:08:23,958 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:08:23] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:08:24,457 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:08:24] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:08:49,544 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:08:51,659 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:08:51] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:08:51,920 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:08:51] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:09:03,251 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:03] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:09:32,731 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:09:35,661 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:35] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:09:35,947 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:35] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:09:46,757 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:46] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:09:47,120 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:47] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:09:49,204 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:49] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:09:49,399 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:49] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:09:54,497 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:09:55,434 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:55] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:09:55,639 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:09:55] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:07,227 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:10:08,590 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:08] "GET /2 HTTP/1.1" 200 -
+2022-05-30 22:10:08,823 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:08] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:11,788 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:11] "GET /2gfgfds HTTP/1.1" 200 -
+2022-05-30 22:10:12,033 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:12] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:25,395 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:25] "GET /2gfgfds HTTP/1.1" 200 -
+2022-05-30 22:10:25,627 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:25] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:30,956 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:30] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:33,300 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:33] "GET /2dffd HTTP/1.1" 200 -
+2022-05-30 22:10:33,603 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:33] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:39,887 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:10:43,538 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:43] "GET /2dffdgthfdh HTTP/1.1" 200 -
+2022-05-30 22:10:43,814 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:43] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:45,224 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:45] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:10:47,955 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:47] "GET /2dffd HTTP/1.1" 200 -
+2022-05-30 22:10:48,155 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:10:48] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:11:09,183 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:11:09] "GET /2dffd HTTP/1.1" 200 -
+2022-05-30 22:11:09,452 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:11:09] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:11:11,704 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:11:11] "GET /2dffddcf HTTP/1.1" 200 -
+2022-05-30 22:11:11,971 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:11:11] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:11:17,109 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:11:17] "GET / HTTP/1.1" 200 -
+2022-05-30 22:11:17,368 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:11:17] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:11:23,454 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:12:19,085 INFO main Thread-1 (process_request_thread) : www.google.com is an invalid url
+2022-05-30 22:12:19,092 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:19] "POST / HTTP/1.1" 200 -
+2022-05-30 22:12:19,378 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:19] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:12:21,799 INFO main Thread-3 (process_request_thread) : https://www.w3schools.com/python/python_mongodb_query.asp inserted
+2022-05-30 22:12:21,801 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:21] "POST / HTTP/1.1" 200 -
+2022-05-30 22:12:22,041 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:22] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:12:24,045 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:24] "[32mGET /5f0df64e8f HTTP/1.1[0m" 302 -
+2022-05-30 22:12:31,597 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:31] "GET /jjfhgjhgfjfgj HTTP/1.1" 200 -
+2022-05-30 22:12:31,854 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:31] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:12:33,764 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:33] "GET / HTTP/1.1" 200 -
+2022-05-30 22:12:34,088 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:12:34] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:16:30,521 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:30] "GET / HTTP/1.1" 200 -
+2022-05-30 22:16:30,917 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:30] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:16:38,026 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:38] "GET /344343 HTTP/1.1" 200 -
+2022-05-30 22:16:38,279 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:38] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:16:42,601 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:42] "GET / HTTP/1.1" 200 -
+2022-05-30 22:16:42,859 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:42] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:16:52,079 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:52] "[32mGET /66284f2b21 HTTP/1.1[0m" 302 -
+2022-05-30 22:16:55,250 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:16:55] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:17:04,922 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:17:04] "GET /hgjhf HTTP/1.1" 200 -
+2022-05-30 22:17:05,221 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:17:05] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:17:06,227 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:17:06] "GET / HTTP/1.1" 200 -
+2022-05-30 22:17:06,483 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:17:06] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:20:02,407 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:20:05,014 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:05] "GET / HTTP/1.1" 200 -
+2022-05-30 22:20:05,081 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:05] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 22:20:05,365 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:05] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:20:11,393 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:11] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:20:38,659 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:20:39,698 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:39] "GET / HTTP/1.1" 200 -
+2022-05-30 22:20:39,765 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:39] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 22:20:40,155 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:40] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:20:40,178 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:40] "GET / HTTP/1.1" 200 -
+2022-05-30 22:20:40,212 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:40] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:20:40,402 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:20:40] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:20:46,765 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:21:06,297 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:21:43,329 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:22:15,034 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:22:15] "GET / HTTP/1.1" 200 -
+2022-05-30 22:22:15,053 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:22:15] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 22:23:44,207 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:23:44] "GET / HTTP/1.1" 200 -
+2022-05-30 22:23:44,249 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:23:44] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 22:23:44,801 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:23:44] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:25:12,448 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:25:14,772 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:25:14] "GET /gfdhdfgh HTTP/1.1" 200 -
+2022-05-30 22:25:15,163 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:25:15] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:25:52,525 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:25:52] "GET /gfdhdfgh HTTP/1.1" 200 -
+2022-05-30 22:25:52,800 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:25:52] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:25:56,101 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:25:56] "GET /fffff HTTP/1.1" 200 -
+2022-05-30 22:25:56,418 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:25:56] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:26:12,544 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:26:12] "GET /jfghjfg675 HTTP/1.1" 200 -
+2022-05-30 22:26:12,910 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:26:12] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:28:50,839 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:50] "GET /jfghjfg675 HTTP/1.1" 200 -
+2022-05-30 22:28:51,325 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:51] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:28:52,320 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:52] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 22:28:52,674 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:52] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:28:54,778 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:54] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 22:28:54,988 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:54] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:28:55,415 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:55] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 22:28:55,600 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:55] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:28:56,229 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:56] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 22:28:56,440 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:56] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:28:59,232 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:59] "GET / HTTP/1.1" 200 -
+2022-05-30 22:28:59,289 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:59] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:28:59,505 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:28:59] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:29:02,652 INFO main Thread-22 (process_request_thread) : d is an invalid url
+2022-05-30 22:29:02,653 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:02] "POST / HTTP/1.1" 200 -
+2022-05-30 22:29:02,680 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:02] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:29:02,883 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:02] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:29:09,693 INFO main Thread-25 (process_request_thread) : http://127.0.0.1:5000/ inserted
+2022-05-30 22:29:09,694 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:09] "POST / HTTP/1.1" 200 -
+2022-05-30 22:29:09,718 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:09] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:29:09,908 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:09] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:29:11,366 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:11] "[32mGET /7b7a46537d HTTP/1.1[0m" 302 -
+2022-05-30 22:29:11,381 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:11] "GET / HTTP/1.1" 200 -
+2022-05-30 22:29:11,423 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:11] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:29:11,749 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:11] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:29:14,719 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:14] "GET /45453 HTTP/1.1" 200 -
+2022-05-30 22:29:14,957 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:29:14] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:29:55,850 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:30:13,433 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:30:13] "GET /45453 HTTP/1.1" 200 -
+2022-05-30 22:30:13,936 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:30:13] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:35:47,747 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:35:55,982 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:35:55] "GET / HTTP/1.1" 200 -
+2022-05-30 22:35:56,101 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:35:56] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 22:35:56,571 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:35:56] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:36:03,279 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:36:03] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:41:48,303 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:41:48] "[32mGET /7b7a46537d HTTP/1.1[0m" 302 -
+2022-05-30 22:41:48,312 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:41:48] "GET / HTTP/1.1" 200 -
+2022-05-30 22:41:48,377 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:41:48] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:41:48,698 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:41:48] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:41:54,762 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:41:54] "[32mGET /66284f2b21 HTTP/1.1[0m" 302 -
+2022-05-30 22:42:01,099 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:42:01] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:42:52,502 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:42:52] "GET / HTTP/1.1" 200 -
+2022-05-30 22:42:52,575 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:42:52] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:42:52,878 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:42:52] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 22:45:22,952 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:45:23,153 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:45:23] "GET / HTTP/1.1" 200 -
+2022-05-30 22:45:23,290 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:45:23] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:45:23,428 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:45:23] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2022-05-30 22:45:35,162 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:45:35] "GET / HTTP/1.1" 200 -
+2022-05-30 22:45:35,220 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:45:35] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:45:43,206 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:45:44,645 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:45:44] "GET / HTTP/1.1" 200 -
+2022-05-30 22:45:44,682 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:45:44] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:51:43,231 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:51:43] "GET / HTTP/1.1" 200 -
+2022-05-30 22:51:43,392 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:51:43] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:51:45,938 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:51:45] "GET / HTTP/1.1" 200 -
+2022-05-30 22:51:45,978 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:51:45] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:54:00,310 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:54:04,286 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:54:04] "GET / HTTP/1.1" 200 -
+2022-05-30 22:54:04,494 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:54:04] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 22:54:18,782 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:54:23,720 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:54:35,510 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:54:57,677 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 22:55:31,635 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:55:31] "GET / HTTP/1.1" 200 -
+2022-05-30 22:55:31,750 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:55:31] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 22:55:32,220 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 22:55:32] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:06:43,403 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:06:50,902 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:06:50] "GET / HTTP/1.1" 200 -
+2022-05-30 23:06:50,988 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:06:50] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:08:47,020 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:08:50,414 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:08:50] "GET / HTTP/1.1" 200 -
+2022-05-30 23:08:50,473 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:08:50] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:08:53,068 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:08:53] "GET / HTTP/1.1" 200 -
+2022-05-30 23:08:53,095 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:08:53] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:09:07,464 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:09:07] "GET / HTTP/1.1" 200 -
+2022-05-30 23:09:07,696 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:09:07] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:09:55,390 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:09:55] "GET / HTTP/1.1" 200 -
+2022-05-30 23:09:55,467 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:09:55] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 23:12:51,137 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:12:51] "GET / HTTP/1.1" 200 -
+2022-05-30 23:12:51,154 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:12:51] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 23:12:52,030 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:12:52] "GET /static/favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:13:14,219 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:14] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:13:14,219 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:14] "GET /static/favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:13:14,406 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:14] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 200 -
+2022-05-30 23:13:14,986 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:14] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+2022-05-30 23:13:22,881 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:22] "GET / HTTP/1.1" 200 -
+2022-05-30 23:13:22,991 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:22] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 200 -
+2022-05-30 23:13:23,088 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:23] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+2022-05-30 23:13:23,094 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:23] "GET /static/favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:13:23,101 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:23] "GET / HTTP/1.1" 200 -
+2022-05-30 23:13:23,197 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:23] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 200 -
+2022-05-30 23:13:23,292 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:23] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+2022-05-30 23:13:23,295 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:13:23] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+2022-05-30 23:18:25,345 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:18:30,495 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:18:30] "GET / HTTP/1.1" 200 -
+2022-05-30 23:18:30,611 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:18:30] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:18:39,955 INFO main Thread-3 (process_request_thread) : https://www.disneyplus.com/video/5837bd57-dcbb-4658-9bee-071dcfb532db inserted
+2022-05-30 23:18:39,956 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:18:39] "POST / HTTP/1.1" 200 -
+2022-05-30 23:18:39,984 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:18:39] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:18:41,506 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:18:41] "[32mGET /845d4f0f48 HTTP/1.1[0m" 302 -
+2022-05-30 23:18:54,224 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:18:54] "GET /454534bg HTTP/1.1" 200 -
+2022-05-30 23:18:54,659 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:18:54] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:19:06,818 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:19:06] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:20:34,845 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:20:34] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:20:39,352 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:20:39] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:20:40,605 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:20:40] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:20:43,781 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:20:43] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:21:01,051 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:21:01,587 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:01] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:21:01,775 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:01] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-30 23:21:03,746 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:03] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:21:10,249 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:10] "GET /454534bg HTTP/1.1" 200 -
+2022-05-30 23:21:10,362 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:10] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-30 23:21:16,486 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:16] "GET / HTTP/1.1" 200 -
+2022-05-30 23:21:16,650 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:16] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:21:21,314 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:21] "GET /bdfsg6 HTTP/1.1" 200 -
+2022-05-30 23:21:23,298 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:21:23] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:22:05,430 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:05] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:22:05,774 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:05] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-30 23:22:07,022 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:07] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:22:11,507 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:11] "GET /bdfsg6 HTTP/1.1" 200 -
+2022-05-30 23:22:11,615 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:11] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-30 23:22:13,361 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:13] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:22:14,549 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:14] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:22:19,465 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:19] "GET /hfdh HTTP/1.1" 200 -
+2022-05-30 23:22:21,880 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:21] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:22:48,168 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:48] "GET /fghdhdfg HTTP/1.1" 200 -
+2022-05-30 23:22:48,556 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:48] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:22:50,156 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:22:50] "GET /url_for('indesx%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:23:08,088 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:23:30,096 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:30] "GET / HTTP/1.1" 200 -
+2022-05-30 23:23:30,171 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:30] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 23:23:34,267 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:34] "GET /52 HTTP/1.1" 200 -
+2022-05-30 23:23:34,636 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:34] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:23:36,377 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:36] "GET /url_for('index%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:23:55,644 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:55] "GET /url_for('index%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:23:55,826 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:55] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-30 23:23:56,956 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:23:56] "GET /url_for('index%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:24:09,426 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:24:09] "GET /url_for('index%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:24:09,788 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:24:09] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:24:11,027 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:24:11] "GET /url_for('index%20%7D%7D HTTP/1.1" 200 -
+2022-05-30 23:24:44,526 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:24:57,131 ERROR main Thread-1 (process_request_thread) : Exception on /url_for('index }} [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return render_template("404.html")
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/templates/404.html", line 186, in template
+    <a href="{{ url_for('index' }}">   Go back </a>
+jinja2.exceptions.TemplateSyntaxError: unexpected '}', expected ')'
+2022-05-30 23:24:57,138 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:24:57] "[35m[1mGET /url_for('index%20%7D%7D HTTP/1.1[0m" 500 -
+2022-05-30 23:24:57,311 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:24:57] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-30 23:25:00,224 ERROR main Thread-3 (process_request_thread) : Exception on /ghgfh [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/main.py", line 48, in redirect_from_token
+    return render_template("404.html")
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/tinyurl_flask/templates/404.html", line 186, in template
+    <a href="{{ url_for('index' }}">   Go back </a>
+jinja2.exceptions.TemplateSyntaxError: unexpected '}', expected ')'
+2022-05-30 23:25:00,225 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:25:00] "[35m[1mGET /ghgfh HTTP/1.1[0m" 500 -
+2022-05-30 23:25:19,918 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:25:20,847 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:25:20] "GET /ghgfh HTTP/1.1" 200 -
+2022-05-30 23:25:21,260 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:25:21] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-30 23:25:22,545 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:25:22] "GET / HTTP/1.1" 200 -
+2022-05-30 23:25:22,603 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:25:22] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-30 23:56:15,232 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-30 23:56:19,145 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:56:19] "GET / HTTP/1.1" 200 -
+2022-05-30 23:56:19,296 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:56:19] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-30 23:56:29,860 INFO main Thread-3 (process_request_thread) : s is an invalid url
+2022-05-30 23:56:29,861 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:56:29] "POST / HTTP/1.1" 200 -
+2022-05-30 23:56:29,896 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [30/May/2022 23:56:29] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:01:28,421 INFO main Thread-5 (process_request_thread) :  is an invalid url
+2022-05-31 00:01:28,426 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:01:28] "POST / HTTP/1.1" 200 -
+2022-05-31 00:01:28,474 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:01:28] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:01:31,384 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:01:31] "GET / HTTP/1.1" 200 -
+2022-05-31 00:01:31,414 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:01:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:01:33,030 INFO main Thread-9 (process_request_thread) :  is an invalid url
+2022-05-31 00:01:33,030 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:01:33] "POST / HTTP/1.1" 200 -
+2022-05-31 00:01:33,057 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:01:33] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:03:35,272 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 00:03:58,270 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:03:58] "GET / HTTP/1.1" 200 -
+2022-05-31 00:03:58,382 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:03:58] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-31 00:04:00,445 INFO main Thread-3 (process_request_thread) :  is an empty url
+2022-05-31 00:04:00,445 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:04:00] "POST / HTTP/1.1" 200 -
+2022-05-31 00:04:00,472 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:04:00] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:04:03,717 INFO main Thread-5 (process_request_thread) : f is an empty url
+2022-05-31 00:04:03,718 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:04:03] "POST / HTTP/1.1" 200 -
+2022-05-31 00:04:03,745 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:04:03] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:04:07,054 INFO main Thread-7 (process_request_thread) : ghdfgh is an empty url
+2022-05-31 00:04:07,055 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:04:07] "POST / HTTP/1.1" 200 -
+2022-05-31 00:04:07,081 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:04:07] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:05:03,921 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 00:05:10,096 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:05:10] "GET / HTTP/1.1" 200 -
+2022-05-31 00:05:10,136 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:05:10] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-31 00:05:11,946 INFO main Thread-3 (process_request_thread) : Empty
+2022-05-31 00:05:11,947 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:05:11] "POST / HTTP/1.1" 200 -
+2022-05-31 00:05:11,978 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:05:11] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 00:31:24,951 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:31:24] "GET / HTTP/1.1" 200 -
+2022-05-31 00:31:25,072 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [31/May/2022 00:31:25] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:21:55,540 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:23:45,042 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:23:45] "GET / HTTP/1.1" 200 -
+2022-05-31 18:23:45,150 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:23:45] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-31 18:23:45,151 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:23:45] "GET /static/favicon.ico HTTP/1.1" 200 -
+2022-05-31 18:23:45,312 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:23:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 200 -
+2022-05-31 18:23:45,397 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:23:45] "GET /apple-touch-icon.png HTTP/1.1" 200 -
+2022-05-31 18:24:15,175 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:24:15] "GET / HTTP/1.1" 200 -
+2022-05-31 18:24:15,261 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:24:15] "GET /static/index.css HTTP/1.1" 200 -
+2022-05-31 18:24:25,420 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:24:25] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-31 18:25:17,274 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:25:26,434 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:25:31,019 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:31] "GET / HTTP/1.1" 200 -
+2022-05-31 18:25:31,028 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:25:31,048 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:25:39,006 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:39] "GET / HTTP/1.1" 200 -
+2022-05-31 18:25:39,063 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:39] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-31 18:25:42,970 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:42] "GET / HTTP/1.1" 200 -
+2022-05-31 18:25:42,996 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:42] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+2022-05-31 18:25:47,936 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:47] "GET / HTTP/1.1" 200 -
+2022-05-31 18:25:47,973 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:25:47] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:27:06,238 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:27:31,776 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:27:31] "GET / HTTP/1.1" 200 -
+2022-05-31 18:27:31,837 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [31/May/2022 18:27:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:43:34,275 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:43:40,757 INFO werkzeug Thread-1 : 127.0.0.1 - - [31/May/2022 18:43:40] "GET / HTTP/1.1" 200 -
+2022-05-31 18:43:40,870 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 18:43:40] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:48:44,541 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:48:50,886 ERROR main Thread-1 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 50, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:48:50,896 INFO werkzeug Thread-1 : 127.0.0.1 - - [31/May/2022 18:48:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:49:04,445 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:49:07,128 ERROR main Thread-1 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 50, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:49:07,136 INFO werkzeug Thread-1 : 127.0.0.1 - - [31/May/2022 18:49:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:49:37,535 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:49:41,535 ERROR main Thread-1 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 50, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:49:41,540 INFO werkzeug Thread-1 : 127.0.0.1 - - [31/May/2022 18:49:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:49:46,682 ERROR main Thread-2 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 50, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:49:46,683 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 18:49:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:50:02,287 ERROR main Thread-4 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 50, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:50:02,290 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 18:50:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:50:02,327 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 18:50:02] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:50:02,368 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 18:50:02] "GET /favicon.ico HTTP/1.1" 200 -
+2022-05-31 18:52:04,119 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:52:07,887 ERROR main Thread-1 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 50, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:52:07,896 INFO werkzeug Thread-1 : 127.0.0.1 - - [31/May/2022 18:52:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:53:29,749 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:53:33,444 ERROR main Thread-1 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 55, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:53:33,456 INFO werkzeug Thread-1 : 127.0.0.1 - - [31/May/2022 18:53:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:53:58,408 ERROR main Thread-2 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 55, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:53:58,409 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 18:53:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:54:10,451 ERROR main Thread-3 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 55, in index
+    return render_template("index.html", github= personal_github_url, form=cform)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:54:10,453 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 18:54:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:54:25,321 ERROR main Thread-4 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 55, in index
+    return render_template("index.html", github= personal_github_url)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:54:25,322 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 18:54:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:54:30,689 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:54:36,468 ERROR main Thread-1 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 55, in index
+    return render_template("index.html", github= personal_github_url)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('home') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:54:36,477 INFO werkzeug Thread-1 : 127.0.0.1 - - [31/May/2022 18:54:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:55:00,808 ERROR main Thread-2 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 55, in index
+    return render_template("index.html", github= personal_github_url)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <form method="POST" action="{{ url_for('index') }}">
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:55:00,812 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 18:55:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:55:10,025 ERROR main Thread-3 : Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/antonio/PycharmProjects/wtf_test/main.py", line 55, in index
+    return render_template("index.html", github= personal_github_url)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/base.html", line 16, in top-level template code
+    {% block content %}
+  File "/Users/antonio/PycharmProjects/wtf_test/templates/index.html", line 41, in block 'content'
+    <!--            <form method="POST" action="{{ url_for('index') }}">-->
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/Users/antonio/PycharmProjects/wtf_test/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you mean 'redirect_from_token' instead?
+2022-05-31 18:55:10,026 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 18:55:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:55:14,356 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:56:42,302 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:56:42,305 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 18:56:43,721 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 18:56:43,746 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 18:56:46,406 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 18:56:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-05-31 18:56:46,439 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 18:56:46] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-05-31 18:56:46,445 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 18:56:46] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-05-31 18:56:46,454 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 18:56:46] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-05-31 18:57:14,795 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:57:14,797 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 18:57:16,269 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 18:57:16,282 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 18:57:18,322 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 18:57:18] "GET / HTTP/1.1" 200 -
+2022-05-31 18:57:18,388 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 18:57:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 18:57:47,085 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 18:57:47,087 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 18:57:48,351 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 18:57:48,360 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 18:57:50,180 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 18:57:50] "GET / HTTP/1.1" 200 -
+2022-05-31 18:57:50,224 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 18:57:50] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:16:47,219 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:16:47] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2022-05-31 19:16:47,249 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 19:16:47] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-05-31 19:16:47,253 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:16:47] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-05-31 19:16:47,269 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 19:16:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 19:17:52,292 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:17:52,294 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:17:53,946 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:17:53,956 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:17:56,413 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:17:56] "GET / HTTP/1.1" 200 -
+2022-05-31 19:17:56,455 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:17:56] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:18:07,522 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:18:07] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2022-05-31 19:18:07,544 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:18:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-05-31 19:18:07,544 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 19:18:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-05-31 19:18:07,553 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 19:18:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 19:20:54,318 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:20:54,320 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:21:01,287 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:21:01,294 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:21:01,324 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:21:01] "GET / HTTP/1.1" 200 -
+2022-05-31 19:21:01,352 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:21:01] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:21:05,117 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:21:05] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2022-05-31 19:21:05,132 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:21:05] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-05-31 19:21:05,133 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 19:21:05] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-05-31 19:21:05,143 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 19:21:05] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-31 19:22:08,513 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-05-31 19:25:35,116 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-05-31 19:25:35,119 INFO werkzeug MainThread :  * Restarting with stat
+2022-05-31 19:25:36,418 WARNING werkzeug MainThread :  * Debugger is active!
+2022-05-31 19:25:36,425 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-05-31 19:25:38,285 INFO werkzeug Thread-2 : 127.0.0.1 - - [31/May/2022 19:25:38] "GET / HTTP/1.1" 200 -
+2022-05-31 19:25:38,359 INFO werkzeug Thread-3 : 127.0.0.1 - - [31/May/2022 19:25:38] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:25:43,168 INFO main Thread-4 : cform.name.data is an empty url
+2022-05-31 19:25:43,169 INFO werkzeug Thread-4 : 127.0.0.1 - - [31/May/2022 19:25:43] "POST / HTTP/1.1" 200 -
+2022-05-31 19:25:43,208 INFO werkzeug Thread-5 : 127.0.0.1 - - [31/May/2022 19:25:43] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:25:53,685 INFO main Thread-6 : https://www.geeksforgeeks.org/create-contact-us-using-wtforms-in-flask/ inserted
+2022-05-31 19:25:53,688 INFO werkzeug Thread-6 : 127.0.0.1 - - [31/May/2022 19:25:53] "POST / HTTP/1.1" 200 -
+2022-05-31 19:25:53,731 INFO werkzeug Thread-7 : 127.0.0.1 - - [31/May/2022 19:25:53] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-05-31 19:25:55,856 INFO werkzeug Thread-8 : 127.0.0.1 - - [31/May/2022 19:25:55] "[32mGET /40be099ad0 HTTP/1.1[0m" 302 -
+2022-05-31 19:27:30,159 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-05-31 19:27:30,727 INFO werkzeug MainThread :  * Restarting with stat

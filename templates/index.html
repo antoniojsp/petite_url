@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container text-center p-5 my-5 bg-success text-white">
+      <h1>PetiteUrl</h1>
+      <p>A TinyURL clone webpage using Flask and MongoDB. </p>
+    </div>
+
+    <div class="container mt-3">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+          {% if link %}
+          <li>The shorten url is <a href="{{ link }}"  target="_blank">{{ link }}</a> </li>
+          {% else %}
+          <li> {{ message }} </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <p id="response"> </p>
+
+      <form method="post">
+        <div class="mb-3 mt-3 ">
+          <input type="text" class="form-control p-2" id="url" placeholder="Enter here the URL you want to shorten" name="url">
+          <br>
+            <div class="text-center">
+              <button type="reset" class="btn btn-success">Clear</button>
+              <button type="submit" class="btn btn-success " >Submit</button>
+            </div>
+        </div>
+      </form>
+
+    </div>
+
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form method="POST" action="{{ url_for('index') }}">
+                {{ form.csrf_token }}
+                <p>
+                    {{ form.name.label }}
+                    <br>
+                    {{ form.name }}
+                </p>
+                {{ form.submit }}
+            </form>
+        </div>
+
+
+
+{% endblock %}
