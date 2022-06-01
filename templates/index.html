@@ -5,10 +5,7 @@
       <h1>PetiteUrl</h1>
       <p>A TinyURL clone webpage using Flask and MongoDB. </p>
     </div>
-<script>
 
-    $("#form")[0].reset();
-</script>
     <div class="container mt-3">
       {% with messages = get_flashed_messages() %}
       {% if messages %}
@@ -24,27 +21,10 @@
       {% endif %}
     {% endwith %}
 
-    <p id="response"> </p>
-
-<!--      <form method="post">-->
-<!--        <div class="mb-3 mt-3 ">-->
-<!--          <input type="text" class="form-control p-2" id="url" placeholder="Enter here the URL you want to shorten" name="url">-->
-<!--          <br>-->
-<!--            <div class="text-center">-->
-<!--              <button type="reset" class="btn btn-success">Clear</button>-->
-<!--              <button type="submit" class="btn btn-success " >Submit</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--      </form>-->
-
-<!--    </div>-->
-
-        <div class="mb-3 mt-3 " >
+        <div class="mb-3 mt-3 text-center" >
             <form method="POST" action="{{ url_for('index') }}">
                 {{ form.csrf_token }}
                 <p>
-                    {{ form.name.label }}
-                    <br>
                     {{ form.name(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}
                 </p>
 <!--                 {{ form.submit(class_="btn btn-success") }}-->

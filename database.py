@@ -1,8 +1,9 @@
-import pymongo
-from hash import hash_url
 import certifi
-import datetime
 import configparser
+import datetime
+from hash import hash_url
+import pymongo
+import urllib.request
 
 configurations = configparser.ConfigParser()
 configurations.read("credentials.ini")
@@ -18,15 +19,22 @@ class TinyURLDatabase:
         # Only works if the unique index is not already set.
         self.mycol.create_index("hash_number", unique= True)
 
-    def insert(self, entry: str) -> str:
-        url_hash = hash_url(entry)
-
+    def insert(self, url: str) -> str:
+        response = ""
+        url_hash = hash_url(url)
         try:
-            mydict = {"hash_number": url_hash, "url_address": entry, "time_stamp": datetime.datetime.now()}
+            self._check_url_alive(url)
+            mydict = {"hash_number": url_hash, "url_address": url, "time_stamp": datetime.datetime.now()}
             self.mycol.insert_one(mydict)
+            response = f'{url_hash}'
         except pymongo.errors.DuplicateKeyError:
             print("Entry already in database")
-        return url_hash
+            response = f'{url_hash}'
+        except urllib.error.HTTPError:
+            print("Website dead")
+            response = "404"
+
+        return response
 
     def query_url(self, hash_number: str) -> str:
         myquery = {"hash_number": hash_number}
@@ -37,6 +45,5 @@ class TinyURLDatabase:
 
         return mydoc["url_address"]
 
-    def check_url_alive(self):
-        #TODO
-        pass
+    def _check_url_alive(self, url) -> bool:
+        return urllib.request.urlopen(url).getcode() == 200
