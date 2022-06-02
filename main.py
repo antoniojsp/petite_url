@@ -2,7 +2,7 @@ import configparser
 from database import *
 from collections import namedtuple
 from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for
-from forms import PetiteURLForm
+from forms import PetiteURLForms
 import logging
 import os
 import validators
@@ -26,35 +26,40 @@ informacion = namedtuple('MyInfo', ['email', 'github'])
 my_info = informacion("antonios@uoregon.edu", "72b594348a")
 
 
+def check_url_alive(url:str) -> bool:
+    try:
+        boolean = urllib.request.urlopen(url).getcode() == 200
+    except (urllib.error.URLError, ValueError) as error:
+        print(error)
+        boolean = False
+
+    return boolean
+
+
 @app.route('/', methods=["GET", "POST"])
 def index():
     personal_github_url = f'{request.base_url}{my_info.github}'
-    forma = PetiteURLForm()
+    form = PetiteURLForms()
 
-    if forma.validate_on_submit():
-        original_url = forma.name.data
+    if form.validate_on_submit():
+        original_url = form.name.data
         is_valid_url = validators.url(original_url)
+        is_alive_url = check_url_alive(original_url)
 
-        if is_valid_url:
+        if not is_valid_url:
+            app.logger.info(f'{original_url} not a valid URL')
+            flash('You need to enter a legal URL')
+        elif not is_alive_url:
+            app.logger.info(f'{original_url} is not a live URL')
+            flash("The website is either down or it doesn't exists")
+        else:
             shorten_url = db.insert(original_url)
-
-            if shorten_url == "404":
-                flash('Website Down')
-                return redirect(url_for('index'))
-
             app.logger.info(f'{original_url} inserted')
             url_link = f'{request.base_url}{shorten_url}'
             flash(url_link)
-        elif original_url == "":
-            app.logger.info(f'Empty')
-            flash('No input')
-        else:
-            app.logger.info(f'{original_url} is an empty url')
-            flash('You need to enter a URL')
-
         return redirect(url_for('index'))
 
-    return render_template("index.html", github=personal_github_url, form=forma, email=my_info.email)
+    return render_template("index.html", github=personal_github_url, form=form, email=my_info.email)
 
 
 @app.route('/<shorten_url_token>')
@@ -70,7 +75,6 @@ def redirect_from_token(shorten_url_token: str):
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico',mimetype='image/vnd.microsoft.icon')
-
 
 
 if __name__ == '__main__':
