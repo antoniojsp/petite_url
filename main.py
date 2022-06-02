@@ -33,6 +33,7 @@ def check_url_alive(url:str) -> bool:
         print(error)
         boolean = False
 
+
     return boolean
 
 
