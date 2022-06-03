@@ -11,10 +11,10 @@
     <div id="response"></div>
 
         <div class="mb-3 mt-3 text-center" >
-            <form method="POST"  action="{{ url_for('index') }}" >
+            <form>
                 {{ form.csrf_token }}
                 <p>
-                    {{ form.name(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}
+                    {{ form.url(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}
                 </p>
                 {{ form.submit(class_="btn btn-success") }}
                 <button type="reset" id="clear" class="btn btn-success">Clear </input>
@@ -23,24 +23,23 @@
          </div>
     </div>
 
+
 <script>
 $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
-        var input = document.getElementById("name").value;
-        document.getElementById("name").value = "";
+        var input = document.getElementById("url").value;
+        document.getElementById("url").value = "";
 
      $.getJSON( "/_submit",
                 {url: input},
                 function(data) {
-                  rsval = data.result.response;
-                  bool = data.result.href;
-
-                  if (bool == true){
-                  $("#response").html("The PetiteURL version is " + "<a href='" + rsval + "' Target='_blank'>" + rsval + "</a>" );
+                  result = data.result.response;
+                  is_href_link = data.result.href;
+                  if (is_href_link == true){
+                  $("#response").html("The PetiteURL version is " + "<a href='" + result + "' Target='_blank'>" + result + "</a>" );
                   }else{
-                  $("#response").html(rsval);
-
+                  $("#response").html(result);
                   }
                 }
              );

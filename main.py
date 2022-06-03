@@ -13,7 +13,7 @@ configurations = configparser.ConfigParser()
 configurations.read("credentials.ini")
 
 app = Flask(__name__)
-app.secret_key = configurations['API']['flash']
+app.secret_key = configurations['API']['secret_word']
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
@@ -30,7 +30,7 @@ my_info = informacion("antonios@uoregon.edu", "72b594348a")
 def index():
     personal_github_url = f'{request.base_url}{my_info.github}'
     form = PetiteURLForms()
-    return render_template("index.html", github=personal_github_url, form=form, email=my_info.email)
+    return render_template("index.html", form=form, email=my_info, github=personal_github_url)
 
 
 @app.route('/<shorten_url_token>')

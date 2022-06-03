@@ -4,9 +4,10 @@ import datetime
 from utilities import hash_url
 import pymongo
 
+# read credentials for secrets
 configurations = configparser.ConfigParser()
 configurations.read("credentials.ini")
-url_connection_mongodb = configurations['API']['mundo']
+url_connection_mongodb = configurations['API']['PetiteUrl']
 
 
 class TinyURLDatabase:

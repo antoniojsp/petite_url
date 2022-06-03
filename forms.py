@@ -4,5 +4,5 @@ from wtforms.validators import DataRequired
 
 
 class PetiteURLForms(FlaskForm):
-    name = StringField(label='URL', validators=[DataRequired()])
+    url = StringField(label='URL', validators=[DataRequired()])
     submit = SubmitField(label="Shorten")
