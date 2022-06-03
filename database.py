@@ -1,9 +1,8 @@
 import certifi
 import configparser
 import datetime
-from hash import hash_url
+from utilities import hash_url
 import pymongo
-import urllib.request
 
 configurations = configparser.ConfigParser()
 configurations.read("credentials.ini")

@@ -1,10 +1,11 @@
 import configparser
-from database import *
 from collections import namedtuple
+from database import *
 from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for
 from forms import PetiteURLForms
 import logging
 import os
+from utilities import check_url_alive
 import validators
 
 # separation of concerns
@@ -26,17 +27,6 @@ informacion = namedtuple('MyInfo', ['email', 'github'])
 my_info = informacion("antonios@uoregon.edu", "72b594348a")
 
 
-def check_url_alive(url:str) -> bool:
-    try:
-        boolean = urllib.request.urlopen(url).getcode() == 200
-    except (urllib.error.URLError, ValueError) as error:
-        print(error)
-        boolean = False
-
-
-    return boolean
-
-
 @app.route('/', methods=["GET", "POST"])
 def index():
     personal_github_url = f'{request.base_url}{my_info.github}'
@@ -44,15 +34,15 @@ def index():
 
     if form.validate_on_submit():
         original_url = form.name.data
-        is_valid_url = validators.url(original_url)
+        is_legal_url = validators.url(original_url)
         is_alive_url = check_url_alive(original_url)
 
-        if not is_valid_url:
-            app.logger.info(f'{original_url} not a valid URL')
-            flash('You need to enter a legal URL')
+        if not is_legal_url:
+            app.logger.info(f'{original_url} is not a valid URL')
+            flash('Please, enter a legal URL.}')
         elif not is_alive_url:
             app.logger.info(f'{original_url} is not a live URL')
-            flash("The website is either down or it doesn't exists")
+            flash("The website is either offline, forbidden or cannot be found.")
         else:
             shorten_url = db.insert(original_url)
             app.logger.info(f'{original_url} inserted')
