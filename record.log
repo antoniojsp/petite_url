@@ -2799,3 +2799,461 @@ werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you me
 2022-06-03 01:21:00,425 INFO werkzeug MainThread :  * Restarting with stat
 2022-06-03 01:21:02,521 WARNING werkzeug MainThread :  * Debugger is active!
 2022-06-03 01:21:02,528 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:25:48,724 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:25:48,727 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:25:50,234 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:25:50,246 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:30:58,922 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:30:58,925 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:31:00,715 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:31:00,727 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:31:15,222 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:31:15] "GET / HTTP/1.1" 200 -
+2022-06-03 01:31:15,288 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:31:15] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:31:20,688 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:31:20,690 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:31:20] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:31:20,710 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:31:20] "GET / HTTP/1.1" 200 -
+2022-06-03 01:31:20,754 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 01:31:20] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:31:46,805 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:31:46,807 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:31:48,296 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:31:48,305 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:31:50,248 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:31:50] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:31:56,145 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:31:56] "GET / HTTP/1.1" 200 -
+2022-06-03 01:31:56,235 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:31:56] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:32:06,056 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:32:06] "GET / HTTP/1.1" 200 -
+2022-06-03 01:32:06,111 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 01:32:06] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:32:11,626 INFO main Thread-7 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:32:11,629 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 01:32:11] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:32:11,639 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 01:32:11] "GET / HTTP/1.1" 200 -
+2022-06-03 01:32:11,684 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 01:32:11] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:33:21,636 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:33:21,638 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:33:23,132 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:33:23,150 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:33:23,535 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:33:23] "GET / HTTP/1.1" 200 -
+2022-06-03 01:33:23,624 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:33:23] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:33:29,312 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:33:29,314 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:33:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:33:29,321 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:33:29] "GET / HTTP/1.1" 200 -
+2022-06-03 01:33:29,364 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 01:33:29] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:34:11,562 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 01:34:11] "GET / HTTP/1.1" 200 -
+2022-06-03 01:34:11,603 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 01:34:11] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:34:15,601 INFO main Thread-9 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:34:15,602 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 01:34:15] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:34:15,609 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 01:34:15] "GET / HTTP/1.1" 200 -
+2022-06-03 01:34:15,652 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 01:34:15] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:34:24,247 INFO werkzeug Thread-12 : 127.0.0.1 - - [03/Jun/2022 01:34:24] "GET / HTTP/1.1" 200 -
+2022-06-03 01:34:24,284 INFO werkzeug Thread-13 : 127.0.0.1 - - [03/Jun/2022 01:34:24] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:34:27,461 INFO main Thread-14 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:34:27,462 INFO werkzeug Thread-14 : 127.0.0.1 - - [03/Jun/2022 01:34:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:34:27,469 INFO werkzeug Thread-15 : 127.0.0.1 - - [03/Jun/2022 01:34:27] "GET / HTTP/1.1" 200 -
+2022-06-03 01:34:27,504 INFO werkzeug Thread-16 : 127.0.0.1 - - [03/Jun/2022 01:34:27] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:34:33,640 INFO main Thread-17 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:34:33,644 INFO werkzeug Thread-17 : 127.0.0.1 - - [03/Jun/2022 01:34:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:34:33,654 INFO werkzeug Thread-18 : 127.0.0.1 - - [03/Jun/2022 01:34:33] "GET / HTTP/1.1" 200 -
+2022-06-03 01:34:33,700 INFO werkzeug Thread-19 : 127.0.0.1 - - [03/Jun/2022 01:34:33] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:34:37,289 INFO werkzeug Thread-20 : 127.0.0.1 - - [03/Jun/2022 01:34:37] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:36:09,567 INFO werkzeug Thread-21 : 127.0.0.1 - - [03/Jun/2022 01:36:09] "GET / HTTP/1.1" 200 -
+2022-06-03 01:36:09,630 INFO werkzeug Thread-22 : 127.0.0.1 - - [03/Jun/2022 01:36:09] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:36:13,390 INFO main Thread-23 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:36:13,392 INFO werkzeug Thread-23 : 127.0.0.1 - - [03/Jun/2022 01:36:13] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:36:13,415 INFO werkzeug Thread-24 : 127.0.0.1 - - [03/Jun/2022 01:36:13] "GET / HTTP/1.1" 200 -
+2022-06-03 01:36:13,464 INFO werkzeug Thread-25 : 127.0.0.1 - - [03/Jun/2022 01:36:13] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:38:03,558 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:38:03,560 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:38:05,018 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:38:05,026 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:38:09,691 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:38:09] "GET / HTTP/1.1" 200 -
+2022-06-03 01:38:09,780 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:38:09] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:38:13,711 INFO main Thread-4 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d is not a live URL
+2022-06-03 01:38:13,713 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:38:13] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:38:13,722 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:38:13] "GET / HTTP/1.1" 200 -
+2022-06-03 01:38:13,767 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 01:38:13] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:38:17,566 INFO main Thread-7 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:38:17,568 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 01:38:17] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:38:17,580 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 01:38:17] "GET / HTTP/1.1" 200 -
+2022-06-03 01:38:17,639 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 01:38:17] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:38:19,775 INFO main Thread-10 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is not a valid URL
+2022-06-03 01:38:19,776 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 01:38:19] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:38:19,785 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 01:38:19] "GET / HTTP/1.1" 200 -
+2022-06-03 01:38:19,827 INFO werkzeug Thread-12 : 127.0.0.1 - - [03/Jun/2022 01:38:19] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:39:59,645 INFO werkzeug Thread-13 : 127.0.0.1 - - [03/Jun/2022 01:39:59] "GET / HTTP/1.1" 200 -
+2022-06-03 01:39:59,713 INFO werkzeug Thread-14 : 127.0.0.1 - - [03/Jun/2022 01:39:59] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:40:11,951 INFO werkzeug Thread-15 : 127.0.0.1 - - [03/Jun/2022 01:40:11] "GET / HTTP/1.1" 200 -
+2022-06-03 01:40:12,016 INFO werkzeug Thread-16 : 127.0.0.1 - - [03/Jun/2022 01:40:12] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:40:16,080 INFO werkzeug Thread-17 : 127.0.0.1 - - [03/Jun/2022 01:40:16] "GET / HTTP/1.1" 200 -
+2022-06-03 01:40:16,126 INFO werkzeug Thread-18 : 127.0.0.1 - - [03/Jun/2022 01:40:16] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:40:20,238 INFO main Thread-19 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:40:20,240 INFO werkzeug Thread-19 : 127.0.0.1 - - [03/Jun/2022 01:40:20] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:40:20,265 INFO werkzeug Thread-20 : 127.0.0.1 - - [03/Jun/2022 01:40:20] "GET / HTTP/1.1" 200 -
+2022-06-03 01:40:20,323 INFO werkzeug Thread-21 : 127.0.0.1 - - [03/Jun/2022 01:40:20] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:40:27,179 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:40:27,180 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:40:28,739 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:40:28,755 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:40:30,295 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:40:30] "GET / HTTP/1.1" 200 -
+2022-06-03 01:40:30,353 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:40:30] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:40:34,825 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:40:34,827 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:40:34] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:40:34,837 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:40:34] "GET / HTTP/1.1" 200 -
+2022-06-03 01:40:34,882 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 01:40:34] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:40:43,780 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 01:40:43] "GET / HTTP/1.1" 200 -
+2022-06-03 01:40:43,816 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 01:40:43] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:40:47,901 INFO main Thread-9 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:40:47,903 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 01:40:47] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:40:47,913 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 01:40:47] "GET / HTTP/1.1" 200 -
+2022-06-03 01:40:47,951 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 01:40:47] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:41:29,388 INFO werkzeug Thread-12 : 127.0.0.1 - - [03/Jun/2022 01:41:29] "GET / HTTP/1.1" 200 -
+2022-06-03 01:41:29,447 INFO werkzeug Thread-13 : 127.0.0.1 - - [03/Jun/2022 01:41:29] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:46:06,221 INFO werkzeug Thread-14 : 127.0.0.1 - - [03/Jun/2022 01:46:06] "GET / HTTP/1.1" 200 -
+2022-06-03 01:46:06,246 INFO werkzeug Thread-15 : 127.0.0.1 - - [03/Jun/2022 01:46:06] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:46:39,981 INFO main Thread-16 : ss is not a valid URL
+2022-06-03 01:46:39,982 INFO werkzeug Thread-16 : 127.0.0.1 - - [03/Jun/2022 01:46:39] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:46:39,996 INFO werkzeug Thread-17 : 127.0.0.1 - - [03/Jun/2022 01:46:39] "GET / HTTP/1.1" 200 -
+2022-06-03 01:46:40,027 INFO werkzeug Thread-18 : 127.0.0.1 - - [03/Jun/2022 01:46:40] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:47:58,927 INFO werkzeug Thread-19 : 127.0.0.1 - - [03/Jun/2022 01:47:58] "GET / HTTP/1.1" 200 -
+2022-06-03 01:47:58,932 INFO werkzeug Thread-20 : 127.0.0.1 - - [03/Jun/2022 01:47:58] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:47:58,954 INFO werkzeug Thread-21 : 127.0.0.1 - - [03/Jun/2022 01:47:58] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:48:18,903 INFO werkzeug Thread-22 : 127.0.0.1 - - [03/Jun/2022 01:48:18] "[32mGET /72b594348a HTTP/1.1[0m" 302 -
+2022-06-03 01:48:57,101 INFO main Thread-23 : https://support.apple.com/es-us/guide/safari/sfri20948/mac inserted
+2022-06-03 01:48:57,106 INFO werkzeug Thread-23 : 127.0.0.1 - - [03/Jun/2022 01:48:57] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:48:57,118 INFO werkzeug Thread-24 : 127.0.0.1 - - [03/Jun/2022 01:48:57] "GET / HTTP/1.1" 200 -
+2022-06-03 01:48:57,183 INFO werkzeug Thread-25 : 127.0.0.1 - - [03/Jun/2022 01:48:57] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:49:25,995 INFO werkzeug Thread-26 : 127.0.0.1 - - [03/Jun/2022 01:49:25] "GET / HTTP/1.1" 200 -
+2022-06-03 01:49:26,042 INFO werkzeug Thread-27 : 127.0.0.1 - - [03/Jun/2022 01:49:26] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:49:35,020 INFO main Thread-28 : https://support.apple.com/es-us/guide/safari/sfri20948/mac inserted
+2022-06-03 01:49:35,023 INFO werkzeug Thread-28 : 127.0.0.1 - - [03/Jun/2022 01:49:35] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:49:35,034 INFO werkzeug Thread-29 : 127.0.0.1 - - [03/Jun/2022 01:49:35] "GET / HTTP/1.1" 200 -
+2022-06-03 01:49:35,071 INFO werkzeug Thread-30 : 127.0.0.1 - - [03/Jun/2022 01:49:35] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:50:00,698 INFO werkzeug Thread-31 : 127.0.0.1 - - [03/Jun/2022 01:50:00] "GET / HTTP/1.1" 200 -
+2022-06-03 01:50:00,748 INFO werkzeug Thread-32 : 127.0.0.1 - - [03/Jun/2022 01:50:00] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:50:06,540 INFO main Thread-33 : https://support.apple.com/es-us/guide/safari/sfri20948/mac inserted
+2022-06-03 01:50:06,542 INFO werkzeug Thread-33 : 127.0.0.1 - - [03/Jun/2022 01:50:06] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:50:06,554 INFO werkzeug Thread-34 : 127.0.0.1 - - [03/Jun/2022 01:50:06] "GET / HTTP/1.1" 200 -
+2022-06-03 01:50:06,602 INFO werkzeug Thread-35 : 127.0.0.1 - - [03/Jun/2022 01:50:06] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:50:53,609 INFO werkzeug Thread-36 : 127.0.0.1 - - [03/Jun/2022 01:50:53] "GET / HTTP/1.1" 200 -
+2022-06-03 01:50:53,634 INFO werkzeug Thread-37 : 127.0.0.1 - - [03/Jun/2022 01:50:53] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:50:59,236 INFO main Thread-38 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:50:59,238 INFO werkzeug Thread-38 : 127.0.0.1 - - [03/Jun/2022 01:50:59] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:50:59,248 INFO werkzeug Thread-39 : 127.0.0.1 - - [03/Jun/2022 01:50:59] "GET / HTTP/1.1" 200 -
+2022-06-03 01:50:59,284 INFO werkzeug Thread-40 : 127.0.0.1 - - [03/Jun/2022 01:50:59] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:51:05,805 INFO werkzeug Thread-41 : 127.0.0.1 - - [03/Jun/2022 01:51:05] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:51:35,684 INFO werkzeug Thread-42 : 127.0.0.1 - - [03/Jun/2022 01:51:35] "GET / HTTP/1.1" 200 -
+2022-06-03 01:53:11,621 INFO werkzeug Thread-44 : 127.0.0.1 - - [03/Jun/2022 01:53:11] "GET / HTTP/1.1" 200 -
+2022-06-03 01:53:11,662 INFO werkzeug Thread-45 : 127.0.0.1 - - [03/Jun/2022 01:53:11] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:54:19,505 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:54:19,520 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:54:21,080 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:54:21,093 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:54:45,620 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:54:45] "GET / HTTP/1.1" 200 -
+2022-06-03 01:54:45,677 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:54:45] "GET /static/index.css HTTP/1.1" 200 -
+2022-06-03 01:55:03,189 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:55:03] "GET / HTTP/1.1" 200 -
+2022-06-03 01:55:03,239 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:55:03] "GET /static/index.css HTTP/1.1" 200 -
+2022-06-03 01:56:28,961 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:56:28,963 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:56:30,503 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:56:30,514 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:56:31,347 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:56:31] "GET / HTTP/1.1" 200 -
+2022-06-03 01:56:31,437 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:56:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:57:50,777 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 01:57:50,779 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:57:52,228 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:57:52,236 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:57:52,262 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:57:52] "GET / HTTP/1.1" 200 -
+2022-06-03 01:57:52,312 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:57:52] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:57:54,231 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:57:54] "GET / HTTP/1.1" 200 -
+2022-06-03 01:57:54,271 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:57:54] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:58:31,084 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/forms.py', reloading
+2022-06-03 01:58:31,622 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:58:33,229 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:58:33,235 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:59:10,897 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/forms.py', reloading
+2022-06-03 01:59:11,396 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 01:59:13,762 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 01:59:13,769 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 01:59:14,733 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 01:59:14] "GET / HTTP/1.1" 200 -
+2022-06-03 01:59:14,789 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 01:59:14] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:59:18,411 INFO main Thread-4 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is not a valid URL
+2022-06-03 01:59:18,414 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 01:59:18] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:59:18,424 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 01:59:18] "GET / HTTP/1.1" 200 -
+2022-06-03 01:59:18,473 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 01:59:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:59:21,837 INFO main Thread-7 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 01:59:21,839 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 01:59:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:59:21,848 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 01:59:21] "GET / HTTP/1.1" 200 -
+2022-06-03 01:59:21,889 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 01:59:21] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 01:59:25,180 INFO main Thread-10 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is not a valid URL
+2022-06-03 01:59:25,182 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 01:59:25] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 01:59:25,192 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 01:59:25] "GET / HTTP/1.1" 200 -
+2022-06-03 01:59:25,233 INFO werkzeug Thread-12 : 127.0.0.1 - - [03/Jun/2022 01:59:25] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:00:21,961 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:00:22,494 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:00:24,154 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:00:24,170 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:00:24,463 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:00:24] "GET / HTTP/1.1" 200 -
+2022-06-03 02:01:19,016 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:01:19] "GET / HTTP/1.1" 200 -
+2022-06-03 02:01:19,090 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:01:19] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:01:43,276 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:01:43] "GET / HTTP/1.1" 200 -
+2022-06-03 02:01:43,322 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:01:43] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:02:34,447 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:02:34,449 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:02:36,012 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:02:36,024 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:02:36,052 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:02:36] "GET / HTTP/1.1" 200 -
+2022-06-03 02:02:36,118 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:02:36] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:02:46,008 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:02:46] "GET / HTTP/1.1" 200 -
+2022-06-03 02:02:46,041 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:02:46] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:03:13,750 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:03:13,753 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:03:13] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 02:03:13,763 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 02:03:13] "GET / HTTP/1.1" 200 -
+2022-06-03 02:03:13,813 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 02:03:13] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:08:43,993 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 02:08:43] "GET / HTTP/1.1" 200 -
+2022-06-03 02:08:44,059 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 02:08:44] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:09:38,541 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:09:38,543 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:09:40,084 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:09:40,093 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:10:39,560 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:10:39] "GET / HTTP/1.1" 200 -
+2022-06-03 02:10:39,633 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:10:39] "GET /static/index.css HTTP/1.1" 200 -
+2022-06-03 02:10:46,432 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:10:46] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:12:58,864 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:12:58,866 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:13:00,409 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:13:00,422 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:13:11,733 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:13:11] "GET / HTTP/1.1" 200 -
+2022-06-03 02:13:11,798 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:13:11] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:17:20,996 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:17:20] "GET / HTTP/1.1" 200 -
+2022-06-03 02:17:21,049 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 02:17:21] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:18:43,548 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 02:18:43] "GET / HTTP/1.1" 200 -
+2022-06-03 02:18:43,590 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 02:18:43] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:18:54,679 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:18:54,682 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:18:56,189 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:18:56,202 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:18:57,735 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:18:57] "GET / HTTP/1.1" 200 -
+2022-06-03 02:18:57,785 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:18:57] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:19:21,634 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:19:21] "GET / HTTP/1.1" 200 -
+2022-06-03 02:19:21,687 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:19:21] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:19:27,582 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:19:27] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:21:37,428 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:21:37,432 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:21:39,044 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:21:39,054 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:21:39,583 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:21:39] "GET / HTTP/1.1" 200 -
+2022-06-03 02:21:39,637 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:21:39] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:22:46,449 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:22:46] "GET / HTTP/1.1" 200 -
+2022-06-03 02:22:46,509 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:22:46] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:23:58,852 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:23:58,866 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:24:00,464 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:24:00,473 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:24:45,161 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:24:45] "GET / HTTP/1.1" 200 -
+2022-06-03 02:24:45,283 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:24:45] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:24:48,063 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:24:48] "GET / HTTP/1.1" 200 -
+2022-06-03 02:24:48,125 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:24:48] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:24:54,213 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:24:54,214 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:24:54] "[32mPOST / HTTP/1.1[0m" 302 -
+2022-06-03 02:24:54,253 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 02:24:54] "GET / HTTP/1.1" 200 -
+2022-06-03 02:24:54,293 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 02:24:54] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:25:07,364 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 02:25:07] "GET / HTTP/1.1" 200 -
+2022-06-03 02:25:07,401 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 02:25:07] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:29:32,655 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 02:29:32] "GET / HTTP/1.1" 200 -
+2022-06-03 02:29:32,709 INFO werkzeug Thread-12 : 127.0.0.1 - - [03/Jun/2022 02:29:32] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:30:18,653 INFO werkzeug Thread-13 : 127.0.0.1 - - [03/Jun/2022 02:30:18] "GET / HTTP/1.1" 200 -
+2022-06-03 02:30:18,722 INFO werkzeug Thread-14 : 127.0.0.1 - - [03/Jun/2022 02:30:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:33:36,576 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:33:37,190 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:33:39,066 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:33:39,076 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:34:24,375 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:34:24] "GET / HTTP/1.1" 200 -
+2022-06-03 02:34:24,474 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:34:24] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:34:31,820 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:34:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:35:09,497 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:35:09] "GET / HTTP/1.1" 200 -
+2022-06-03 02:35:09,546 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:35:09] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:35:12,026 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 02:35:12] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:35:32,146 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 02:35:32] "GET /_submit?url=%3C!--++++++++++++++%3Cbutton+type%3D%22reset%22+class%3D%22btn+btn-success%22%3EClear%3C%2Fbutton%3E--%3E HTTP/1.1" 200 -
+2022-06-03 02:35:57,741 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 02:35:57] "GET / HTTP/1.1" 200 -
+2022-06-03 02:35:57,791 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 02:35:57] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:36:00,241 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 02:36:00] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:37:09,105 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:37:09,598 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:37:11,770 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:37:11,780 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:37:11,808 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:37:11] "GET / HTTP/1.1" 200 -
+2022-06-03 02:37:11,862 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:37:11] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:37:14,016 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:37:14] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:37:21,848 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:37:21,879 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:37:23,362 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:37:23,370 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:37:30,511 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:37:31,107 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:37:35,405 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:37:35,408 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:37:37,156 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:37:37,163 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:37:37,190 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:37:37] "GET / HTTP/1.1" 200 -
+2022-06-03 02:37:37,254 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:37:37] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:37:39,655 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:37:39] "[35m[1mGET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1[0m" 500 -
+2022-06-03 02:38:02,722 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:38:03,358 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:38:05,151 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:38:05,158 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:38:11,280 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:38:11,629 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:38:14,163 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:38:14,164 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:38:15,690 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:38:15,700 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:38:16,373 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:38:16] "GET / HTTP/1.1" 200 -
+2022-06-03 02:38:16,429 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:38:16] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:38:19,030 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:38:19] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:40:02,370 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:40:02,948 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:40:05,043 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:40:05,054 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:40:06,127 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:40:06] "GET / HTTP/1.1" 200 -
+2022-06-03 02:40:06,175 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:40:06] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:40:08,908 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:40:08] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:40:42,181 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:40:42,182 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:40:43,810 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:40:43,818 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:40:47,680 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:40:47] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:40:59,077 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:40:59,627 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:41:01,437 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:41:01,443 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:41:07,599 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:41:08,131 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:41:09,771 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:41:09,783 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:41:09,825 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:41:09] "GET / HTTP/1.1" 200 -
+2022-06-03 02:41:09,896 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:41:09] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:41:12,288 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:41:12] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:41:19,931 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:41:19,932 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:41:21,439 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:41:21,446 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:41:23,191 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:41:23] "GET / HTTP/1.1" 200 -
+2022-06-03 02:41:23,362 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:41:23] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:41:27,109 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:41:27] "GET / HTTP/1.1" 200 -
+2022-06-03 02:41:27,175 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:41:27] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:41:29,564 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:41:29] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:42:00,162 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:42:00,716 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:42:02,479 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:42:02,490 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:42:53,497 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:42:54,067 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:42:55,912 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:42:55,920 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:44:04,327 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:44:04,782 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:44:06,487 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:44:06,494 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:45:09,529 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:45:09,998 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:45:12,042 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:45:12,050 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:45:24,238 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:45:24,758 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:45:26,827 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:45:26,834 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:45:38,074 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:45:38,665 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:45:40,670 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:45:40,677 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:45:52,328 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:45:52] "GET / HTTP/1.1" 200 -
+2022-06-03 02:45:52,405 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:45:52] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:45:56,265 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:45:56,267 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:45:56] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:48:23,864 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:48:23,866 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:48:25,466 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:48:25,474 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:48:25,500 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:48:25] "GET / HTTP/1.1" 200 -
+2022-06-03 02:48:25,582 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:48:25] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:48:27,086 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:48:27] "GET / HTTP/1.1" 200 -
+2022-06-03 02:48:27,140 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:48:27] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:48:30,878 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:48:30,879 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:48:30] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:48:38,487 INFO main Thread-7 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d is not a live URL
+2022-06-03 02:48:38,488 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 02:48:38] "GET /_submit?url=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fdeploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d HTTP/1.1" 200 -
+2022-06-03 02:48:41,926 INFO main Thread-8 : https://github.com/antoniojsp/petite_url inserted
+2022-06-03 02:48:41,928 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 02:48:41] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url HTTP/1.1" 200 -
+2022-06-03 02:48:45,717 INFO main Thread-9 : https://github.com/antoniojsp/petite_url.giterre is not a live URL
+2022-06-03 02:48:45,718 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 02:48:45] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.giterre HTTP/1.1" 200 -
+2022-06-03 02:48:49,299 INFO main Thread-10 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:48:49,301 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 02:48:49] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:49:46,869 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:49:47,132 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:49:49,107 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:49:49,115 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:49:49,231 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:49:49] "GET / HTTP/1.1" 200 -
+2022-06-03 02:49:49,290 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:49:49] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:49:52,597 INFO main Thread-4 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is not a valid URL
+2022-06-03 02:49:52,597 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:49:52] "GET /_submit?url=%3C!--++++++++++++++%3Cbutton+type%3D%22reset%22+class%3D%22btn+btn-success%22%3EClear%3C%2Fbutton%3E--%3E HTTP/1.1" 200 -
+2022-06-03 02:49:56,942 INFO main Thread-5 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d is not a live URL
+2022-06-03 02:49:56,942 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 02:49:56] "GET /_submit?url=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fdeploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d HTTP/1.1" 200 -
+2022-06-03 02:50:01,854 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:50:01,855 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 02:50:01] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:50:40,116 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:50:40,690 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:50:42,216 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:50:42,223 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:52:50,154 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:52:50,700 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:52:52,723 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:52:52,732 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:52:57,404 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:52:57] "GET / HTTP/1.1" 200 -
+2022-06-03 02:52:57,472 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:52:57] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:53:01,124 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:53:01,127 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:53:01] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:53:16,106 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:53:16,453 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:53:18,266 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:53:18,273 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:53:18,300 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:53:18] "GET / HTTP/1.1" 200 -
+2022-06-03 02:53:18,366 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:53:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:53:21,299 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:53:21,300 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:53:21] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:53:31,497 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:53:32,049 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:53:33,727 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:53:33,734 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:53:33,759 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:53:33] "GET / HTTP/1.1" 200 -
+2022-06-03 02:53:33,898 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:53:33] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:53:36,171 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:53:36,172 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:53:36] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:53:44,922 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:53:45,484 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:53:47,141 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:53:47,150 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:53:47,178 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:53:47] "GET / HTTP/1.1" 200 -
+2022-06-03 02:53:47,334 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:53:47] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:53:50,475 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:53:50,476 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:53:50] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:54:02,455 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:54:02,911 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:54:04,530 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:54:04,553 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:55:13,868 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:55:14,349 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:55:17,263 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:55:17,273 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:55:18,774 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:55:18] "GET / HTTP/1.1" 200 -
+2022-06-03 02:55:18,841 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:55:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 02:55:21,709 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:55:21,710 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 02:55:21] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:55:48,855 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 02:55:49,380 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:55:51,073 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:55:51,081 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:56:36,517 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 02:56:36,518 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 02:56:37,971 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 02:56:37,980 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 02:56:49,626 INFO main Thread-2 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 02:56:49,627 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:56:49] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 02:56:53,021 INFO main Thread-3 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d is not a live URL
+2022-06-03 02:56:53,022 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:56:53] "GET /_submit?url=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fdeploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d HTTP/1.1" 200 -

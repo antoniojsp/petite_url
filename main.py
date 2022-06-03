@@ -1,7 +1,7 @@
 import configparser
 from collections import namedtuple
 from database import *
-from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for
+from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for, jsonify
 from forms import PetiteURLForms
 import logging
 import os
@@ -31,25 +31,6 @@ my_info = informacion("antonios@uoregon.edu", "72b594348a")
 def index():
     personal_github_url = f'{request.base_url}{my_info.github}'
     form = PetiteURLForms()
-
-    if form.validate_on_submit():
-        original_url = form.name.data
-        is_legal_url = validators.url(original_url)
-        is_alive_url = check_url_alive(original_url)
-
-        if not is_legal_url:
-            app.logger.info(f'{original_url} is not a valid URL')
-            flash('Please, enter a legal URL.}')
-        elif not is_alive_url:
-            app.logger.info(f'{original_url} is not a live URL')
-            flash("The website is either offline, forbidden or cannot be found.")
-        else:
-            shorten_url = db.insert(original_url)
-            app.logger.info(f'{original_url} inserted')
-            url_link = f'{request.base_url}{shorten_url}'
-            flash(url_link)
-        return redirect(url_for('index'))
-
     return render_template("index.html", github=personal_github_url, form=form, email=my_info.email)
 
 
@@ -66,6 +47,25 @@ def redirect_from_token(shorten_url_token: str):
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico',mimetype='image/vnd.microsoft.icon')
+
+
+@app.route("/_submit")
+def _submit():
+    original_url = request.args.get("url", type=str)
+    is_legal_url = validators.url(original_url)
+    is_alive_url = check_url_alive(original_url)
+    if not is_legal_url:
+        app.logger.info(f'{original_url} is not a valid URL')
+        result = 'Please, enter a legal URL.'
+    elif not is_alive_url:
+        app.logger.info(f'{original_url} is not a live URL')
+        result = "The website is either offline, forbidden or cannot be found."
+    else:
+        shorten_url = db.insert(original_url)
+        app.logger.info(f'{original_url} inserted')
+        result = f'{request.url_root}{shorten_url}'
+
+    return jsonify(result={"response": result})
 
 
 if __name__ == '__main__':

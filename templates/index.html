@@ -1,39 +1,60 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
   <div class="container text-center p-5 my-5 bg-success text-white">
       <h1>PetiteUrl</h1>
       <p>A TinyURL clone webpage using Flask and MongoDB. </p>
-    </div>
+  </div>
 
-    <div class="container mt-3">
-      {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <ul class=flashes>
-        {% for message in messages %}
-          {% if link %}
-          <li>The shorten url is <a href="{{ link }}"  target="_blank">{{ link }}</a> </li>
-          {% else %}
-          <li> {{ message }} </li>
-          {% endif %}
-        {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+<div class="container mt-3">
+<!--      {% with messages = get_flashed_messages() %}-->
+<!--      {% if messages %}-->
+<!--        <ul class=flashes>-->
+<!--        {% for message in messages %}-->
+<!--          {% if link %}-->
+<!--          <li>The shorten url is <a href="{{ link }}"  target="_blank">{{ link }}</a> </li>-->
+<!--          {% else %}-->
+<!--          <li> {{ message }} </li>-->
+<!--          {% endif %}-->
+<!--        {% endfor %}-->
+<!--        </ul>-->
+<!--      {% endif %}-->
+<!--    {% endwith %}-->
+    <div id="response"></div>
 
         <div class="mb-3 mt-3 text-center" >
-            <form method="POST" action="{{ url_for('index') }}">
+            <form method="POST"  action="{{ url_for('index') }}" >
                 {{ form.csrf_token }}
                 <p>
                     {{ form.name(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}
                 </p>
-<!--                 {{ form.submit(class_="btn btn-success") }}-->
-                <button type="submit" class="btn btn-success">Shorten </button>
 
+                {{ form.submit(class_="btn btn-success") }}
                 <button type="reset" class="btn btn-success">Clear </button>
 
             </form>
-        </div>
+         </div>
+    </div>
+
+<script>
+$(document).ready(function() {
+    $('form').submit(function(e) {
+        e.preventDefault();
+        var input = document.getElementById("name").value;
+        document.getElementById("name").value = "";
+
+     $.getJSON( "/_submit",
+                {url: input},
+                function(data) {
+                  rsval = data.result.response;
+                  console.log(rsval);
+                  $("#response").html(rsval);
+                }
+             );
+    });
+});
+</script>
 
 
 
