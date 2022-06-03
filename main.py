@@ -34,6 +34,8 @@ my_info = informacion(name, email, github)
 def index():
     personal_github_url = f'{request.base_url}{my_info.github}'
     form = PetiteURLForms()
+    # TODO
+    # try to reduce number of  arguments
     return render_template("index.html",form=form, name=my_info.name, email=my_info.email, github=my_info.github, info=my_info)
 
 
