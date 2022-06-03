@@ -1,13 +1,15 @@
 import certifi
 import configparser
 import datetime
-from utilities import hash_url
+from utilities import hash_url, generate_random_hash
 import pymongo
 
 # read credentials for secrets
 configurations = configparser.ConfigParser()
 configurations.read("credentials.ini")
 url_connection_mongodb = configurations['API']['PetiteUrl']
+SIZE_HASH = int(configurations['API']['size_hash'])
+
 
 
 class TinyURLDatabase:
@@ -21,7 +23,7 @@ class TinyURLDatabase:
         self.mycol.create_index("hash_number", unique= True)
 
     def insert(self, url: str) -> str:
-        url_hash_value = hash_url(url)
+        url_hash_value = generate_random_hash(SIZE_HASH)
         try:
             mydict = {"hash_number": url_hash_value, "url_address": url, "time_stamp": datetime.datetime.now()}
             self.mycol.insert_one(mydict)

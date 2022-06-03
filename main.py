@@ -22,15 +22,19 @@ logging.basicConfig(filename='record.log',
 db = TinyURLDatabase()
 
 # my info
-informacion = namedtuple('MyInfo', ['email', 'github'])
-my_info = informacion("antonios@uoregon.edu", "72b594348a")
+name = configurations['API']['name']
+email = configurations['API']['email']
+github = configurations['API']['github']
+
+informacion = namedtuple('MyInfo', ['name', 'email', 'github'])
+my_info = informacion(name, email, github)
 
 
 @app.route('/', methods=["GET", "POST"])
 def index():
     personal_github_url = f'{request.base_url}{my_info.github}'
     form = PetiteURLForms()
-    return render_template("index.html", form=form, email=my_info, github=personal_github_url)
+    return render_template("index.html",form=form, name=my_info.name, email=my_info.email, github=my_info.github, info=my_info)
 
 
 @app.route('/<shorten_url_token>')
@@ -48,6 +52,7 @@ def favicon():
                                'favicon.ico',mimetype='image/vnd.microsoft.icon')
 
 
+# AJAX methods
 @app.route("/_submit")
 def _submit():
     original_url = request.args.get("url", type=str)
@@ -55,20 +60,20 @@ def _submit():
     is_alive_url = check_url_alive(original_url)
     if not is_legal_url:
         app.logger.info(f'{original_url} is not a valid URL')
-        result = 'Please, check that URL is legal and try again.'
-        bool = False
+        result = 'Please, check that the URL is legal and try again.'
+        is_href = False
 
     elif not is_alive_url:
         app.logger.info(f'{original_url} is not a live URL')
         result = "The website is either offline, forbidden or cannot be found."
-        bool = False
+        is_href = False
     else:
         shorten_url = db.insert(original_url)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
-        bool = True
+        is_href = True
 
-    return jsonify(result={"response": result, "href": bool})
+    return jsonify(result={"response": result, "href": is_href})
 
 
 if __name__ == '__main__':
