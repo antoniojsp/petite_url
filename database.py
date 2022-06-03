@@ -11,7 +11,6 @@ url_connection_mongodb = configurations['API']['PetiteUrl']
 SIZE_HASH = int(configurations['API']['size_hash'])
 
 
-
 class TinyURLDatabase:
     def __init__(self):
         # establish connection to mongodb atlas
@@ -41,5 +40,6 @@ class TinyURLDatabase:
             return ""
 
         return mydoc["url_address"]
+
 
 
