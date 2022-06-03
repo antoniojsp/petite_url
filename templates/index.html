@@ -3,24 +3,11 @@
 {% block content %}
 
   <div class="container text-center p-5 my-5 bg-success text-white">
-      <h1>PetiteUrl</h1>
-      <p>A TinyURL clone webpage using Flask and MongoDB. </p>
+      <h1>PetiteURL</h1>
+      <p>A TinyURL clone webpage using Flask, Ajax and MongoDB. </p>
   </div>
 
 <div class="container mt-3">
-<!--      {% with messages = get_flashed_messages() %}-->
-<!--      {% if messages %}-->
-<!--        <ul class=flashes>-->
-<!--        {% for message in messages %}-->
-<!--          {% if link %}-->
-<!--          <li>The shorten url is <a href="{{ link }}"  target="_blank">{{ link }}</a> </li>-->
-<!--          {% else %}-->
-<!--          <li> {{ message }} </li>-->
-<!--          {% endif %}-->
-<!--        {% endfor %}-->
-<!--        </ul>-->
-<!--      {% endif %}-->
-<!--    {% endwith %}-->
     <div id="response"></div>
 
         <div class="mb-3 mt-3 text-center" >
@@ -29,9 +16,8 @@
                 <p>
                     {{ form.name(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}
                 </p>
-
                 {{ form.submit(class_="btn btn-success") }}
-                <button type="reset" class="btn btn-success">Clear </button>
+                <button type="reset" id="clear" class="btn btn-success">Clear </input>
 
             </form>
          </div>
@@ -48,14 +34,24 @@ $(document).ready(function() {
                 {url: input},
                 function(data) {
                   rsval = data.result.response;
-                  console.log(rsval);
+                  bool = data.result.href;
+
+                  if (bool == true){
+                  $("#response").html("The PetiteURL version is " + "<a href='" + rsval + "' Target='_blank'>" + rsval + "</a>" );
+                  }else{
                   $("#response").html(rsval);
+
+                  }
                 }
              );
     });
 });
+
+$("#clear").click(function(){
+    document.getElementById("response").innerHTML = "";
+ })
+
+
 </script>
-
-
 
 {% endblock %}

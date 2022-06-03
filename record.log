@@ -3257,3 +3257,188 @@ werkzeug.routing.BuildError: Could not build url for endpoint 'home'. Did you me
 2022-06-03 02:56:49,627 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 02:56:49] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
 2022-06-03 02:56:53,021 INFO main Thread-3 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d is not a live URL
 2022-06-03 02:56:53,022 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 02:56:53] "GET /_submit?url=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fdeploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d HTTP/1.1" 200 -
+2022-06-03 03:00:16,837 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 03:00:17,225 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 03:00:19,201 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 03:00:19,210 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 03:03:30,721 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 03:03:30,970 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 03:03:33,075 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 03:03:33,083 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 03:03:45,811 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 03:03:45,813 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 03:03:47,483 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 03:03:47,506 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 03:03:47,565 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 03:03:47] "GET / HTTP/1.1" 200 -
+2022-06-03 03:03:47,643 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 03:03:47] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:04:20,001 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 03:04:20] "GET / HTTP/1.1" 200 -
+2022-06-03 03:04:20,058 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 03:04:20] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:04:23,670 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:04:23,673 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 03:04:23] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:04:28,662 INFO main Thread-7 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is not a valid URL
+2022-06-03 03:04:28,663 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 03:04:28] "GET /_submit?url=%3C!--++++++++++++++%3Cbutton+type%3D%22reset%22+class%3D%22btn+btn-success%22%3EClear%3C%2Fbutton%3E--%3E HTTP/1.1" 200 -
+2022-06-03 03:04:37,970 INFO main Thread-8 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d is not a live URL
+2022-06-03 03:04:37,987 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 03:04:37] "GET /_submit?url=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fdeploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d HTTP/1.1" 200 -
+2022-06-03 03:05:29,823 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 03:05:29] "GET / HTTP/1.1" 200 -
+2022-06-03 03:05:29,876 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 03:05:29] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:05:33,096 INFO main Thread-11 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:05:33,097 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 03:05:33] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:07:53,592 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 03:07:53,594 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 03:07:55,078 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 03:07:55,088 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 03:07:55,113 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 03:07:55] "GET / HTTP/1.1" 200 -
+2022-06-03 03:07:55,194 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 03:07:55] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:07:57,986 INFO main Thread-4 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:07:57,988 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 03:07:57] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:08:00,539 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 03:08:00] "[32mGET /72b594348a HTTP/1.1[0m" 302 -
+2022-06-03 03:08:05,977 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 03:08:05] "[32mGET /72b594348a HTTP/1.1[0m" 302 -
+2022-06-03 03:09:03,510 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 03:09:03] "GET / HTTP/1.1" 200 -
+2022-06-03 03:09:03,532 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 03:09:03] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:09:07,748 INFO main Thread-9 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:09:07,749 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 03:09:07] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:09:52,715 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 03:09:52] "GET / HTTP/1.1" 200 -
+2022-06-03 03:09:52,766 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 03:09:52] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:09:56,370 INFO main Thread-12 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:09:56,372 INFO werkzeug Thread-12 : 127.0.0.1 - - [03/Jun/2022 03:09:56] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:10:00,068 INFO werkzeug Thread-13 : 127.0.0.1 - - [03/Jun/2022 03:10:00] "[32mGET /72b594348a HTTP/1.1[0m" 302 -
+2022-06-03 03:10:05,389 INFO main Thread-14 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is not a valid URL
+2022-06-03 03:10:05,389 INFO werkzeug Thread-14 : 127.0.0.1 - - [03/Jun/2022 03:10:05] "GET /_submit?url=%3C!--++++++++++++++%3Cbutton+type%3D%22reset%22+class%3D%22btn+btn-success%22%3EClear%3C%2Fbutton%3E--%3E HTTP/1.1" 200 -
+2022-06-03 03:10:46,115 INFO werkzeug MainThread :  * Detected change in '/Users/antonio/PycharmProjects/wtf_test/main.py', reloading
+2022-06-03 03:10:46,645 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 03:10:48,344 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 03:10:48,359 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 03:10:54,452 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 03:10:54,453 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 03:10:56,124 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 03:10:56,133 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 03:10:56,162 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 03:10:56] "GET / HTTP/1.1" 200 -
+2022-06-03 03:10:56,225 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 03:10:56] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:10:59,474 INFO main Thread-4 : <!--              <button type="reset" class="btn btn-success">Clear</button>--> is not a valid URL
+2022-06-03 03:10:59,475 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 03:10:59] "GET /_submit?url=%3C!--++++++++++++++%3Cbutton+type%3D%22reset%22+class%3D%22btn+btn-success%22%3EClear%3C%2Fbutton%3E--%3E HTTP/1.1" 200 -
+2022-06-03 03:11:10,531 INFO main Thread-5 : https://medium.com/analytics-vidhya/deploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d is not a live URL
+2022-06-03 03:11:10,532 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 03:11:10] "GET /_submit?url=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fdeploy-a-web-api-with-python-flask-and-mongodb-on-heroku-in-10-mins-71c4571c505d HTTP/1.1" 200 -
+2022-06-03 03:11:14,738 INFO main Thread-6 : https://github.com/antoniojsp/petite_url.giterre is not a live URL
+2022-06-03 03:11:14,739 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 03:11:14] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.giterre HTTP/1.1" 200 -
+2022-06-03 03:11:25,666 INFO main Thread-7 : https://www.disneyplus.com/video/de739c9a-880f-4e00-9ceb-515061e1c6cd inserted
+2022-06-03 03:11:25,667 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 03:11:25] "GET /_submit?url=https%3A%2F%2Fwww.disneyplus.com%2Fvideo%2Fde739c9a-880f-4e00-9ceb-515061e1c6cd HTTP/1.1" 200 -
+2022-06-03 03:14:05,466 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-03 03:14:05,468 INFO werkzeug MainThread :  * Restarting with stat
+2022-06-03 03:14:06,986 WARNING werkzeug MainThread :  * Debugger is active!
+2022-06-03 03:14:06,994 INFO werkzeug MainThread :  * Debugger PIN: 207-385-183
+2022-06-03 03:14:07,020 INFO werkzeug Thread-2 : 127.0.0.1 - - [03/Jun/2022 03:14:07] "GET / HTTP/1.1" 200 -
+2022-06-03 03:14:07,075 INFO werkzeug Thread-3 : 127.0.0.1 - - [03/Jun/2022 03:14:07] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:14:14,286 INFO werkzeug Thread-4 : 127.0.0.1 - - [03/Jun/2022 03:14:14] "POST / HTTP/1.1" 200 -
+2022-06-03 03:14:14,335 INFO werkzeug Thread-5 : 127.0.0.1 - - [03/Jun/2022 03:14:14] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:14:18,865 INFO werkzeug Thread-6 : 127.0.0.1 - - [03/Jun/2022 03:14:18] "POST / HTTP/1.1" 200 -
+2022-06-03 03:14:18,913 INFO werkzeug Thread-7 : 127.0.0.1 - - [03/Jun/2022 03:14:18] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:14:29,883 INFO werkzeug Thread-8 : 127.0.0.1 - - [03/Jun/2022 03:14:29] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:14:31,871 INFO werkzeug Thread-9 : 127.0.0.1 - - [03/Jun/2022 03:14:31] "POST / HTTP/1.1" 200 -
+2022-06-03 03:14:31,912 INFO werkzeug Thread-10 : 127.0.0.1 - - [03/Jun/2022 03:14:31] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:14:54,639 INFO werkzeug Thread-11 : 127.0.0.1 - - [03/Jun/2022 03:14:54] "GET / HTTP/1.1" 200 -
+2022-06-03 03:14:54,692 INFO werkzeug Thread-12 : 127.0.0.1 - - [03/Jun/2022 03:14:54] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:14:57,468 INFO werkzeug Thread-13 : 127.0.0.1 - - [03/Jun/2022 03:14:57] "POST / HTTP/1.1" 200 -
+2022-06-03 03:14:57,523 INFO werkzeug Thread-14 : 127.0.0.1 - - [03/Jun/2022 03:14:57] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:15:22,931 INFO werkzeug Thread-15 : 127.0.0.1 - - [03/Jun/2022 03:15:22] "GET / HTTP/1.1" 200 -
+2022-06-03 03:15:22,976 INFO werkzeug Thread-16 : 127.0.0.1 - - [03/Jun/2022 03:15:22] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:15:25,413 INFO werkzeug Thread-17 : 127.0.0.1 - - [03/Jun/2022 03:15:25] "POST / HTTP/1.1" 200 -
+2022-06-03 03:15:25,465 INFO werkzeug Thread-18 : 127.0.0.1 - - [03/Jun/2022 03:15:25] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:15:30,853 INFO werkzeug Thread-19 : 127.0.0.1 - - [03/Jun/2022 03:15:30] "POST / HTTP/1.1" 200 -
+2022-06-03 03:15:30,908 INFO werkzeug Thread-20 : 127.0.0.1 - - [03/Jun/2022 03:15:30] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:16:08,718 INFO werkzeug Thread-21 : 127.0.0.1 - - [03/Jun/2022 03:16:08] "GET / HTTP/1.1" 200 -
+2022-06-03 03:16:08,764 INFO werkzeug Thread-22 : 127.0.0.1 - - [03/Jun/2022 03:16:08] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:16:14,115 INFO main Thread-23 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:16:14,116 INFO werkzeug Thread-23 : 127.0.0.1 - - [03/Jun/2022 03:16:14] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:16:55,305 INFO werkzeug Thread-24 : 127.0.0.1 - - [03/Jun/2022 03:16:55] "GET / HTTP/1.1" 200 -
+2022-06-03 03:16:55,366 INFO werkzeug Thread-25 : 127.0.0.1 - - [03/Jun/2022 03:16:55] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:16:58,649 INFO main Thread-26 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:16:58,650 INFO werkzeug Thread-26 : 127.0.0.1 - - [03/Jun/2022 03:16:58] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:19:56,161 INFO werkzeug Thread-27 : 127.0.0.1 - - [03/Jun/2022 03:19:56] "GET / HTTP/1.1" 200 -
+2022-06-03 03:19:56,214 INFO werkzeug Thread-28 : 127.0.0.1 - - [03/Jun/2022 03:19:56] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:19:59,493 INFO main Thread-29 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:19:59,495 INFO werkzeug Thread-29 : 127.0.0.1 - - [03/Jun/2022 03:19:59] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:20:40,403 INFO werkzeug Thread-30 : 127.0.0.1 - - [03/Jun/2022 03:20:40] "GET / HTTP/1.1" 200 -
+2022-06-03 03:20:40,475 INFO werkzeug Thread-31 : 127.0.0.1 - - [03/Jun/2022 03:20:40] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:20:44,705 INFO main Thread-32 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:20:44,707 INFO werkzeug Thread-32 : 127.0.0.1 - - [03/Jun/2022 03:20:44] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:21:18,942 INFO werkzeug Thread-33 : 127.0.0.1 - - [03/Jun/2022 03:21:18] "GET / HTTP/1.1" 200 -
+2022-06-03 03:21:19,022 INFO werkzeug Thread-34 : 127.0.0.1 - - [03/Jun/2022 03:21:19] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:21:22,965 INFO werkzeug Thread-35 : 127.0.0.1 - - [03/Jun/2022 03:21:22] "GET / HTTP/1.1" 200 -
+2022-06-03 03:21:23,001 INFO werkzeug Thread-36 : 127.0.0.1 - - [03/Jun/2022 03:21:23] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:21:25,976 INFO main Thread-37 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:21:25,977 INFO werkzeug Thread-37 : 127.0.0.1 - - [03/Jun/2022 03:21:25] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:23:41,091 INFO werkzeug Thread-38 : 127.0.0.1 - - [03/Jun/2022 03:23:41] "GET / HTTP/1.1" 200 -
+2022-06-03 03:23:41,131 INFO werkzeug Thread-39 : 127.0.0.1 - - [03/Jun/2022 03:23:41] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:25:43,396 INFO werkzeug Thread-40 : 127.0.0.1 - - [03/Jun/2022 03:25:43] "GET / HTTP/1.1" 200 -
+2022-06-03 03:25:43,451 INFO werkzeug Thread-41 : 127.0.0.1 - - [03/Jun/2022 03:25:43] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:25:47,017 INFO main Thread-42 : dff is not a valid URL
+2022-06-03 03:25:47,018 INFO werkzeug Thread-42 : 127.0.0.1 - - [03/Jun/2022 03:25:47] "GET /_submit?url=dff HTTP/1.1" 200 -
+2022-06-03 03:26:05,605 INFO main Thread-43 : dff is not a valid URL
+2022-06-03 03:26:05,606 INFO werkzeug Thread-43 : 127.0.0.1 - - [03/Jun/2022 03:26:05] "GET /_submit?url=dff HTTP/1.1" 200 -
+2022-06-03 03:26:08,636 INFO main Thread-44 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:26:08,637 INFO werkzeug Thread-44 : 127.0.0.1 - - [03/Jun/2022 03:26:08] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:26:20,487 INFO werkzeug Thread-45 : 127.0.0.1 - - [03/Jun/2022 03:26:20] "GET / HTTP/1.1" 200 -
+2022-06-03 03:26:20,542 INFO werkzeug Thread-46 : 127.0.0.1 - - [03/Jun/2022 03:26:20] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:26:24,580 INFO main Thread-47 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:26:24,581 INFO werkzeug Thread-47 : 127.0.0.1 - - [03/Jun/2022 03:26:24] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:27:44,218 INFO werkzeug Thread-48 : 127.0.0.1 - - [03/Jun/2022 03:27:44] "GET / HTTP/1.1" 200 -
+2022-06-03 03:27:44,275 INFO werkzeug Thread-49 : 127.0.0.1 - - [03/Jun/2022 03:27:44] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:27:47,990 INFO main Thread-50 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:27:47,991 INFO werkzeug Thread-50 : 127.0.0.1 - - [03/Jun/2022 03:27:47] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:27:50,461 INFO main Thread-51 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:27:50,462 INFO werkzeug Thread-51 : 127.0.0.1 - - [03/Jun/2022 03:27:50] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:28:16,030 INFO werkzeug Thread-52 : 127.0.0.1 - - [03/Jun/2022 03:28:16] "GET / HTTP/1.1" 200 -
+2022-06-03 03:28:16,080 INFO werkzeug Thread-53 : 127.0.0.1 - - [03/Jun/2022 03:28:16] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:28:23,509 INFO main Thread-54 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:28:23,510 INFO werkzeug Thread-54 : 127.0.0.1 - - [03/Jun/2022 03:28:23] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:28:46,851 INFO werkzeug Thread-55 : 127.0.0.1 - - [03/Jun/2022 03:28:46] "GET / HTTP/1.1" 200 -
+2022-06-03 03:28:46,921 INFO werkzeug Thread-56 : 127.0.0.1 - - [03/Jun/2022 03:28:46] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:28:52,968 INFO main Thread-57 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:28:52,969 INFO werkzeug Thread-57 : 127.0.0.1 - - [03/Jun/2022 03:28:52] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:29:09,059 INFO werkzeug Thread-58 : 127.0.0.1 - - [03/Jun/2022 03:29:09] "GET / HTTP/1.1" 200 -
+2022-06-03 03:29:09,107 INFO werkzeug Thread-59 : 127.0.0.1 - - [03/Jun/2022 03:29:09] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:29:19,942 INFO main Thread-60 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:29:19,943 INFO werkzeug Thread-60 : 127.0.0.1 - - [03/Jun/2022 03:29:19] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:29:23,731 INFO main Thread-61 : https://github.com/antoniojsp/petite_url inserted
+2022-06-03 03:29:23,733 INFO werkzeug Thread-61 : 127.0.0.1 - - [03/Jun/2022 03:29:23] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url HTTP/1.1" 200 -
+2022-06-03 03:29:27,107 INFO main Thread-62 : https://github.com/antoniojsp/petite_url.giterre is not a live URL
+2022-06-03 03:29:27,108 INFO werkzeug Thread-62 : 127.0.0.1 - - [03/Jun/2022 03:29:27] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.giterre HTTP/1.1" 200 -
+2022-06-03 03:29:48,193 INFO werkzeug Thread-63 : 127.0.0.1 - - [03/Jun/2022 03:29:48] "GET / HTTP/1.1" 200 -
+2022-06-03 03:29:48,282 INFO werkzeug Thread-64 : 127.0.0.1 - - [03/Jun/2022 03:29:48] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:29:52,002 INFO main Thread-65 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:29:52,003 INFO werkzeug Thread-65 : 127.0.0.1 - - [03/Jun/2022 03:29:52] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:30:59,898 INFO werkzeug Thread-66 : 127.0.0.1 - - [03/Jun/2022 03:30:59] "GET / HTTP/1.1" 200 -
+2022-06-03 03:30:59,967 INFO werkzeug Thread-67 : 127.0.0.1 - - [03/Jun/2022 03:30:59] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:31:03,450 INFO main Thread-68 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:31:03,452 INFO werkzeug Thread-68 : 127.0.0.1 - - [03/Jun/2022 03:31:03] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:31:16,773 INFO werkzeug Thread-69 : 127.0.0.1 - - [03/Jun/2022 03:31:16] "GET / HTTP/1.1" 200 -
+2022-06-03 03:31:16,830 INFO werkzeug Thread-70 : 127.0.0.1 - - [03/Jun/2022 03:31:16] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:31:19,476 INFO main Thread-71 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:31:19,477 INFO werkzeug Thread-71 : 127.0.0.1 - - [03/Jun/2022 03:31:19] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:32:08,372 INFO werkzeug Thread-72 : 127.0.0.1 - - [03/Jun/2022 03:32:08] "GET / HTTP/1.1" 200 -
+2022-06-03 03:32:08,431 INFO werkzeug Thread-73 : 127.0.0.1 - - [03/Jun/2022 03:32:08] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:32:12,573 INFO main Thread-74 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:32:12,574 INFO werkzeug Thread-74 : 127.0.0.1 - - [03/Jun/2022 03:32:12] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:32:40,022 INFO werkzeug Thread-75 : 127.0.0.1 - - [03/Jun/2022 03:32:40] "GET / HTTP/1.1" 200 -
+2022-06-03 03:32:40,066 INFO werkzeug Thread-76 : 127.0.0.1 - - [03/Jun/2022 03:32:40] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:32:54,802 INFO werkzeug Thread-77 : 127.0.0.1 - - [03/Jun/2022 03:32:54] "GET / HTTP/1.1" 200 -
+2022-06-03 03:32:54,852 INFO werkzeug Thread-78 : 127.0.0.1 - - [03/Jun/2022 03:32:54] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:32:56,830 INFO werkzeug Thread-79 : 127.0.0.1 - - [03/Jun/2022 03:32:56] "GET / HTTP/1.1" 200 -
+2022-06-03 03:32:56,869 INFO werkzeug Thread-80 : 127.0.0.1 - - [03/Jun/2022 03:32:56] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:33:00,172 INFO main Thread-81 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:33:00,173 INFO werkzeug Thread-81 : 127.0.0.1 - - [03/Jun/2022 03:33:00] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:33:08,795 INFO werkzeug Thread-82 : 127.0.0.1 - - [03/Jun/2022 03:33:08] "GET / HTTP/1.1" 200 -
+2022-06-03 03:33:08,834 INFO werkzeug Thread-83 : 127.0.0.1 - - [03/Jun/2022 03:33:08] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:33:11,952 INFO main Thread-84 : https://github.com/antoniojsp/petite_url.giterre is not a live URL
+2022-06-03 03:33:11,953 INFO werkzeug Thread-84 : 127.0.0.1 - - [03/Jun/2022 03:33:11] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.giterre HTTP/1.1" 200 -
+2022-06-03 03:33:14,315 INFO werkzeug Thread-86 : 127.0.0.1 - - [03/Jun/2022 03:33:14] "GET / HTTP/1.1" 200 -
+2022-06-03 03:33:14,419 INFO main Thread-85 : http://127.0.0.1:5000/ inserted
+2022-06-03 03:33:14,421 INFO werkzeug Thread-85 : 127.0.0.1 - - [03/Jun/2022 03:33:14] "GET /_submit?url=http%3A%2F%2F127.0.0.1%3A5000%2F HTTP/1.1" 200 -
+2022-06-03 03:33:31,430 INFO main Thread-87 : https://github.com/lednesday/MealPlanner/blob/main/mealPlannerApp/static/js/javascript_meal_planner.js inserted
+2022-06-03 03:33:31,433 INFO werkzeug Thread-87 : 127.0.0.1 - - [03/Jun/2022 03:33:31] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Flednesday%2FMealPlanner%2Fblob%2Fmain%2FmealPlannerApp%2Fstatic%2Fjs%2Fjavascript_meal_planner.js HTTP/1.1" 200 -
+2022-06-03 03:33:33,016 INFO werkzeug Thread-88 : 127.0.0.1 - - [03/Jun/2022 03:33:33] "[32mGET /65ebc49f92 HTTP/1.1[0m" 302 -
+2022-06-03 03:34:55,252 INFO werkzeug Thread-91 : 127.0.0.1 - - [03/Jun/2022 03:34:55] "GET / HTTP/1.1" 200 -
+2022-06-03 03:34:55,315 INFO werkzeug Thread-92 : 127.0.0.1 - - [03/Jun/2022 03:34:55] "[36mGET /static/index.css HTTP/1.1[0m" 304 -
+2022-06-03 03:34:58,792 INFO main Thread-93 : https://github.com/antoniojsp/petite_url.git inserted
+2022-06-03 03:34:58,793 INFO werkzeug Thread-93 : 127.0.0.1 - - [03/Jun/2022 03:34:58] "GET /_submit?url=https%3A%2F%2Fgithub.com%2Fantoniojsp%2Fpetite_url.git HTTP/1.1" 200 -
+2022-06-03 03:34:59,977 INFO werkzeug Thread-94 : 127.0.0.1 - - [03/Jun/2022 03:34:59] "[32mGET /72b594348a HTTP/1.1[0m" 302 -

@@ -19,7 +19,6 @@ logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
-
 db = TinyURLDatabase()
 
 # my info
@@ -56,16 +55,20 @@ def _submit():
     is_alive_url = check_url_alive(original_url)
     if not is_legal_url:
         app.logger.info(f'{original_url} is not a valid URL')
-        result = 'Please, enter a legal URL.'
+        result = 'Please, check that URL is legal and try again.'
+        bool = False
+
     elif not is_alive_url:
         app.logger.info(f'{original_url} is not a live URL')
         result = "The website is either offline, forbidden or cannot be found."
+        bool = False
     else:
         shorten_url = db.insert(original_url)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
+        bool = True
 
-    return jsonify(result={"response": result})
+    return jsonify(result={"response": result, "href": bool})
 
 
 if __name__ == '__main__':
