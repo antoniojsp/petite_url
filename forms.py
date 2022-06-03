@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, validators, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, URL
 
 
 class PetiteURLForms(FlaskForm):
