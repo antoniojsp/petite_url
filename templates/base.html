@@ -9,21 +9,19 @@
     <script src="{{ url_for('static', filename='index.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <title>PetiteUrl</title>
+    <title>{{ info.title }}</title>
 </head>
     <body class="d-flex flex-column h-100">
         {% block content %}
 
         {% endblock %}
-
-
     </body>
     <footer class="footer mt-3 l-16 bg-light">
         <div class="container ">
-            <small>Site written by {{ name }}</small><br>
+            <small>Clone site written by {{ info.name }}</small><br>
             <small> Email contact:
-                <a href="mailto:{{ email }}"> {{ email }}</a></small><br>
-            <small><a href = "{{ github }}"> Personal Github and repo of "Petite URL"</a></small>
+                <a href="mailto:{{ info.email }}"> {{ info.email }}</a></small><br>
+            <small><a href = "{{ info.github }}" Target="_blank"> Personal Github and repo of "Petite URL"</a></small>
         </div>
     </footer>
 </html>

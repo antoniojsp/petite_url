@@ -1,17 +1,16 @@
-
-from random import randrange
-
-
-def generate_random_hash(size= int) -> str:
-	hash_result = []
-	alphanumeric = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
-	for hash_char_position in range(0, size):
-		random_char = randrange(0, 62)
-		hash_result.append(alphanumeric[random_char])
-
-	return "".join(hash_result)
+import configparser
 
 
-print(generate_random_hash(7))
+def return_settings(file_name: str) -> dict:
+    configurations = configparser.ConfigParser()
+    configurations.read(file_name)
+    dictionary_secrets = {}
 
+    for i in configurations:
+        for j in configurations[i]:
+            dictionary_secrets[j] = configurations[i][j]
+
+    return dictionary_secrets
+
+
+print(return_settings('credentials.ini'))

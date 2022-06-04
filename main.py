@@ -5,15 +5,14 @@ from flask import Flask, redirect, render_template, request, flash, send_from_di
 from forms import PetiteURLForms
 import logging
 import os
-from utilities import check_url_alive
+from utilities import check_url_alive, enviroment_settings
 import validators
 
-# separation of concerns
-configurations = configparser.ConfigParser()
-configurations.read("credentials.ini")
+# separation of concerns (dictionary with setting varibles and keys)
+my_info = enviroment_settings("credentials.ini")
 
 app = Flask(__name__)
-app.secret_key = configurations['API']['secret_word']
+app.secret_key = my_info['secret_word']
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
@@ -21,22 +20,10 @@ logging.basicConfig(filename='record.log',
 
 db = TinyURLDatabase()
 
-# my info
-name = configurations['API']['name']
-email = configurations['API']['email']
-github = configurations['API']['github']
-
-informacion = namedtuple('MyInfo', ['name', 'email', 'github'])
-my_info = informacion(name, email, github)
-
-
 @app.route('/', methods=["GET", "POST"])
 def index():
-    personal_github_url = f'{request.base_url}{my_info.github}'
     form = PetiteURLForms()
-    # TODO
-    # try to reduce number of  arguments
-    return render_template("index.html",form=form, name=my_info.name, email=my_info.email, github=my_info.github, info=my_info)
+    return render_template("index.html", form=form, info=my_info)
 
 
 @app.route('/<shorten_url_token>')
