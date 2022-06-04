@@ -14,7 +14,7 @@ SIZE_HASH = 7
 class TinyURLDatabase:
     def __init__(self):
         # establish connection to mongodb atlas
-        client = pymongo.MongoClient(url_connection_mongodb, tlsCAFile=certifi.where())
+        client = pymongo.MongoClient("mongodb+srv://petiteurl:antonio12@cluster0.1ra6dk3.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
         mydb = client["petiteUrl"]
         self.mycol = mydb["url"]
 
