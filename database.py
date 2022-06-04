@@ -1,7 +1,7 @@
 import certifi
 import configparser
 import datetime
-from utilities import hash_url, generate_random_hash
+from utilities import generate_random_hash
 import pymongo
 
 # read credentials for secrets

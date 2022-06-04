@@ -1,16 +1,8 @@
-import configparser
-
-
-def return_settings(file_name: str) -> dict:
-    configurations = configparser.ConfigParser()
-    configurations.read(file_name)
-    dictionary_secrets = {}
-
-    for i in configurations:
-        for j in configurations[i]:
-            dictionary_secrets[j] = configurations[i][j]
-
-    return dictionary_secrets
-
-
-print(return_settings('credentials.ini'))
+# import datetime
+#
+# def expiration_time()
+#     current_time = datetime.datetime.now()
+#     time_change = datetime.timedelta(minutes=10)
+#     new_time = date_and_time + time_change
+#
+#     return new_time

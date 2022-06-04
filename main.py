@@ -8,7 +8,7 @@ import os
 from utilities import check_url_alive, enviroment_settings
 import validators
 
-# separation of concerns (dictionary with setting varibles and keys)
+# separation of concerns (dictionary with setting variables and keys)
 my_info = enviroment_settings("credentials.ini")
 
 app = Flask(__name__)
@@ -19,6 +19,7 @@ logging.basicConfig(filename='record.log',
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 db = TinyURLDatabase()
+
 
 @app.route('/', methods=["GET", "POST"])
 def index():
@@ -31,14 +32,14 @@ def redirect_from_token(shorten_url_token: str):
     full_url = db.query_url(shorten_url_token)
     if full_url == "":
         return render_template("404.html")
-    print(f'Redirecting to ->  {request.base_url}{shorten_url_token}')
+    app.logger.info(f'Redirecting to ->  {request.base_url}{shorten_url_token}')
     return redirect(full_url, code=302)
 
 
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico',mimetype='image/vnd.microsoft.icon')
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
 # AJAX methods
