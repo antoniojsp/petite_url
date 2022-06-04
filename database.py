@@ -8,7 +8,7 @@ import pymongo
 configurations = configparser.ConfigParser()
 configurations.read("credentials.ini")
 url_connection_mongodb = configurations['API']['PetiteUrl']
-SIZE_HASH = int(configurations['API']['size_hash'])
+SIZE_HASH = 7
 
 
 class TinyURLDatabase:

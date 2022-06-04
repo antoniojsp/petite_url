@@ -12,7 +12,7 @@ import validators
 my_info = enviroment_settings("credentials.ini")
 
 app = Flask(__name__)
-app.secret_key = my_info['secret_word']
+app.secret_key = b'proyecto_nuevo_petite_url'
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
