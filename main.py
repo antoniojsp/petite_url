@@ -5,11 +5,11 @@ from flask import Flask, redirect, render_template, request, flash, send_from_di
 from forms import PetiteURLForms
 import logging
 import os
-from utilities import check_url_alive, enviroment_settings
+from utilities import check_url_alive, environment_settings
 import validators
 
 # separation of concerns (dictionary with setting variables and keys)
-my_info = enviroment_settings("credentials.ini")
+my_info = environment_settings("credentials.ini")
 
 app = Flask(__name__)
 app.secret_key = b'proyecto_nuevo_petite_url'

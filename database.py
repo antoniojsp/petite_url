@@ -1,20 +1,23 @@
 import certifi
 import configparser
 import datetime
-from utilities import generate_random_hash
+from utilities import generate_random_hash, environment_settings
 import pymongo
 
 # read credentials for secrets
-configurations = configparser.ConfigParser()
-configurations.read("credentials.ini")
-url_connection_mongodb = configurations['API']['PetiteUrl']
-SIZE_HASH = 7
+# configurations = configparser.ConfigParser()
+# configurations.read("credentials.ini")
+# url_connection_mongodb = configurations['API']['PetiteUrl']
+# environmments
+my_info = environment_settings("credentials.ini")
+SIZE_HASH = my_info['size_hash']
+mongodb = my_info['petiteurl']
 
 
 class TinyURLDatabase:
     def __init__(self):
         # establish connection to mongodb atlas
-        client = pymongo.MongoClient("mongodb+srv://petiteurl:antonio12@cluster0.1ra6dk3.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
+        client = pymongo.MongoClient(mongodb, tlsCAFile=certifi.where())
         mydb = client["petiteUrl"]
         self.mycol = mydb["url"]
 

@@ -4,7 +4,7 @@ from random import randrange
 import configparser
 
 
-def enviroment_settings(file_name: str) -> dict:
+def environment_settings(file_name: str) -> dict:
     configurations = configparser.ConfigParser()
     configurations.read(file_name)
     dictionary_secrets = {}
