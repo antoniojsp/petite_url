@@ -9,16 +9,19 @@ from utilities import check_url_alive, environment_settings
 import validators
 
 # separation of concerns (dictionary with setting variables and keys)
-my_info = environment_settings("credentials.ini")
-
-app = Flask(__name__)
-app.secret_key = os.getenv("FLASH")
+connection_info = environment_settings("credentials.ini")
+my_info = environment_settings("personal.ini")
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+app = Flask(__name__)
 
-db = TinyURLDatabase()
+app.secret_key = connection_info['secret_word']
+SIZE_HASH = int(connection_info['size_hash'])
+URI = connection_info['database']
+
+db = TinyURLDatabase(URI)
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -58,7 +61,7 @@ def _submit():
         result = "The website is either offline, forbidden or cannot be found."
         is_href = False
     else:
-        shorten_url = db.insert(original_url)
+        shorten_url = db.insert(original_url, SIZE_HASH)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
         is_href = True
@@ -67,5 +70,5 @@ def _submit():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")
 

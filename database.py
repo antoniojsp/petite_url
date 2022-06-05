@@ -5,30 +5,20 @@ from utilities import generate_random_hash, environment_settings
 import pymongo
 import os
 
-PASSWORD = os.getenv("URI")
-print(PASSWORD)
-# read credentials for secrets
-# configurations = configparser.ConfigParser()
-# configurations.read("credentials.ini")
-# url_connection_mongodb = configurations['API']['PetiteUrl']
-# environmments
-my_info = environment_settings("credentials.ini")
-SIZE_HASH = my_info['size_hash']
-# mongodb = my_info['petiteurl']
-
 
 class TinyURLDatabase:
-    def __init__(self):
+    def __init__(self, uri):
         # establish connection to mongodb atlas
-        client = pymongo.MongoClient("mongodb+srv://petiteurl:{ PASSWORD }@cluster0.1ra6dk3.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
+        client = pymongo.MongoClient(uri,
+                                     tlsCAFile=certifi.where())
         mydb = client["petiteUrl"]
         self.mycol = mydb["url"]
 
         # Only works if the unique index is not already set.
         self.mycol.create_index("hash_number", unique= True)
 
-    def insert(self, url: str) -> str:
-        url_hash_value = generate_random_hash(SIZE_HASH)
+    def insert(self, url: str, size_hash:int) -> str:
+        url_hash_value = generate_random_hash(size_hash)
         try:
             mydict = {"hash_number": url_hash_value, "url_address": url, "time_stamp": datetime.datetime.now()}
             self.mycol.insert_one(mydict)

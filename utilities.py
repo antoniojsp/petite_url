@@ -1,6 +1,7 @@
 import hashlib
-import urllib.request
+# import urllib.request
 from random import randrange
+import requests
 import configparser
 
 
@@ -18,14 +19,17 @@ def environment_settings(file_name: str) -> dict:
 
 def check_url_alive(url: str) -> bool:
     try:
-        result = urllib.request.urlopen(url).getcode() == 200
-    except (urllib.error.URLError, ValueError) as error:
+        result = requests.get(url).status_code == 200
+        print(requests.get(url))
+        print(result)
+    except requests.exceptions.RequestException as e:
+        print(e)
         result = False
 
     return result
 
 
-def generate_random_hash(size:int) -> str:
+def generate_random_hash(size: int) -> str:
     """
     Number of combinations is 62**size
     i.e. if size is 6 then there are combinations 56,800,235,584
