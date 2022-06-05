@@ -3,7 +3,10 @@ import configparser
 import datetime
 from utilities import generate_random_hash, environment_settings
 import pymongo
+import os
 
+PASSWORD = os.getenv("URI")
+print(PASSWORD)
 # read credentials for secrets
 # configurations = configparser.ConfigParser()
 # configurations.read("credentials.ini")
@@ -11,13 +14,13 @@ import pymongo
 # environmments
 my_info = environment_settings("credentials.ini")
 SIZE_HASH = my_info['size_hash']
-mongodb = my_info['petiteurl']
+# mongodb = my_info['petiteurl']
 
 
 class TinyURLDatabase:
     def __init__(self):
         # establish connection to mongodb atlas
-        client = pymongo.MongoClient(mongodb, tlsCAFile=certifi.where())
+        client = pymongo.MongoClient("mongodb+srv://petiteurl:{ PASSWORD }@cluster0.1ra6dk3.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
         mydb = client["petiteUrl"]
         self.mycol = mydb["url"]
 

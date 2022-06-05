@@ -12,7 +12,7 @@ import validators
 my_info = environment_settings("credentials.ini")
 
 app = Flask(__name__)
-app.secret_key = b'proyecto_nuevo_petite_url'
+app.secret_key = os.getenv("FLASH")
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
