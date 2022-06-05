@@ -14,10 +14,12 @@
             <form>
                 {{ form.csrf_token }}
                 <p>
-                    {{ form.url(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}
+                    {{ form.url(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}<br>
+                    {{ form.expiration.label }}
+                    {{ form.expiration }}
                 </p>
                 {{ form.submit(class_="btn btn-success") }}
-                <button type="reset" id="clear" class="btn btn-success">Clear </input>
+                <button type="reset" id="clear" class="btn btn-success">Clear </button>
 
             </form>
          </div>
