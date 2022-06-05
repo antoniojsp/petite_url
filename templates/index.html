@@ -3,7 +3,7 @@
 {% block content %}
 
   <div class="container text-center p-5 my-5 bg-success text-white">
-      <h1>{{ info.title }}</h1>
+      <h1><a href="{{url_for('index')}}" id='title'> {{ info.title }}</a></h1>
       <p>A TinyURL clone webpage using Flask, Ajax and MongoDB. </p>
   </div>
 <div class="container mt-3">

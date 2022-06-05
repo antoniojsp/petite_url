@@ -10,7 +10,7 @@ $(document).ready(function() {
                   result = data.result.response;
                   is_href_link = data.result.href;
                   if (is_href_link == true){
-                  $("#response").html("The PetiteURL version is " + "<a href='" + result + "' Target='_blank'>" + result + "</a>" );
+                  $("#response").html("The shorten URL is " + "<a href='" + result + "' Target='_blank'>" + result + "</a>" );
                   }else{
                   $("#response").html(result);
                   }
