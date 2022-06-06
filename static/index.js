@@ -3,7 +3,6 @@ function is_box_checked(id){
     return checkBox.checked
 };
 
-
 function myFunction() {
   var text = document.getElementById("text");
 
@@ -20,6 +19,9 @@ $(document).ready(function() {
         var input = document.getElementById("url").value;
         var input_date = document.getElementById("exp_date").value;
         document.getElementById("url").value = "";
+        document.getElementById("exp_date").value = "";
+        text.style.display = "none";
+        document.getElementById("myCheck").checked = false;
 
         if(is_box_checked("myCheck")){
             var package = {url: input, exp: input_date}
