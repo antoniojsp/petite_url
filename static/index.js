@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
         var input = document.getElementById("url").value;
-        var input_date = document.getElementById("date").value;
+        var input_date = document.getElementById("exp_date").value;
         document.getElementById("url").value = "";
 
         if(is_box_checked("myCheck")){
@@ -27,6 +27,7 @@ $(document).ready(function() {
             var package = {url: input, exp: "None"}
         }
 
+    console.log(package)
      $.getJSON( "/_submit",
                 package,
                 function(data) {

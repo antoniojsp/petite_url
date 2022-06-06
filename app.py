@@ -35,6 +35,9 @@ def redirect_from_token(shorten_url_token: str):
     full_url = db.query_url(shorten_url_token)
     if full_url == "":
         return render_template("404.html")
+    if full_url == "exp":
+        print("exp")
+        return render_template("404.html")
     app.logger.info(f'Redirecting to ->  {request.base_url}{shorten_url_token}')
     return redirect(full_url, code=302)
 

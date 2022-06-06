@@ -1,8 +1,7 @@
-import hashlib
-# import urllib.request
+import configparser
+from datetime import datetime
 from random import randrange
 import requests
-import configparser
 
 
 def environment_settings(file_name: str) -> dict:
@@ -44,3 +43,8 @@ def generate_random_hash(size: int) -> str:
         hash_result.append(alphanumeric[random_char])
 
     return "".join(hash_result)
+
+def expiration_time(time: str):
+    current_time = datetime.now()
+    expiration_date = datetime.strptime(time, "%Y-%m-%dT%H:%M")
+    return current_time > expiration_date
