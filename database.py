@@ -17,10 +17,13 @@ class TinyURLDatabase:
         # Only works if the unique index is not already set.
         self.mycol.create_index("hash_number", unique= True)
 
-    def insert(self, url: str, size_hash:int) -> str:
+    def insert(self, url: str,expiration_date, size_hash:int) -> str:
         url_hash_value = generate_random_hash(size_hash)
         try:
-            mydict = {"hash_number": url_hash_value, "url_address": url, "time_stamp": datetime.datetime.now()}
+            mydict = {"hash_number": url_hash_value,
+                      "url_address": url,
+                      "time_stamp": datetime.datetime.now(),
+                      "exp_date": expiration_date}
             self.mycol.insert_one(mydict)
             print("Site recorded correctly")
         except pymongo.errors.DuplicateKeyError as error:

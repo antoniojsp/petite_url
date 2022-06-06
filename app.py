@@ -49,6 +49,10 @@ def favicon():
 @app.route("/_submit")
 def _submit():
     original_url = request.args.get("url", type=str)
+    exp_date = request.args.get("exp", type=str)
+    print(exp_date)
+
+
     is_legal_url = validators.url(original_url)
     is_alive_url = check_url_alive(original_url)
     if not is_legal_url:
@@ -61,7 +65,7 @@ def _submit():
         result = "The website is either offline, forbidden or cannot be found."
         is_href = False
     else:
-        shorten_url = db.insert(original_url, SIZE_HASH)
+        shorten_url = db.insert(original_url, exp_date, SIZE_HASH)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
         is_href = True
