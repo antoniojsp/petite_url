@@ -1,9 +1,7 @@
 import certifi
-import configparser
 import datetime
-from utilities import generate_random_hash, expiration_time
+from utilities import generate_random_hash, is_expired
 import pymongo
-import os
 
 
 class TinyURLDatabase:
@@ -36,12 +34,11 @@ class TinyURLDatabase:
         mydoc = self.mycol.find_one(myquery)
 
         if mydoc is None:
-            return ""
+            return "not found"
 
-        if expiration_time(mydoc['exp_date']):
-            print(mydoc['exp_date'])
-            return "exp"
-        print(mydoc['exp_date'])
+        if is_expired(mydoc['exp_date']):
+            return "expired"
+
         return mydoc["url_address"]
 
 

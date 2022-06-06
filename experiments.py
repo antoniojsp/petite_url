@@ -8,4 +8,4 @@ def expiration_time(time: str):
     return current_time > expiration_date
 
 
-print(expiration_time("2018-06-12T19:30"))
+print(expiration_time("2022-06-11T02:41"))

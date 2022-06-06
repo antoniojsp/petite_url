@@ -4,7 +4,7 @@ function is_box_checked(id){
 };
 
 function myFunction() {
-  var text = document.getElementById("text");
+  var text = document.getElementById("date_local");
 
   if (is_box_checked("myCheck")){
     text.style.display = "block";
@@ -26,8 +26,8 @@ $(document).ready(function() {
         }
 
         document.getElementById("url").value = "";
-        document.getElementById("exp_date").value = "";
-        text.style.display = "none";
+        document.getElementById("exp_date").value = "2022-06-06T19:30";
+        date_local.style.display = "none";
         document.getElementById("myCheck").checked = false;
 
          $.getJSON( "/_submit",
@@ -46,8 +46,19 @@ $(document).ready(function() {
 });
 
 $("#clear").click(function(){
+
     document.getElementById("response").innerHTML = "";
+    document.getElementById("exp_date").value = "2022-06-06T19:30";
+    document.getElementById("myCheck").checked = false;
+    if (is_box_checked("myCheck")){
+    text.style.display = "block";
+    } else {
+    text.style.display = "none";
+  }
+
 });
+
+
 
 
 

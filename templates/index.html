@@ -16,16 +16,15 @@
                 <p>
                     {{ form.url(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}<br>
                     Checkbox: <input type="checkbox" id="myCheck" onclick="myFunction()">
-                    <p id="text" style="display:none">
-<!--                    <label for="date">Expiration Date:</label>-->
-<!--                    <input type="date" id="date" name="date" max="2030-12-31" onload="document.getElementById('date').valueAsDate = new Date();">-->
-                                <input type="datetime-local" id="exp_date"
-                       name="exp_date" value="2022-06-12T19:30"
-                       min="2022-06-01T00:00" max="2030-06-14T00:00">
+                    <p id="date_local" style="display:none">
+
+                    <input type="datetime-local" id="exp_date"
+                       name="exp_date" value="2022-06-06T19:30"
+                       min="2022-06-06T00:00" max="2030-06-14T00:00">
                     </p>
 
                 {{ form.submit(class_="btn btn-success") }}
-                <button type="reset" id="clear" class="btn btn-success">Clear </button>
+                <button type="reset" id="clear" class="btn btn-success"> Clear </button>
 
             </form>
          </div>
