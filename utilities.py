@@ -47,6 +47,7 @@ def generate_random_hash(size: int) -> str:
 
 def expiration_time(time: str):
     current_time = datetime.now()
+    print(current_time)
     expiration_date = datetime.strptime(time, "%Y-%m-%dT%H:%M")
-
+    print(current_time > expiration_date)
     return current_time > expiration_date

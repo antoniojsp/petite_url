@@ -18,10 +18,6 @@ $(document).ready(function() {
         e.preventDefault();
         var input = document.getElementById("url").value;
         var input_date = document.getElementById("exp_date").value;
-        document.getElementById("url").value = "";
-        document.getElementById("exp_date").value = "";
-        text.style.display = "none";
-        document.getElementById("myCheck").checked = false;
 
         if(is_box_checked("myCheck")){
             var package = {url: input, exp: input_date}
@@ -29,20 +25,24 @@ $(document).ready(function() {
             var package = {url: input, exp: "None"}
         }
 
-    console.log(package)
-     $.getJSON( "/_submit",
-                package,
-                function(data) {
-                  result = data.result.response;
-                  is_href_link = data.result.href;
-                  if (is_href_link == true){
-                  $("#response").html("The shorten URL is " + "<a href='" + result + "' Target='_blank'>" + result + "</a>" );
-                  }else{
-                  $("#response").html(result);
-                  }
-                }
-             );
-    });
+        document.getElementById("url").value = "";
+        document.getElementById("exp_date").value = "";
+        text.style.display = "none";
+        document.getElementById("myCheck").checked = false;
+
+         $.getJSON( "/_submit",
+                    package,
+                    function(data) {
+                      result = data.result.response;
+                      is_href_link = data.result.href;
+                      if (is_href_link == true){
+                      $("#response").html("The shorten URL is " + "<a href='" + result + "' Target='_blank'>" + result + "</a>" );
+                      }else{
+                      $("#response").html(result);
+                      }
+                    }
+                 );
+        });
 });
 
 $("#clear").click(function(){

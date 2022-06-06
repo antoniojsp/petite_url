@@ -41,7 +41,7 @@ class TinyURLDatabase:
         if expiration_time(mydoc['exp_date']):
             print(mydoc['exp_date'])
             return "exp"
-
+        print(mydoc['exp_date'])
         return mydoc["url_address"]
 
 
