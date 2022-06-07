@@ -1,9 +1,8 @@
-from database import *
 from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for, jsonify
 from forms import PetiteURLForms
 import logging
 import os
-from utilities import environment_settings, is_url_alive, is_expired
+from database import TinyURLDatabase
 import validators
 
 
@@ -12,7 +11,7 @@ SECRET_KEY = os.environ['secret_key']
 SIZE_HASH = int(os.environ['size_hash'])
 
 
-logging.basicConfig(filename='../record.log',
+logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
@@ -76,7 +75,7 @@ def _submit():
     return jsonify(result={"response": result, "href": is_href})
 
 
-# if __name__ == '__main__':
-#     app.run(host="0.0.0.0", port=5001)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5001)
 
 
