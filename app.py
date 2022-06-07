@@ -20,7 +20,7 @@ logging.basicConfig(filename='record.log',
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
 
-my_info = {"name": "Antonio J. Silva Paucar", 'email': 'antonios@uoregon.edu', "github": "Haf4Q6h", 'title': "PetiteURL"}
+my_info = {"name": "Antonio J. Silva Paucar", 'email': 'antonios@uoregon.edu', "github": "8jqJ0AX", 'title': "PetiteURL"}
 
 db = TinyURLDatabase(URI)
 
