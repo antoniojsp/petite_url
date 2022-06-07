@@ -24,7 +24,7 @@ $(document).ready(function() {
         }else{
             var package = {url: input, exp: "None"}
         }
-
+        console.log(input);
         document.getElementById("url").value = "";
         document.getElementById("exp_date").value = "2022-06-06T19:30";
         date_local.style.display = "none";
