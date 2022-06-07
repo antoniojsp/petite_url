@@ -4,6 +4,7 @@ import logging
 import os
 from database import TinyURLDatabase
 import validators
+from utilities import is_url_alive
 
 
 URI = os.environ['URI']
