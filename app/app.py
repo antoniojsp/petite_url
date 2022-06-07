@@ -6,20 +6,20 @@ import os
 from utilities import environment_settings, is_url_alive, is_expired
 import validators
 
-logging.basicConfig(filename='record.log',
+
+URI = os.environ['URI']
+SECRET_KEY = os.environ['secret_key']
+SIZE_HASH = int(os.environ['size_hash'])
+
+
+logging.basicConfig(filename='../record.log',
                     level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 app = Flask(__name__)
+app.secret_key = SECRET_KEY
 
-# separation of concerns (dictionary with setting variables and keys)
-connection_info = environment_settings("credentials.ini")
-my_info = environment_settings("personal.ini")
-
-# secret variables
-app.secret_key = connection_info['secret_word']
-SIZE_HASH = int(connection_info['size_hash'])
-URI = connection_info['database']
+my_info = {"name": "Antonio J. Silva Paucar", 'email': 'antonios@uoregon.edu', "github": "Haf4Q6h", 'title': "PetiteURL"}
 
 db = TinyURLDatabase(URI)
 
@@ -76,7 +76,7 @@ def _submit():
     return jsonify(result={"response": result, "href": is_href})
 
 
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5001)
+# if __name__ == '__main__':
+#     app.run(host="0.0.0.0", port=5001)
 
 
