@@ -1,6 +1,6 @@
 import certifi
 import datetime
-from utilities import generate_random_hash, is_expired, record_time
+from utilities import generate_random_hash, is_expired
 import pymongo
 
 

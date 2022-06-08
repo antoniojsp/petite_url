@@ -51,13 +51,16 @@ def is_expired(time: str) -> bool:
     return current_time > expiration_date
 
 
-def record_time(time, utc: int) -> str:
-    if time == "None":
-        return False
-    expiration_date = datetime.strptime(time, "%Y-%m-%dT%H:%M")
+def convert_time_utc(local_time: str, utc: int) -> str:
+    """
+    Converts local time into UTC time to be used by Heroku to determinate if url expired
+    :param local_time: expiration date in str
+    :param utc: diff in minutes
+    :return: expiration time string
+    """
+    expiration_date = datetime.strptime(local_time, "%Y-%m-%dT%H:%M")
+    utc_time = expiration_date + timedelta(minutes=utc)
+    utc_time_string = utc_time.strftime("%Y-%m-%dT%H:%M")
 
-    delta = expiration_date + timedelta(minutes=utc)
-
-    date_time = delta.strftime("%Y-%m-%dT%H:%M")
-    return date_time
+    return utc_time_string
 

@@ -4,8 +4,7 @@ import logging
 import os
 from database import TinyURLDatabase
 import validators
-from utilities import is_url_alive, record_time
-
+from utilities import is_url_alive, convert_time_utc
 
 
 URI = os.environ['URI']
@@ -71,10 +70,11 @@ def _submit():
         is_href = False
     else:
         if utc != "None":
-            date = record_time(exp_date, int(utc))
+            date = convert_time_utc(exp_date, int(utc))
             print(date)
         else:
             date = "None"
+
         shorten_url = db.insert(original_url, date, SIZE_HASH)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
