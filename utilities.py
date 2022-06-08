@@ -58,6 +58,6 @@ def record_time(time, utc: int) -> str:
 
     delta = expiration_date + timedelta(minutes=utc)
 
-    date_time = delta.strftime("%Y/%m/%dT%H:%M")
+    date_time = delta.strftime("%Y-%m-%dT%H:%M")
     return date_time
 

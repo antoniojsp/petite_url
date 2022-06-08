@@ -2,17 +2,12 @@ from datetime import datetime
 from datetime import timedelta
 
 
-def record_time(time, utc: int) -> str:
+def is_expired(time: str) -> bool:
     if time == "None":
         return False
-    expiration_date = datetime.strptime(time, "%Y-%m-%dT%H:%M")
+    current_time = datetime.now()
+    expiration_date = datetime.strptime(time, "%Y/%m/%dT%H:%M")
 
-    delta = expiration_date + timedelta(minutes=utc)
+    return current_time > expiration_date
 
-    date_time = delta.strftime("%Y/%m/%dT%H:%M")
-    return date_time
-
-
-
-
-print(record_time("2022-06-07T06:20", 420))
+print(is_expired("2022/06/09T02:30"))

@@ -72,6 +72,7 @@ def _submit():
     else:
         if utc != "None":
             date = record_time(exp_date, int(utc))
+            print(date)
         else:
             date = "None"
         shorten_url = db.insert(original_url, date, SIZE_HASH)
