@@ -20,11 +20,14 @@ $(document).ready(function() {
         var input_date = document.getElementById("exp_date").value;
 
         if(is_box_checked("myCheck")){
-            var package = {url: input, exp: input_date}
+            const date = new Date();
+            const offset = date.getTimezoneOffset();
+            console.log(offset)
+            var package = {url: input, exp: input_date, utc: offset }
         }else{
-            var package = {url: input, exp: "None"}
+            var package = {url: input, exp: "None", utc: "None"}
         }
-        console.log(input);
+        console.log(package);
         document.getElementById("url").value = "";
         document.getElementById("exp_date").value = "2022-06-06T19:30";
         date_local.style.display = "none";

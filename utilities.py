@@ -1,7 +1,8 @@
 import configparser
 from datetime import datetime
-from random import randrange
+from datetime import timedelta
 import requests
+from random import randrange
 
 
 def environment_settings(file_name: str) -> dict:
@@ -48,3 +49,15 @@ def is_expired(time: str) -> bool:
     expiration_date = datetime.strptime(time, "%Y-%m-%dT%H:%M")
 
     return current_time > expiration_date
+
+
+def record_time(time, utc: int) -> str:
+    if time == "None":
+        return False
+    expiration_date = datetime.strptime(time, "%Y-%m-%dT%H:%M")
+
+    delta = expiration_date + timedelta(minutes=utc)
+
+    date_time = delta.strftime("%Y/%m/%dT%H:%M")
+    return date_time
+
