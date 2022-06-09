@@ -4,7 +4,7 @@ import logging
 import os
 from database import TinyURLDatabase
 import validators
-from utilities import is_url_alive, convert_time_utc
+from utilities import is_url_alive
 
 
 URI = os.environ['URI']
@@ -55,7 +55,6 @@ def favicon():
 def _submit():
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("exp", type=str)
-    utc = request.args.get("utc", type=str)
 
     is_legal_url = validators.url(original_url)
     is_alive_url = is_url_alive(original_url)
@@ -69,13 +68,7 @@ def _submit():
         result = "The website is either offline, forbidden or cannot be found."
         is_href = False
     else:
-        if utc != "None":
-            date = convert_time_utc(exp_date, int(utc))
-            print(date)
-        else:
-            date = "None"
-
-        shorten_url = db.insert(original_url, date, SIZE_HASH)
+        shorten_url = db.insert(original_url, exp_date, SIZE_HASH)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
         is_href = True

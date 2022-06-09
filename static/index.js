@@ -3,7 +3,7 @@ function is_box_checked(id){
     return checkBox.checked
 };
 
-function myFunction() {
+function hide_show_expiration() {
   var text = document.getElementById("date_local");
 
   if (is_box_checked("myCheck")){
@@ -13,25 +13,24 @@ function myFunction() {
   }
 };
 
+
 $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
         var input = document.getElementById("url").value;
         var input_date = document.getElementById("exp_date").value;
 
+        console.log(input_date);
+        var utc_date = new Date(input_date).toISOString();
+        console.log(utc_date);
+
         if(is_box_checked("myCheck")){
-            const date = new Date();
-            const offset = date.getTimezoneOffset();
-            console.log(offset)
-            var package = {url: input, exp: input_date, utc: offset }
+            var package = {url: input, exp: utc_date}
         }else{
-            var package = {url: input, exp: "None", utc: "None"}
+            var package = {url: input, exp: "None"}
         }
-        console.log(package);
-        document.getElementById("url").value = "";
-        document.getElementById("exp_date").value = "2022-06-06T19:30";
-        date_local.style.display = "none";
-        document.getElementById("myCheck").checked = false;
+
+        clear_button();
 
          $.getJSON( "/_submit",
                     package,
@@ -48,18 +47,22 @@ $(document).ready(function() {
         });
 });
 
-$("#clear").click(function(){
+
+function clear_button(){
 
     document.getElementById("response").innerHTML = "";
-    document.getElementById("exp_date").value = "2022-06-06T19:30";
+    document.getElementById("url").value = "";
+    document.getElementById("exp_date").value = "2022-06-08T19:30";
     document.getElementById("myCheck").checked = false;
-    if (is_box_checked("myCheck")){
-    text.style.display = "block";
-    } else {
-    text.style.display = "none";
-  }
 
-});
+    if (is_box_checked("myCheck")){
+    document.getElementById("date_local").style.display = "block";
+    } else {
+    document.getElementById("date_local").style.display = "none";
+    };
+}''
+
+$("#clear").click(clear_button);
 
 
 

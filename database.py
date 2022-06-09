@@ -2,6 +2,7 @@ import certifi
 import datetime
 from utilities import generate_random_hash, is_expired
 import pymongo
+from datetime import timezone
 
 
 class TinyURLDatabase:
@@ -20,7 +21,7 @@ class TinyURLDatabase:
         try:
             mydict = {"hash_number": url_hash_value,
                       "url_address": url,
-                      "time_stamp": datetime.datetime.now(),
+                      "time_stamp": datetime.datetime.now(timezone.utc),
                       "exp_date": expiration_date}
 
             self.mycol.insert_one(mydict)

@@ -1,13 +1,4 @@
-from datetime import datetime
-from datetime import timedelta
+str = '2022-06-09T14:06:00.000Z'
 
 
-def is_expired(time: str) -> bool:
-    if time == "None":
-        return False
-    current_time = datetime.now()
-    expiration_date = datetime.strptime(time, "%Y/%m/%dT%H:%M")
-
-    return current_time > expiration_date
-
-print(is_expired("2022/06/09T02:30"))
+print(str[:-5])

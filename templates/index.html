@@ -15,11 +15,11 @@
                 {{ form.csrf_token }}
                 <p>
                     {{ form.url(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}<br>
-                    Checkbox: <input type="checkbox" id="myCheck" onclick="myFunction()">
+                    Checkbox: <input type="checkbox" id="myCheck" onclick="hide_show_expiration()">
                     <p id="date_local" style="display:none">
 
                     <input type="datetime-local" id="exp_date"
-                       name="exp_date" value="2022-06-06T19:30"
+                       name="exp_date" value="2022-06-09T00:00"
                        min="2022-06-06T00:00" max="2030-06-14T00:00">
                     </p>
 

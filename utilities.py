@@ -43,24 +43,8 @@ def generate_random_hash(size: int) -> str:
 
 
 def is_expired(time: str) -> bool:
-    if time == "None":
-        return False
     current_time = datetime.now()
-    expiration_date = datetime.strptime(time, "%Y-%m-%dT%H:%M")
-
+    print(time[:-8])
+    expiration_date = datetime.strptime(time[:-8], "%Y-%m-%dT%H:%M")
+    print(current_time > expiration_date)
     return current_time > expiration_date
-
-
-def convert_time_utc(local_time: str, utc: int) -> str:
-    """
-    Converts local time into UTC time to be used by Heroku to determinate if url expired
-    :param local_time: expiration date in str
-    :param utc: diff in minutes
-    :return: expiration time string
-    """
-    expiration_date = datetime.strptime(local_time, "%Y-%m-%dT%H:%M")
-    utc_time = expiration_date + timedelta(minutes=utc)
-    utc_time_string = utc_time.strftime("%Y-%m-%dT%H:%M")
-
-    return utc_time_string
-
