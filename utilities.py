@@ -1,6 +1,5 @@
 import configparser
 from datetime import datetime
-from datetime import timedelta
 import requests
 from random import randrange
 
@@ -43,8 +42,10 @@ def generate_random_hash(size: int) -> str:
 
 
 def is_expired(time: str) -> bool:
-    current_time = datetime.now()
-    print(time[:-8])
+    if time == "None":
+        return True
+    current_time = datetime.utcnow()
+    print(current_time)
     expiration_date = datetime.strptime(time[:-8], "%Y-%m-%dT%H:%M")
-    print(current_time > expiration_date)
+    print(expiration_date)
     return current_time > expiration_date

@@ -55,7 +55,6 @@ def favicon():
 def _submit():
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("exp", type=str)
-
     is_legal_url = validators.url(original_url)
     is_alive_url = is_url_alive(original_url)
     if not is_legal_url:

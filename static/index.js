@@ -9,7 +9,7 @@ function hide_show_expiration() {
   if (is_box_checked("myCheck")){
     text.style.display = "block";
   } else {
-    text.style.display = "none";
+    text.style.display = "None";
   }
 };
 
@@ -49,23 +49,21 @@ $(document).ready(function() {
 
 
 function clear_button(){
-
+    console.log("hola");
+    hide_show_expiration();
     document.getElementById("response").innerHTML = "";
     document.getElementById("url").value = "";
-    document.getElementById("exp_date").value = "2022-06-08T19:30";
     document.getElementById("myCheck").checked = false;
 
-    if (is_box_checked("myCheck")){
-    document.getElementById("date_local").style.display = "block";
-    } else {
-    document.getElementById("date_local").style.display = "none";
-    };
-}''
+};
 
 $("#clear").click(clear_button);
 
+function current_time(){
+    var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
+    var localISOTime = (new Date(Date.now() - tzoffset + 60000)).toISOString().slice(0, -1);
 
-
-
-
-
+    const dateInput = exp_date;
+    dateInput.min = localISOTime.split('.')[0].slice(0, -3);
+    dateInput.value = localISOTime.split('.')[0].slice(0, -3);
+};

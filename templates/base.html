@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title> {{ info.title }} </title>
 </head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column h-100" onload="current_time();">
         {% block content %}
 
         {% endblock %}
