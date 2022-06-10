@@ -19,10 +19,12 @@ $(document).ready(function() {
         e.preventDefault();
 
 
+        var input_url = document.getElementById("url").value;
+
+        // response alerts parts
         var alert1 = '<div id="response-alert" class="alert alert-success alert-dismissible fade show" role="alert">'
         var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>'
         var alert3 = '</button> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-        var input_url = document.getElementById("url").value;
 
         if(is_expiration_checked("myCheck")){
             var input_date = document.getElementById("exp_date").value;
@@ -35,16 +37,16 @@ $(document).ready(function() {
                 current_time();
                 return
             };
-
             var utc_date = new Date(input_date).toISOString();
             var package = {url: input_url, expiration_date: utc_date}
+
         }else{
+
             var package = {url: input_url, expiration_date: "None"}
+
         };
 
         clear_button();
-
-
 
          $.getJSON( "/_submit",
                     package,
@@ -76,8 +78,6 @@ function clear_button(){
     document.getElementById("myCheck").checked = false;
     document.getElementById("response").innerHTML = "";
     document.getElementById("url").value = "";
-
-
 };
 
 function current_time(){
