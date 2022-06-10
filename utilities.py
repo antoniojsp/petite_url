@@ -43,7 +43,7 @@ def generate_random_hash(size: int) -> str:
 
 def is_expired(time: str) -> bool:
     if time == "None":
-        return True
+        return False
     current_time = datetime.utcnow()
     print(current_time)
     expiration_date = datetime.strptime(time[:-8], "%Y-%m-%dT%H:%M")
