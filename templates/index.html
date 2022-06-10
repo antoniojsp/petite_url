@@ -19,13 +19,11 @@
 
                     <input type="checkbox" id="myCheck" onclick="hide_show_expiration()">
                     <p id="date_local" style="display:none">
-
-
                     <input type="datetime-local" id="exp_date"
-                           name="exp_date" min="2030-06-14T00:00">
+                           name="exp_date"></p>
 
                 {{ form.submit(class_="btn btn-success") }}
-                <button type="reset" id="clear" class="btn btn-success"> Clear </button>
+                <button type="reset" id="clear" class="btn btn-success" onclick="clear_button()"> Clear </button>
 
             </form>
          </div>
