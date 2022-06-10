@@ -34,10 +34,10 @@ def index():
 def redirect_from_token(shorten_url_token: str):
     full_url = db.query_url(shorten_url_token)
 
-    if full_url == "not found":
+    if full_url == "Not found":
         return render_template("404.html")
 
-    if full_url == "expired":
+    if full_url == "Expired":
         return render_template("404.html")
 
     app.logger.info(f'Redirecting to ->  {request.base_url}{shorten_url_token}')

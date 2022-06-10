@@ -32,14 +32,21 @@ class TinyURLDatabase:
         return url_hash_value
 
     def query_url(self, hash_number: str) -> str:
+        """
+        If the hash value doesn't map to any url, returns a string "Not found",
+        if the hash value has an url that has expired, returns "Expired",
+        else, returns the url
+        :param hash_number: unique hash value that direct to a website
+        :return: Not found, Expired, or url
+        """
         myquery = {"hash_number": hash_number}
         mydoc = self.mycol.find_one(myquery)
 
         if mydoc is None:
-            return "not found"
+            return "Not found"
 
         if is_expired(mydoc['exp_date']):
-            return "expired"
+            return "Expired"
 
         return mydoc["url_address"]
 
