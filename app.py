@@ -27,6 +27,8 @@ db = TinyURLDatabase(URI)
 
 @app.route('/', methods=["GET", "POST"])
 def index():
+    print("Entrada")
+    sys.stdout.flush()
     form = PetiteURLForms()
     return render_template("index.html", form=form, info=my_info)
 
