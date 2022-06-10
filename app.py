@@ -7,7 +7,7 @@ import os
 from utilities import is_url_alive
 import validators
 
-
+# Environment variables (Secret keys)
 URI = os.environ['URI']
 SECRET_KEY = os.environ['secret_key']
 SIZE_HASH = int(os.environ['size_hash'])
@@ -24,18 +24,16 @@ my_info = PersonalInformation().dict()
 
 db = TinyURLDatabase(URI)
 
-import  sys
+
 @app.route('/', methods=["GET", "POST"])
 def index():
-    print("Entrada")
-    sys.stdout.flush()
-    form = PetiteURLForms()
-    return render_template("index.html", form=form, info=my_info)
+    index_form = PetiteURLForms()
+    return render_template("index.html", form=index_form, info=my_info)
 
 
-@app.route('/<shorten_url_token>')
-def redirect_from_token(shorten_url_token: str):
-    query_answer = db.query_url(shorten_url_token)
+@app.route('/<shorten_url_hash>')
+def redirect_from_token(shorten_url_hash: str):
+    query_answer = db.query_url(shorten_url_hash)
 
     if query_answer == "Not found":
         return render_template("404.html", message= "The URL was not found in the server.")
@@ -43,7 +41,7 @@ def redirect_from_token(shorten_url_token: str):
         return render_template("404.html", message="The URL has expired.")
 
     # If the hash+value is present and not expired, then it redirect to the URL from the database
-    app.logger.info(f'Redirecting to ->  {request.base_url}{shorten_url_token}')
+    app.logger.info(f'Redirecting to ->  {request.base_url}{shorten_url_hash}')
     return redirect(query_answer, code=302)
 
 
@@ -59,13 +57,13 @@ def _submit():
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("expiration_date", type=str)
     is_legal_url = validators.url(original_url)
-    is_alive_url = is_url_alive(original_url)
+
     if not is_legal_url:
         app.logger.info(f'{original_url} is not a valid URL')
         result = 'Please, check that the URL is legal and try again.'
         is_href = False
 
-    elif not is_alive_url:
+    elif not is_url_alive(original_url):
         app.logger.info(f'{original_url} is not a live URL')
         result = "The website is either offline, forbidden or cannot be found."
         is_href = False

@@ -17,16 +17,21 @@ function hide_show_expiration() {
 $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
+
+
+        var alert1 = '<div id="response-alert" class="alert alert-success alert-dismissible fade show" role="alert">'
+        var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>'
+        var alert3 = '</button> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
         var input_url = document.getElementById("url").value;
-
-
 
         if(is_expiration_checked("myCheck")){
             var input_date = document.getElementById("exp_date").value;
 
             if (compare_dates(input_date)){
                 console.log("aaaa")
-                $("#response").html("The expiration date needs to be greater than the current date." );
+                $("#response").html(alert1 +
+                'The expiration date needs to be greater than the current date.' +
+                 alert3);
                 current_time();
                 return
             };
@@ -39,16 +44,20 @@ $(document).ready(function() {
 
         clear_button();
 
+
+
          $.getJSON( "/_submit",
                     package,
                     function(data) {
                       result = data.result.response;
                       is_href_link = data.result.href;
                       if (is_href_link == true){
-                      $("#response").html("The shorten URL is " + "<a id='petite_url' href='" + result +
-                      "' Target='_blank'>" + result + "</a>" + "  <button class='btn btn-outline-success btn-sm' onclick='clipboard()'> Copy PetiteURL!</button>" );
+                        $("#response").html(alert1 +' The shorten URL is ' + '<a id="petite_url" href=" '
+                        + result + '  "Target="_blank">' + result + '</a>   '+ alert2 +
+                         'Copy PetiteURL!' + alert3 );
+
                       }else{
-                      $("#response").html(result);
+                      $("#response").html(alert1 + result + alert3);
                       }
                     }
                  );
@@ -92,3 +101,4 @@ function clipboard() {
   console.log(copyText.href);
   navigator.clipboard.writeText(copyText.href);
 };
+
