@@ -24,7 +24,7 @@ my_info = PersonalInformation().dict()
 
 db = TinyURLDatabase(URI)
 
-
+import  sys
 @app.route('/', methods=["GET", "POST"])
 def index():
     print("Entrada")
