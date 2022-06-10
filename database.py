@@ -18,6 +18,10 @@ class TinyURLDatabase:
 
     def insert(self, url: str, expiration_date, size_hash: int) -> str:
         url_hash_value = generate_random_hash(size_hash)
+
+        # TODO
+        # check for repetitions
+
         try:
             mydict = {"hash_number": url_hash_value,
                       "url_address": url,

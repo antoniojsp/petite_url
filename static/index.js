@@ -1,3 +1,4 @@
+// functions
 function is_expiration_checked(id){
     var checkBox = document.getElementById(id);
     return checkBox.checked
@@ -14,6 +15,43 @@ function hide_show_expiration() {
   }
 };
 
+function clear_button(){
+    // compatible if expiration is checked or not
+    var text = document.getElementById("date_local");
+
+    // catch cases if the expiration block is showing or not
+    if (text.style.display == "block"){
+        text.style.display = "none";
+    }
+
+    document.getElementById("myCheck").checked = false;
+    document.getElementById("response").innerHTML = "";
+    document.getElementById("url").value = "";
+};
+
+function current_time(){
+    var one_minute = 60000;
+    var diff_hours_to_utc = (new Date()).getTimezoneOffset() * 60000;
+    var localISOTime = (new Date(Date.now() - diff_hours_to_utc + one_minute)).toISOString().slice(0, -1);
+    const dateInput = exp_date;
+    dateInput.min = localISOTime.split('.')[0].slice(0, -3);
+    dateInput.value = localISOTime.split('.')[0].slice(0, -3);
+};
+
+function compare_dates(input_date){
+    var current_time = new Date();
+    var input_time = new Date(input_date);
+    return current_time.getTime() > input_time.getTime();
+};
+
+function clipboard() {
+  /* Get the text field */
+  var copyText = document.getElementById("petite_url");
+  console.log(copyText.href);
+  navigator.clipboard.writeText(copyText.href);
+};
+
+// Triggers
 $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
@@ -56,7 +94,7 @@ $(document).ready(function() {
                       if (is_href_link == true){
                         $("#response").html(alert1 +' The shorten URL is ' + '<a id="petite_url" href=" '
                         + result + '  "Target="_blank">' + result + '</a>   '+ alert2 +
-                         'Copy PetiteURL!' + alert3 );
+                         '   Copy PetiteURL!' + alert3 );
 
                       }else{
                       $("#response").html(alert1 + result + alert3);
@@ -65,40 +103,4 @@ $(document).ready(function() {
                  );
         });
 });
-
-function clear_button(){
-    // compatible if expiration is checked or not
-    var text = document.getElementById("date_local");
-
-    // catch cases if the expiration block is showing or not
-    if (text.style.display == "block"){
-        text.style.display = "none";
-    }
-
-    document.getElementById("myCheck").checked = false;
-    document.getElementById("response").innerHTML = "";
-    document.getElementById("url").value = "";
-};
-
-function current_time(){
-    var one_minute = 60000;
-    var diff_hours_to_utc = (new Date()).getTimezoneOffset() * 60000;
-    var localISOTime = (new Date(Date.now() - diff_hours_to_utc + one_minute)).toISOString().slice(0, -1);
-    const dateInput = exp_date;
-    dateInput.min = localISOTime.split('.')[0].slice(0, -3);
-    dateInput.value = localISOTime.split('.')[0].slice(0, -3);
-};
-
-function compare_dates(input_date){
-    var current_time = new Date();
-    var input_time = new Date(input_date);
-    return current_time.getTime() > input_time.getTime();
-};
-
-function clipboard() {
-  /* Get the text field */
-  var copyText = document.getElementById("petite_url");
-  console.log(copyText.href);
-  navigator.clipboard.writeText(copyText.href);
-};
 
