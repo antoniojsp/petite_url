@@ -32,16 +32,16 @@ def index():
 
 @app.route('/<shorten_url_token>')
 def redirect_from_token(shorten_url_token: str):
-    full_url = db.query_url(shorten_url_token)
+    query_answer = db.query_url(shorten_url_token)
 
-    if full_url == "Not found":
-        return render_template("404.html")
+    if query_answer == "Not found":
+        return render_template("404.html", message= "The URL was not found in the server.")
+    elif query_answer == "Expired":
+        return render_template("404.html", message="The URL has expired.")
 
-    if full_url == "Expired":
-        return render_template("404.html")
-
+    # If the hash+value is present and not expired, then it redirect to the URL from the database
     app.logger.info(f'Redirecting to ->  {request.base_url}{shorten_url_token}')
-    return redirect(full_url, code=302)
+    return redirect(query_answer, code=302)
 
 
 @app.route('/favicon.ico')
@@ -54,7 +54,7 @@ def favicon():
 @app.route("/_submit")
 def _submit():
     original_url = request.args.get("url", type=str)
-    exp_date = request.args.get("exp", type=str)
+    exp_date = request.args.get("expiration_date", type=str)
     is_legal_url = validators.url(original_url)
     is_alive_url = is_url_alive(original_url)
     if not is_legal_url:
