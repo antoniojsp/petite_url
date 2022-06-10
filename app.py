@@ -1,10 +1,11 @@
+from database import TinyURLDatabase
 from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for, jsonify
 from forms import PetiteURLForms
 import logging
+from personal_information import *
 import os
-from database import TinyURLDatabase
-import validators
 from utilities import is_url_alive
+import validators
 
 
 URI = os.environ['URI']
@@ -19,7 +20,7 @@ logging.basicConfig(filename='record.log',
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
 
-my_info = {"name": "Antonio J. Silva Paucar", 'email': 'antonios@uoregon.edu', "github": "8jqJ0AX", 'title': "PetiteURL"}
+my_info = PersonalInformation().dict()
 
 db = TinyURLDatabase(URI)
 
