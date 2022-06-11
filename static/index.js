@@ -106,4 +106,5 @@ $(document).ready(function(){
     $('#per_name').keyup(function(event){
         console.log("keyup");
     });
+
 });

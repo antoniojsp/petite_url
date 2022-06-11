@@ -54,6 +54,9 @@ class TinyURLDatabase:
 
         return mydoc["url_address"]
 
+    def check_use(self):
+        pass
+
 
 
 
