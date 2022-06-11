@@ -104,7 +104,36 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $('#per_name').keyup(function(event){
-        console.log("keyup");
+        var partial_name = $("#per_name").val();
+                console.log(partial_name);
+
+        var keycode = event.which;      // They key that just went up
+
+    if (partial_name.length >= 7){
+
+        $.getJSON( "/_check_name",
+                  {name: partial_name},
+                  function(data) {
+                    rsval = data.result.response;
+                    console.log(rsval);
+
+                    if (rsval){
+                        $("#response").html("Existe");
+                    }else{
+                        $("#response").html("No existe");
+
+                    };
+
+                  }
+
+               );
+    }else{
+
+      $("#response").html("Needs to be 7");
+
+    };
+
+
     });
 
 });

@@ -54,8 +54,11 @@ class TinyURLDatabase:
 
         return mydoc["url_address"]
 
-    def check_use(self):
-        pass
+    def check_name(self, hash_number):
+        myquery = {"hash_number": hash_number}
+        mydoc = self.mycol.find_one(myquery)
+
+        return False if mydoc is None else True
 
 
 
