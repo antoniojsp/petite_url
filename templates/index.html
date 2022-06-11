@@ -6,33 +6,49 @@
       <h1><a href="{{url_for('index')}}" id='title'> {{ info.title }}</a></h1>
       <p>A TinyURL clone webpage using Flask, Ajax and MongoDB. </p>
   </div>
+
 <div class="container mt-3">
 
     <div id="response"></div>
 
-<!--    <div  id="response-alert" style="display:none"-->
-<!--        class="alert alert-warning alert-dismissible fade show" role="alert">-->
-<!--  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
-<!--</div>-->
+    <div class="mb-3 mt-3 text-center" >
+        <form>
+            {{ form.csrf_token }}
+            <p>
+                {{ form.url(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}
+            </p>
 
-        <div class="mb-3 mt-3 text-center" >
-            <form>
-                {{ form.csrf_token }}
-                <p>
-                    {{ form.url(class_="form-control p-2s", placeholder_="Paste here the complete URL you want to shorten") }}<br>
-                    Do you want that the link expire?:
+            <p>
+                {{ form.expires.label }}
+                {{ form.expires(onclick_="hide_show_expiration('date_local', 'expires')") }}
+            </p>
 
-                    <input type="checkbox" id="myCheck" onclick="hide_show_expiration()">
-                    <p id="date_local" style="display:none">
-                    <input type="datetime-local" id="exp_date"
-                           name="exp_date"></p>
+            <p id="date_local" style="display:none">
+            <input type="datetime-local" id="exp_date" name="exp_date">
+            </p>
 
-                {{ form.submit(class_="btn btn-success") }}
-                <button type="reset" id="clear" class="btn btn-success" onclick="clear_button()"> Clear </button>
+            <p>
+                {{ form.personalized_name.label }}
+                {{ form.personalized_name(onclick_="hide_show_expiration('personalized', 'personalized_name')") }}
+            </p>
 
-            </form>
-         </div>
+            <p id="personalized" style="display:none">
+            <input type="text" id="per_name" name="per_name">
+            </p>
+
+            {{ form.submit(class_="btn btn-success") }}
+            <button type="reset" id="clear" class="btn btn-success" onclick="clear_button()"> Clear </button>
+
+        </form>
+     </div>
     </div>
+
+<!--<script>-->
+<!--   $("#per_name").keyup(function(event) {-->
+<!--       var a = $("#per_name").val();-->
+<!--       console.log(a);-->
+<!--  });-->
+<!--</script>-->
 
 
 

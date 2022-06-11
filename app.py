@@ -75,6 +75,29 @@ def _submit():
 
     return jsonify(result={"response": result, "href": is_href})
 
+@app.route("/_check_hash")
+def _check_name():
+    original_url = request.args.get("url", type=str)
+    exp_date = request.args.get("expiration_date", type=str)
+    is_legal_url = validators.url(original_url)
+
+    if not is_legal_url:
+        app.logger.info(f'{original_url} is not a valid URL')
+        result = 'Please, check that the URL is legal and try again.'
+        is_href = False
+
+    elif not is_url_alive(original_url):
+        app.logger.info(f'{original_url} is not a live URL')
+        result = "The website is either offline, forbidden or cannot be found."
+        is_href = False
+    else:
+        shorten_url = db.insert(original_url, exp_date, SIZE_HASH)
+        app.logger.info(f'{original_url} inserted')
+        result = f'{request.url_root}{shorten_url}'
+        is_href = True
+
+    return jsonify(result={"response": result, "href": is_href})
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001)

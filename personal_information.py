@@ -9,6 +9,4 @@ class PersonalInformation:
     def dict(self):
         return self.__dict__
 
-a = PersonalInformation()
-
 

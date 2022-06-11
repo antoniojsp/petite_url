@@ -7,31 +7,31 @@ from datetime import timezone
 
 class TinyURLDatabase:
     def __init__(self, uri):
-        # establish connection to mongodb atlas
-        client = pymongo.MongoClient(uri,
-                                     tlsCAFile=certifi.where())
+        # establish connection to mongodb atlas and connects to the database
+        client = pymongo.MongoClient(uri, tlsCAFile=certifi.where())
         mydb = client["petiteUrl"]
         self.mycol = mydb["url"]
 
-        # Only works if the unique index is not already set.
+        # Creates an index just one. If index present, it skips it.
         self.mycol.create_index("hash_number", unique= True)
 
     def insert(self, url: str, expiration_date, size_hash: int) -> str:
-        url_hash_value = generate_random_hash(size_hash)
 
-        # TODO
-        # check for repetitions
+        is_unique = False
+        url_hash_value = ""
+        while not is_unique:
+            url_hash_value = generate_random_hash(size_hash)
+            try:
+                mydict = {"hash_number": url_hash_value,
+                          "url_address": url,
+                          "time_stamp": datetime.datetime.now(timezone.utc),
+                          "exp_date": expiration_date}
 
-        try:
-            mydict = {"hash_number": url_hash_value,
-                      "url_address": url,
-                      "time_stamp": datetime.datetime.now(timezone.utc),
-                      "exp_date": expiration_date}
-
-            self.mycol.insert_one(mydict)
-            print("Site recorded correctly")
-        except pymongo.errors.DuplicateKeyError as error:
-            print(error)
+                self.mycol.insert_one(mydict)
+                print("Site recorded correctly")
+                is_unique = True
+            except pymongo.errors.DuplicateKeyError as error:
+                print(error)
 
         return url_hash_value
 
@@ -53,6 +53,8 @@ class TinyURLDatabase:
             return "Expired"
 
         return mydoc["url_address"]
+
+
 
 
 

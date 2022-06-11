@@ -4,10 +4,10 @@ function is_expiration_checked(id){
     return checkBox.checked
 };
 
-function hide_show_expiration() {
-  var text = document.getElementById("date_local");
+function hide_show_expiration(element, input) {
+  var text = document.getElementById(element);
 
-  if (is_expiration_checked("myCheck")){
+  if (is_expiration_checked(input)){
     text.style.display = "block";
     current_time();
   } else {
@@ -24,7 +24,7 @@ function clear_button(){
         text.style.display = "none";
     }
 
-    document.getElementById("myCheck").checked = false;
+    document.getElementById("expires").checked = false;
     document.getElementById("response").innerHTML = "";
     document.getElementById("url").value = "";
 };
@@ -55,42 +55,40 @@ function clipboard() {
 $(document).ready(function() {
     $('form').submit(function(e) {
         e.preventDefault();
-
-
         var input_url = document.getElementById("url").value;
+        var information_package = {};
+
+        information_package['url'] = input_url
 
         // response alerts parts
         var alert1 = '<div id="response-alert" class="alert alert-success alert-dismissible fade show" role="alert">'
         var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>'
         var alert3 = '</button> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
 
-        if(is_expiration_checked("myCheck")){
+        if(is_expiration_checked("expires")){
             var input_date = document.getElementById("exp_date").value;
 
             if (compare_dates(input_date)){
-                console.log("aaaa")
                 $("#response").html(alert1 +
                 'The expiration date needs to be greater than the current date.' +
-                 alert3);
+                alert3);
                 current_time();
                 return
             };
             var utc_date = new Date(input_date).toISOString();
-            var package = {url: input_url, expiration_date: utc_date}
+            information_package['expiration_date'] = utc_date;
+        }
 
-        }else{
-
-            var package = {url: input_url, expiration_date: "None"}
-
-        };
+        console.log(information_package);
 
         clear_button();
 
          $.getJSON( "/_submit",
-                    package,
+                    information_package,
                     function(data) {
                       result = data.result.response;
                       is_href_link = data.result.href;
+                      console.log(result);
                       if (is_href_link == true){
                         $("#response").html(alert1 +' The shorten URL is ' + '<a id="petite_url" href=" '
                         + result + '  "Target="_blank">' + result + '</a>   '+ alert2 +
@@ -104,3 +102,8 @@ $(document).ready(function() {
         });
 });
 
+$(document).ready(function(){
+    $('#per_name').keyup(function(event){
+        console.log("keyup");
+    });
+});

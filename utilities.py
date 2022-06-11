@@ -4,18 +4,6 @@ import requests
 from random import randrange
 
 
-def environment_settings(file_name: str) -> dict:
-    configurations = configparser.ConfigParser()
-    configurations.read(file_name)
-    dictionary_secrets = {}
-
-    for i in configurations:
-        for j in configurations[i]:
-            dictionary_secrets[j] = configurations[i][j]
-
-    return dictionary_secrets
-
-
 def is_url_alive(url: str) -> bool:
     try:
         result = requests.get(url).status_code == 200
@@ -42,10 +30,12 @@ def generate_random_hash(size: int) -> str:
 
 
 def is_expired(time: str) -> bool:
-    if time == "None":
+    if time is None:
         return False
+
+    adjusted_time_format = time[:-8]
+    pattern_time_format = "%Y-%m-%dT%H:%M"
     current_time = datetime.utcnow()
-    print(current_time)
-    expiration_date = datetime.strptime(time[:-8], "%Y-%m-%dT%H:%M")
-    print(expiration_date)
+    expiration_date = datetime.strptime(adjusted_time_format, pattern_time_format)
+
     return current_time > expiration_date
