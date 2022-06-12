@@ -27,3 +27,8 @@ footer {
  display:none
 }
 
+#response-alert {
+  margin: auto;
+  width: 85%;
+  padding: 10px;
+}

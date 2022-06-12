@@ -3,7 +3,7 @@ class PersonalInformation:
     def __init__(self):
         self.name = "Antonio J. Silva Paucar"
         self.email = 'antonios@uoregon.edu'
-        self.github = "WHAAUIZ"
+        self.github = "Q2yRET3"
         self.title = "PetiteURL"
 
     def dict(self):

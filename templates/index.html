@@ -9,7 +9,10 @@
 
 <div class="container mt-3">
 
+
     <div id="response"></div>
+
+
 
     <div class="mb-3 mt-3 text-center" >
         <form>
@@ -20,7 +23,7 @@
 
             <p>
                 {{ form.expires.label }}
-                {{ form.expires(onclick_="hide_show_expiration('date_local', 'expires')") }}
+                {{ form.expires(onclick_="hide_show_expiration('date_local', '#expires')") }}
             </p>
 
             <p id="date_local" style="display:none">
@@ -29,10 +32,10 @@
 
             <p>
                 {{ form.personalized_name.label }}
-                {{ form.personalized_name(onclick_="hide_show_expiration('personalized', 'personalized_name')") }}
+                {{ form.personalized_name(onclick_="hide_show_expiration('personalized', '#personalized_name')") }}
             </p>
             <p id="personalized">
-            <input type="text" id="per_name" name="per_name">
+            <input type="text" id="per_name" name="per_name" maxlength="7">
             </p>
             <div id="unique_hash"></div>
 

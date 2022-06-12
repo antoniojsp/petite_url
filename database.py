@@ -10,42 +10,49 @@ SIZE_HASH = int(os.environ['size_hash'])
 
 class TinyURLDatabase:
     def __init__(self, uri):
-        # establish connection to mongodb atlas and connects to the database
+        """
+        Establish the connection with mongodb atlas and connects to collection
+        :param uri: string with the address and password to connect
+        """
         client = pymongo.MongoClient(uri, tlsCAFile=certifi.where())
-        mydb = client["petiteUrl"]
-        self.mycol = mydb["url"]
+        my_db = client["petiteUrl"]
+        self.my_col = my_db["url"]
 
-        # Creates an index just one. If index present, it skips it.
-        self.mycol.create_index("hash_number", unique= True)
+        # Creates an index just once to make hash_value unique key. If index present, it skips it.
+        self.my_col.create_index("hash_value", unique=True)
 
-    def insert(self, url: str, expiration_date: str, per_name: str) -> str:
-        is_unique = False
-        url_hash_value = ""
-        # while not is_unique:
-        if per_name != "None":
-            if not self.check_name(per_name):
-                url_hash_value = per_name
+    def insert(self, url: str, expiration_date: str, custom_hash: str) -> str:
+        """
+        Inserts the hash_value and the url into the database. It does some validations to check if the
+        hash_value is unique
+
+        :param url: address that is going to be stored
+        :param expiration_date: if present, it records the date by when the shortened url should expire
+        :param custom_hash: if present, personalized the hash_value
+        :return: the custom_hash value that has been stored
+        """
+        if custom_hash != "None":
+            # revalidates personalized name. JS should check for duplication too.
+            if not self.is_hash_duplicated(custom_hash):
+                url_hash_value = custom_hash
             else:
-                print("Duplicado")
-                return ""
+                print("The personalized hash value already in database.")
+                return "Duplicate"
         else:
             while True:
+                # generate hash value and check that its uniqueness (combinations are in the order of 62^7)
                 url_hash_value = self.generate_random_hash()
-                if not self.check_name(url_hash_value):
+                if not self.is_hash_duplicated(url_hash_value):
                     break
 
-        mydict = {"hash_number": url_hash_value,
+        mydict = {"hash_value": url_hash_value,
                   "url_address": url,
                   "time_stamp": datetime.now(timezone.utc),
-                  "exp_date": expiration_date}
+                  "exp_date": expiration_date,
+                  "count": 0}
 
-        self.mycol.insert_one(mydict)
+        self.my_col.insert_one(mydict)
         print("Site recorded correctly")
-
-
-            # except pymongo.errors.DuplicateKeyError as error:
-            #     print(error)
-            #     break
 
         return url_hash_value
 
@@ -57,24 +64,31 @@ class TinyURLDatabase:
         :param hash_number: unique hash value that direct to a website
         :return: Not found, Expired, or url
         """
-        myquery = {"hash_number": hash_number}
-        mydoc = self.mycol.find_one(myquery)
+        my_query = {"hash_value": hash_number}
+        my_doc = self.my_col.find_one(my_query)
 
-        if mydoc is None:
+        if my_doc is None:
             return "Not found"
 
-        if self.is_expired(mydoc['exp_date']):
+        if self.is_page_expired(my_doc['exp_date']):
             return "Expired"
 
-        return mydoc["url_address"]
+        self.update_counter(my_query, my_doc)
 
-    def check_name(self, hash_number):
-        myquery = {"hash_number": hash_number}
-        mydoc = self.mycol.find_one(myquery)
-        return False if mydoc is None else True
+        return my_doc["url_address"]
+
+    def update_counter(self, my_query, my_doc) -> bool:
+        new_count = my_doc['count'] + 1
+        update_field = {"$set": {"count": new_count }}
+        self.my_col.update_one(my_query, update_field)
+
+    def is_hash_duplicated(self, hash_value:str) -> bool:
+        my_query = {"hash_value": hash_value}
+        my_doc = self.my_col.find_one(my_query)
+        return False if my_doc is None else True
 
     @staticmethod
-    def is_expired(time: str) -> bool:
+    def is_page_expired(time: str) -> bool:
         if time == "None":
             return False
 

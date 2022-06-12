@@ -47,7 +47,6 @@ def redirect_from_token(shorten_url_hash: str):
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
@@ -63,25 +62,24 @@ def _submit():
     if not is_legal_url:
         app.logger.info(f'{original_url} is not a valid URL')
         result = 'Please, check that the URL is legal and try again.'
-        is_href = False
-
     elif not is_url_alive(original_url):
         app.logger.info(f'{original_url} is not a live URL')
         result = "The website is either offline, forbidden or cannot be found."
-        is_href = False
     else:
         shorten_url = db.insert(original_url, exp_date, pers_name)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
-        is_href = True
 
-    return jsonify(result={"response": result, "href": is_href})
+        if shorten_url == "Duplicate":
+            result = f"The hash name {pers_name} exists"
+
+    return jsonify(result={"response": result})
 
 
-@app.route("/_check_name")
+@app.route("/_check_hash")
 def _check_name():
     partial_name = request.args.get("name", type=str)
-    result = db.check_name(partial_name)
+    result = db.is_hash_duplicated(partial_name)
 
     return jsonify(result={"response": result})
 
