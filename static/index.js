@@ -59,6 +59,9 @@ function clipboard() {
     navigator.clipboard.writeText(copyText.href);
 };
 
+function is_only_alphanumeric(str) {
+  return /^[A-Za-z0-9]*$/.test(str);
+};
 
 // parts of responses
 var alert1 = '<div id="response-alert" class="alert alert-success alert-dismissible fade show in text-center" role="alert">'
@@ -79,7 +82,6 @@ $(document).ready(function() {
         }
 
         information_package['url'] = input_url
-
         if (is_checkbox_checked("#expires")){
             var input_date = document.getElementById("exp_date").value;
 
@@ -89,6 +91,7 @@ $(document).ready(function() {
                 current_time();
                 return
             };
+
             var utc_date = new Date(input_date).toISOString();
             information_package['expiration_date'] = utc_date;
         }else{
@@ -97,6 +100,11 @@ $(document).ready(function() {
 
         if (is_checkbox_checked("#personalized_name")){
             var partial_name = $("#custom_hash").val();
+
+            if (is_only_alphanumeric(partial_name) == false){
+                $("#response").html(alert1 + "Only alphanumeric characters (Lower or capital case)." + alert3);
+                return
+            }
 
             if (response_answer == false){
                 $("#response").html(alert1 + "Personalized hash value is in use." + alert3);
@@ -135,6 +143,17 @@ $(document).ready(function(){
     $('#custom_hash').keyup(function hash_name(){
         var partial_name = $("#custom_hash").val();
         var needs_characters = 7 - partial_name.length
+
+        console.log(is_only_alphanumeric(partial_name));
+
+        if (is_only_alphanumeric(partial_name) == false){
+            $("#unique_hash").html(alert1 + "Only alphanumeric characters (Lower or capital case)." + alert3);
+            return
+        }else{
+            $("#unique_hash").html("");
+            $("#response").html("");
+
+        };
 
         if (partial_name.length == 7){
             $.getJSON( "/_check_hash",
