@@ -31,10 +31,11 @@
                 {{ form.personalized_name.label }}
                 {{ form.personalized_name(onclick_="hide_show_expiration('personalized', 'personalized_name')") }}
             </p>
-
-            <p id="personalized" style="display:none">
+            <p id="personalized">
             <input type="text" id="per_name" name="per_name">
             </p>
+            <div id="unique_hash"></div>
+
 
             {{ form.submit(class_="btn btn-success") }}
             <button type="reset" id="clear" class="btn btn-success" onclick="clear_button()"> Clear </button>
@@ -42,15 +43,5 @@
         </form>
      </div>
     </div>
-
-<!--<script>-->
-<!--   $("#per_name").keyup(function(event) {-->
-<!--       var a = $("#per_name").val();-->
-<!--       console.log(a);-->
-<!--  });-->
-<!--</script>-->
-
-
-
 
 {% endblock %}

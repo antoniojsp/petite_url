@@ -10,7 +10,6 @@ import validators
 # Environment variables (Secret keys)
 URI = os.environ['URI']
 SECRET_KEY = os.environ['secret_key']
-SIZE_HASH = int(os.environ['size_hash'])
 
 
 logging.basicConfig(filename='record.log',
@@ -48,6 +47,7 @@ def redirect_from_token(shorten_url_hash: str):
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
+
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
@@ -56,6 +56,8 @@ def favicon():
 def _submit():
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("expiration_date", type=str)
+    pers_name = request.args.get("per_name", type=str)
+
     is_legal_url = validators.url(original_url)
 
     if not is_legal_url:
@@ -68,7 +70,7 @@ def _submit():
         result = "The website is either offline, forbidden or cannot be found."
         is_href = False
     else:
-        shorten_url = db.insert(original_url, exp_date, SIZE_HASH)
+        shorten_url = db.insert(original_url, exp_date, pers_name)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
         is_href = True
