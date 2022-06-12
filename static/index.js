@@ -36,7 +36,7 @@ function clear_button(){
     document.getElementById("unique_hash").innerHTML = "";
 
     document.getElementById("url").value = "";
-    document.getElementById("per_name").value = "";
+    document.getElementById("custom_hash").value = "";
 };
 
 function current_time(){
@@ -95,7 +95,7 @@ $(document).ready(function() {
         };
 
         if (is_checkbox_checked("#personalized_name")){
-            var partial_name = $("#per_name").val();
+            var partial_name = $("#custom_hash").val();
 
             if (response_answer == false){
                 $("#response").html(alert1 + "Personalized hash value is in use." + alert3);
@@ -103,11 +103,11 @@ $(document).ready(function() {
             };
 
             if (response_answer == true){
-                information_package["per_name"] = partial_name;
+                information_package["custom_hash"] = partial_name;
                 response_answer = false;
             }
         }else{
-            information_package['per_name'] = "None";
+            information_package['custom_hash'] = "None";
         };
 
 
@@ -131,8 +131,10 @@ $(document).ready(function() {
 
 var response_answer = false;
 $(document).ready(function(){
-    $('#per_name').keyup(function hash_name(){
-        var partial_name = $("#per_name").val();
+    $('#custom_hash').keyup(function hash_name(){
+        var partial_name = $("#custom_hash").val();
+        var needs_characters = 7 - partial_name.length
+
         if (partial_name.length == 7){
             $.getJSON( "/_check_hash",
                       {name: partial_name},
@@ -147,7 +149,8 @@ $(document).ready(function(){
                             };
                       });
         }else if(partial_name.length < 7){
-             $("#unique_hash").html(alert1 + "Hash value needs to be at least 7 characters long." + alert3);
+             $("#unique_hash").html(alert1 + "Hash value needs to be at least 7 characters long. It needs "
+                                    + needs_characters.toString() +" characters more." + alert3);
              response_answer = false;
         };
     });

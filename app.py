@@ -19,7 +19,7 @@ logging.basicConfig(filename='record.log',
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
 
-my_info = PersonalInformation().dict()
+my_info = MyPersonalInfo().dict()
 
 db = TinyURLDatabase(URI)
 
@@ -35,7 +35,7 @@ def redirect_from_token(shorten_url_hash: str):
     query_answer = db.query_url(shorten_url_hash)
 
     if query_answer == "Not found":
-        return render_template("404.html", message= "The URL was not found in the server.")
+        return render_template("404.html", message="The URL was not found in the server.")
     elif query_answer == "Expired":
         return render_template("404.html", message="The URL has expired.")
 
@@ -55,10 +55,11 @@ def favicon():
 def _submit():
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("expiration_date", type=str)
-    pers_name = request.args.get("per_name", type=str)
+    pers_name = request.args.get("custom_hash", type=str)
 
     is_legal_url = validators.url(original_url)
 
+    # validations. URL is legal and alive. Client JS does validation too but for extra protection
     if not is_legal_url:
         app.logger.info(f'{original_url} is not a valid URL')
         result = 'Please, check that the URL is legal and try again.'
