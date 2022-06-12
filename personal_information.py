@@ -1,5 +1,4 @@
 class PersonalInformation:
-
     def __init__(self):
         self.name = "Antonio J. Silva Paucar"
         self.email = 'antonios@uoregon.edu'
