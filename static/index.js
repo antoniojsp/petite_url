@@ -68,6 +68,7 @@ var alert3 = '</button> <button type="button" class="btn-close" data-bs-dismiss=
 // Triggers
 $(document).ready(function() {
     $('form').submit(function(e) {
+
         e.preventDefault();
         var input_url = $('#url').val();
         var information_package = {};

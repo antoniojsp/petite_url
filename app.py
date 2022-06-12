@@ -57,6 +57,7 @@ def _submit():
     exp_date = request.args.get("expiration_date", type=str)
     pers_name = request.args.get("custom_hash", type=str)
 
+
     is_legal_url = validators.url(original_url)
 
     # validations. URL is legal and alive. Client JS does validation too but for extra protection
