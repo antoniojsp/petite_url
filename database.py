@@ -41,7 +41,7 @@ class TinyURLDatabase:
         else:
             while True:
                 # generate hash value and check that its uniqueness (combinations are in the order of 62^7)
-                url_hash_value = self.generate_random_hash()
+                url_hash_value = self.__generate_random_hash()
                 if not self.is_hash_duplicated(url_hash_value):
                     break
 
@@ -70,25 +70,25 @@ class TinyURLDatabase:
         if my_doc is None:
             return "Not found"
 
-        if self.is_page_expired(my_doc['exp_date']):
+        if self.__is_page_expired(my_doc['exp_date']):
             return "Expired"
 
-        self.update_counter(my_query, my_doc)
+        self.__update_counter(my_query, my_doc)
 
         return my_doc["url_address"]
 
-    def update_counter(self, my_query, my_doc) -> bool:
+    def __update_counter(self, my_query, my_doc):
         new_count = my_doc['count'] + 1
         update_field = {"$set": {"count": new_count }}
         self.my_col.update_one(my_query, update_field)
 
-    def is_hash_duplicated(self, hash_value:str) -> bool:
+    def is_hash_duplicated(self, hash_value: str) -> bool:
         my_query = {"hash_value": hash_value}
         my_doc = self.my_col.find_one(my_query)
         return False if my_doc is None else True
 
     @staticmethod
-    def is_page_expired(time: str) -> bool:
+    def __is_page_expired(time: str) -> bool:
         if time == "None":
             return False
 
@@ -99,7 +99,7 @@ class TinyURLDatabase:
         return current_time > expiration_date
 
     @staticmethod
-    def generate_random_hash() -> str:
+    def __generate_random_hash() -> str:
         """
         Number of combinations is 62**size
         i.e. if size is 6 then there are combinations 56,800,235,584
