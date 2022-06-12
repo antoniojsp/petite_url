@@ -23,24 +23,22 @@
 
             <p>
                 {{ form.expires.label }}
-                {{ form.expires(onclick_="hide_show_expiration('date_local', '#expires')") }}
+                {{ form.expires }}
             </p>
 
             <p id="date_local" style="display:none">
-            <input type="datetime-local" id="exp_date" name="exp_date">
+                {{ form.exp_date }}
             </p>
-
             <p>
                 {{ form.personalized_name.label }}
-                {{ form.personalized_name(onclick_="hide_show_expiration('personalized', '#personalized_name')") }}
+                {{ form.personalized_name }}
             </p>
             <p id="personalized" style="display:none">
-            <input type="text" id="custom_hash" name="custom_hash" maxlength="7">
+                {{ form.custom_hash }}
             </p>
             <div id="unique_hash"></div>
 
-
-            {{ form.submit(class_="btn btn-success") }}
+            {{ form.submit}}
             <button type="reset" id="clear" class="btn btn-success" onclick="clear_button()"> Clear </button>
 
         </form>
