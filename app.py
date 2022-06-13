@@ -17,8 +17,8 @@ logging.basicConfig(filename='record.log',
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 app = Flask(__name__)
-app.secret_key = SECRET_KEY
 
+app.secret_key = SECRET_KEY
 my_info = MyPersonalInfo().dict()
 
 db = TinyURLDatabase(URI)
@@ -39,7 +39,7 @@ def redirect_from_token(shorten_url_hash: str):
     elif query_answer == "Expired":
         return render_template("404.html", message="The URL has expired.")
 
-    # If the hash+value is present and not expired, then it redirect to the URL from the database
+    # If the hash_value is present and not expired, then it redirect to the URL from the database
     app.logger.info(f'Redirecting to ->  {request.base_url}{shorten_url_hash}')
     return redirect(query_answer, code=302)
 
@@ -55,11 +55,11 @@ def favicon():
 def _submit():
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("expiration_date", type=str)
-    pers_name = request.args.get("custom_hash", type=str)
+    custom_hash = request.args.get("custom_hash", type=str)
 
     is_legal_url = validators.url(original_url)
 
-    # validations. URL is legal and alive. Client JS does validation too but for extra protection
+    # Validations. URL is legal and alive. Client use JS to do validations too but for extra protection
     if not is_legal_url:
         app.logger.info(f'{original_url} is not a valid URL')
         result = 'Please, check that the URL is legal and try again.'
@@ -67,12 +67,12 @@ def _submit():
         app.logger.info(f'{original_url} is not a live URL')
         result = "The website is either offline, forbidden or cannot be found."
     else:
-        shorten_url = db.insert(original_url, exp_date, pers_name)
+        shorten_url = db.insert(original_url, exp_date, custom_hash)
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
 
         if shorten_url == "Duplicate":
-            result = f"The hash name {pers_name} exists"
+            result = f"The hash name {custom_hash} exists"
 
     return jsonify(result={"response": result})
 
