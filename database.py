@@ -47,8 +47,7 @@ class TinyURLDatabase:
                 print("Custom hash has been recorded")
                 return custom_hash
             else:
-                print("The custom hash value already in database.")
-                return "Duplicate"
+                raise LookupError("Duplicate: Hash value already in the database")
         else:
             is_random_unique = True
             while is_random_unique:

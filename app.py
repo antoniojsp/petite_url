@@ -67,7 +67,12 @@ def _submit():
         app.logger.info(f'{original_url} is not a live URL')
         result = "The website is either offline, forbidden or cannot be found."
     else:
-        shorten_url = db.insert(original_url, exp_date, custom_hash)
+        try:
+            shorten_url = db.insert(original_url, exp_date, custom_hash)
+        except LookupError as e:
+            shorten_url = "Duplicate"
+            print("Error occurred", e)
+
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
 

@@ -16,7 +16,6 @@ function is_url_valid(string) {
 
 function hide_show_expiration(element, input) {
     var hidden_element = document.getElementById(element).style;
-
     if (is_checkbox_checked(input)){
         hidden_element.display = "block";
         current_time();
@@ -29,8 +28,8 @@ function clear_button(){
     document.getElementById("date_local").style.display = "none";
     document.getElementById("personalized").style.display = "none";
 
-    document.getElementById("expires").checked = false;
-    document.getElementById("personalized_name").checked = false;
+    document.getElementById("expires_option").checked = false;
+    document.getElementById("custom_hash_option").checked = false;
 
     document.getElementById("response").innerHTML = "";
     document.getElementById("unique_hash").innerHTML = "";
@@ -43,7 +42,7 @@ function current_time(){
     var one_minute = 60000; //to set to default  the min input  time to the current time plus one minute
     var diff_hours_to_utc = (new Date()).getTimezoneOffset() * one_minute;
     var localISOTime = (new Date(Date.now() - diff_hours_to_utc + one_minute)).toISOString().slice(0, -1);
-    const dateInput = exp_date;
+    const dateInput = expire_time;
     dateInput.min = localISOTime.split('.')[0].slice(0, -3);
     dateInput.value = localISOTime.split('.')[0].slice(0, -3);
 };
@@ -82,8 +81,8 @@ $(document).ready(function() {
         }
 
         information_package['url'] = input_url
-        if (is_checkbox_checked("#expires")){
-            var input_date = document.getElementById("exp_date").value;
+        if (is_checkbox_checked("#expires_option")){
+            var input_date = document.getElementById("expire_time").value;
 
             if (compare_dates(input_date)){
                 $("#response").html(alert1 +'The expiration date needs to be greater than the current date.' +
@@ -98,7 +97,7 @@ $(document).ready(function() {
             information_package['expiration_date'] = "None";
         };
 
-        if (is_checkbox_checked("#personalized_name")){
+        if (is_checkbox_checked("#custom_hash_option")){
             var partial_name = $("#custom_hash").val();
 
             if (is_only_alphanumeric(partial_name) == false){
