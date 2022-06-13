@@ -31,25 +31,31 @@ class TinyURLDatabase:
         :param custom_hash: if present, personalized the hash_value
         :return: the custom_hash value that has been stored
         """
-        if custom_hash != "None":
-            # revalidates personalized name. JS should check for duplication too.
-            if not self.is_hash_duplicated(custom_hash):
-                url_hash_value = custom_hash
-            else:
-                print("The personalized hash value already in database.")
-                return "Duplicate"
-        else:
-            while True:
-                # generate hash value and check that its uniqueness (combinations are in the order of 62^7)
-                url_hash_value = self.__generate_random_hash()
-                if not self.is_hash_duplicated(url_hash_value):
-                    break
 
-        mydict = {"hash_value": url_hash_value,
+        mydict = {"hash_value": "",
                   "url_address": url,
                   "time_stamp": datetime.now(timezone.utc),
                   "exp_date": expiration_date,
                   "count": 0}
+
+        url_hash_value = ""
+        if custom_hash != "None":
+            # revalidates personalized name. JS should check for duplication too.
+            if not self.is_hash_duplicated(custom_hash):
+                mydict['hash_value'] = custom_hash
+                self.my_col.insert_one(mydict)
+                print("Custom hash has been recorded")
+                return custom_hash
+            else:
+                print("The custom hash value already in database.")
+                return "Duplicate"
+        else:
+            is_random_unique = True
+            while is_random_unique:
+                # generate hash value and check that its uniqueness (combinations are in the order of 62^7)
+                url_hash_value = self.__generate_random_hash()
+                mydict['hash_value'] = url_hash_value
+                is_random_unique = self.is_hash_duplicated(url_hash_value)
 
         self.my_col.insert_one(mydict)
         print("Site recorded correctly")
@@ -69,23 +75,22 @@ class TinyURLDatabase:
 
         if my_doc is None:
             return "Not found"
-
-        if self.__is_page_expired(my_doc['exp_date']):
+        elif self.__is_page_expired(my_doc['exp_date']):
             return "Expired"
 
         self.__update_counter(my_query, my_doc)
 
         return my_doc["url_address"]
 
+    def is_hash_duplicated(self, hash_value: str) -> list:
+        my_query = {"hash_value": hash_value}
+        my_doc = self.my_col.find_one(my_query)
+        return False if my_doc is None else True
+
     def __update_counter(self, my_query, my_doc):
         new_count = my_doc['count'] + 1
         update_field = {"$set": {"count": new_count }}
         self.my_col.update_one(my_query, update_field)
-
-    def is_hash_duplicated(self, hash_value: str) -> bool:
-        my_query = {"hash_value": hash_value}
-        my_doc = self.my_col.find_one(my_query)
-        return False if my_doc is None else True
 
     @staticmethod
     def __is_page_expired(time: str) -> bool:
