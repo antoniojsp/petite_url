@@ -63,10 +63,9 @@ function is_only_alphanumeric(str) {
 };
 
 // parts of responses
-var alert1 = '<div id="response-alert" class="alert alert-success alert-dismissible fade show in text-center" role="alert">'
+var alert1 = '<div  id="response-alert" class="alert alert-success alert-dismissible fade show in text-center" role="alert">'
 var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>'
 var alert3 = '</button> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-
 // Triggers
 $(document).ready(function() {
     $('form').submit(function(e) {
@@ -127,8 +126,8 @@ $(document).ready(function() {
                     function(data) {
                       result = data.result.response;
                       if (is_url_valid(result)){
-                        $("#response").html(alert1 +' The shorten URL is ' + '<a id="petite_url" href="'
-                        + result + '  "Target="_blank">' + result + '      </a>       ' + alert2 + '   Copy PetiteURL!' + alert3 );
+                        $("#response").html(alert1 +'<div> The shorten URL is ' + '<a id="petite_url" href="'
+                        + result + '  "Target="_blank">' + result + '      </a>       ' + alert2 + '   Copy PetiteURL!</div>' + alert3 );
                       }else{
                         $("#response").html(alert1 + result + alert3);
                       }
