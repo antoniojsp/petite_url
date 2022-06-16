@@ -58,11 +58,11 @@ footer {
 
   #response-alert{
   margin: auto;
-  width: 80%;
+  width: 90%;
   margin-bottom:10px
   border-style: dotted;
   text-align: center;
-  font-size:8px
+  font-size:5px
 
 }
 }
