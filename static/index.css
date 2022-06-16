@@ -55,4 +55,14 @@ footer {
     visibility: hidden;
     display: none;
   }
+
+  #response-alert{
+  margin: auto;
+  width: 80%;
+  margin-bottom:10px
+  border-style: dotted;
+  text-align: center;
+  font-size:8px
+
+}
 }
