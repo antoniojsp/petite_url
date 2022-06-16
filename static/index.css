@@ -23,12 +23,16 @@
 
 #response-alert{
   margin: auto;
-  width: 50%;
+  width: 60%;
   margin-bottom:10px
   border-style: dotted;
   text-align: center;
+  font-size:15px
 
 }
+
+
+
 
 #footer_url, #footer_mail{
   color: white;
