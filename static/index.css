@@ -23,7 +23,7 @@
 
 #response-alert{
   margin: auto;
-  width: 60%;
+  width: 40%;
   margin-bottom:10px
   border-style: dotted;
   text-align: center;
@@ -58,7 +58,7 @@ footer {
 
   #response-alert{
   margin: auto;
-  width: 90%;
+  width: 100%;
   margin-bottom:10px
   border-style: dotted;
   text-align: center;
