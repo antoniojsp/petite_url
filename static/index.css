@@ -45,3 +45,10 @@ footer {
   padding: 5px;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .footer{
+    visibility: hidden;
+    display: none;
+  }
+}

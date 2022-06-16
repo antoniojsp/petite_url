@@ -11,7 +11,7 @@ SIZE_HASH = int(os.environ['size_hash'])
 class TinyURLDatabase:
     def __init__(self, uri):
         """
-        Establish the connection with mongodb atlas and connects to collection
+        Connect Mongodb database and select collection
         :param uri: string with the address and password to connect
         """
         client = pymongo.MongoClient(uri, tlsCAFile=certifi.where())
