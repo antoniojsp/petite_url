@@ -69,7 +69,7 @@ function is_only_alphanumeric(str) {
 
 // parts of responses
 var alert1 = '<div  id="response-alert" class="alert alert-success alert-dismissible fade show in text-center" role="alert">'
-var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>'
+var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>    '
 var alert3 = '</button> <button type="button" id="clear_id" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
 // Triggers
 $(document).ready(function() {

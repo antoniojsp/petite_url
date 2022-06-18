@@ -38,6 +38,7 @@ body::after {
 }
 
 #response-alert{
+  white-space: nowrap
   margin: auto;
   width: 50%;
   margin-bottom:10px
