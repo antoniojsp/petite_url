@@ -1,4 +1,8 @@
 // functions
+
+function getResolution() {
+     $("#response").html("Your screen resolution is: " + screen.width + "x" + screen.height);
+}
 function is_checkbox_checked(id){
     return $(id).prop("checked");
 };
@@ -15,6 +19,7 @@ function is_url_valid(string) {
 
 
 function hide_show_expiration(element, input) {
+    getResolution();
     var hidden_element = document.getElementById(element).style;
     if (is_checkbox_checked(input)){
         hidden_element.display = "block";
@@ -141,8 +146,6 @@ $(document).ready(function(){
     $('#custom_hash').keyup(function hash_name(){
         var partial_name = $("#custom_hash").val();
         var needs_characters = 7 - partial_name.length
-
-        console.log(is_only_alphanumeric(partial_name));
 
         if (is_only_alphanumeric(partial_name) == false){
             $("#unique_hash").html(alert1 + "Only alphanumeric characters (Lower or capital case)." + alert3);
