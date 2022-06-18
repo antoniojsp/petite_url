@@ -1,27 +1,17 @@
-from database import TinyURLDatabase
-from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for, jsonify
-from forms import PetiteURLForms
+
 import logging
-from personal_information import *
-import os
-from utilities import is_url_alive
+from app.utilities import is_url_alive
+from app.forms import PetiteURLForms
 import validators
-
-# Environment variables (Secret keys)
-URI = os.environ['URI']
-SECRET_KEY = os.environ['secret_key']
-
+import os
+from flask import redirect, render_template, request, send_from_directory, jsonify
+from app import create_app
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
-app = Flask(__name__)
-
-app.secret_key = SECRET_KEY
-my_info = MyPersonalInfo().dict()
-
-db = TinyURLDatabase(URI)
+app, my_info, db = create_app()
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -45,7 +35,7 @@ def redirect_from_token(shorten_url_hash: str):
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
+    return send_from_directory(os.path.join(app.root_path, 'app/static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
