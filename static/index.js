@@ -19,7 +19,7 @@ function is_url_valid(string) {
 
 
 function hide_show_expiration(element, input) {
-    getResolution();
+
     var hidden_element = document.getElementById(element).style;
     if (is_checkbox_checked(input)){
         hidden_element.display = "block";
