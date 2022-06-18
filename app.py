@@ -36,8 +36,6 @@ def redirect_from_token(shorten_url_hash: str):
     result = f'{request.url_root}{shorten_url_hash}'
     if query_answer == "Not found":
         return render_template("404.html", message=f"The URL {result} was not found in the server."), 404
-    elif query_answer == "Expired":
-        return render_template("404.html", message=f"The URL {result} has expired."), 404
 
     # If the hash_value is present and not expired, then it redirect to the URL from the database
     app.logger.info(f'Redirecting to ->  result')

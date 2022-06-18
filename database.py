@@ -9,6 +9,7 @@ SIZE_HASH = int(os.environ['size_hash'])
 
 
 class TinyURLDatabase:
+
     def __init__(self, uri):
         """
         Connect Mongodb database and select collection
@@ -61,6 +62,11 @@ class TinyURLDatabase:
 
         return url_hash_value
 
+    def is_hash_duplicated(self, hash_value: str) -> bool:
+        my_query = {"hash_value": hash_value}
+        my_doc = self.my_col.find_one(my_query)
+        return False if my_doc is None else True
+
     def query_url(self, hash_number: str) -> str:
         """
         If the hash value doesn't map to any url, returns a string "Not found",
@@ -72,23 +78,16 @@ class TinyURLDatabase:
         my_query = {"hash_value": hash_number}
         my_doc = self.my_col.find_one(my_query)
 
-        if my_doc is None:
+        if my_doc is None or self.__is_page_expired(my_doc['exp_date']):
             return "Not found"
-        elif self.__is_page_expired(my_doc['exp_date']):
-            return "Expired"
 
         self.__update_counter(my_query, my_doc)
 
         return my_doc["url_address"]
 
-    def is_hash_duplicated(self, hash_value: str) -> list:
-        my_query = {"hash_value": hash_value}
-        my_doc = self.my_col.find_one(my_query)
-        return False if my_doc is None else True
-
     def __update_counter(self, my_query, my_doc):
         new_count = my_doc['count'] + 1
-        update_field = {"$set": {"count": new_count }}
+        update_field = {"$set": {"count": new_count}}
         self.my_col.update_one(my_query, update_field)
 
     @staticmethod
