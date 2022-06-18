@@ -126,17 +126,14 @@ $(document).ready(function() {
 
         console.log(information_package);
         clear_button();
-
+        var space = "&nbsp;";
          $.getJSON( "/_submit",
                     information_package,
                     function(data) {
                       result = data.result.response;
                       if (is_url_valid(result)){
                         $("#response").html(alert1 + 'Your petite URL: ' + '<a id="petite_url" href="'
-                        + result + '" Target="_blank"> ' + result + '</a>&nbsp;&nbsp;' + alert2 + 'Copy!' + alert3 );
-
-                        console.log(alert1 + 'The shorten URL is ' + '<a id="petite_url" href="'
-                        + result + '" Target="_blank"> ' + result + '</a>&nbsp;&nbsp;' + alert2 + 'Copy!' + alert3  );
+                        + result + '" Target="_blank"> ' + result + '</a>' + space + space + space + space + alert2 + 'Copy!' + alert3 );
                       }else{
                         $("#response").html(alert1 + result + alert3);
                       }
