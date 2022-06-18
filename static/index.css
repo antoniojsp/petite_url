@@ -1,19 +1,25 @@
 
 #title {
-    text-decoration: none;
+   text-decoration: none;
    color: white;
+
 }
+
 
 #header_title{
-  text-align: center;
-
+    text-align: center;
+    margin-top: 10px;
 }
 
-body{ min-height:100vh;
-margin:0;
+body{
+min-height:100vh;
+margin:0px;
 position:relative;
+
 }
-header{ min-height:50px;
+
+header{
+min-height:50px;
 }
 
 body {
