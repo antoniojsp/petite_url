@@ -34,6 +34,7 @@ def index():
 def redirect_from_token(shorten_url_hash: str):
     query_answer = db.query_url(shorten_url_hash)
     result = f'{request.url_root}{shorten_url_hash}'
+
     if query_answer == "Not found":
         return render_template("404.html", message=f"The URL {result} was not found in the server."), 404
 
