@@ -1,8 +1,4 @@
 // functions
-
-function getResolution() {
-     $("#response").html("Your screen resolution is: " + screen.width + "x" + screen.height);
-}
 function is_checkbox_checked(id){
     return $(id).prop("checked");
 };
@@ -69,7 +65,7 @@ function is_only_alphanumeric(str) {
 
 // parts of responses
 var alert1 = '<div  id="response-alert" class="alert alert-success alert-dismissible fade show in text-center" role="alert">'
-var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>    '
+var alert2 = '<button class="btn btn-outline-success btn-sm" onclick="clipboard()"> </a>'
 var alert3 = '</button> <button type="button" id="clear_id" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
 // Triggers
 $(document).ready(function() {
@@ -109,8 +105,13 @@ $(document).ready(function() {
                 return
             }
 
+            if (partial_name.length < 7){
+                $("#response").html(alert1 + "Custom hash need to be 7 characters long." + alert3);
+                return
+            };
+
             if (response_answer == false){
-                $("#response").html(alert1 + "Personalized hash value is in use." + alert3);
+                $("#response").html(alert1 + "Custom hash value in use." + alert3);
                 return
             };
 
@@ -162,15 +163,15 @@ $(document).ready(function(){
                       function(data) {
                             server_response = data.result.response;
                             if (server_response){
-                                $("#unique_hash").html(alert1 + "The hash is not available." + alert3);
+                                $("#unique_hash").html(alert1 + "Custom hash is not available." + alert3);
                                 response_answer = false;
                             }else{
-                                $("#unique_hash").html(alert1 + "The hash is available"+ alert3);
+                                $("#unique_hash").html(alert1 + "Custom hash is available"+ alert3);
                                 response_answer = true;
                             };
                       });
         }else if(partial_name.length < 7){
-             $("#unique_hash").html(alert1 + "Hash value needs to be at least 7 characters long. It needs "
+             $("#unique_hash").html(alert1 + "Custom hash needs to be at least 7 characters long. It needs "
                                     + needs_characters.toString() +" characters more." + alert3);
              response_answer = false;
         };
