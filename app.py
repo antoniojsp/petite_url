@@ -1,11 +1,11 @@
 
 import logging
+from app import create_app
 from app.utilities import is_url_alive
 from app.forms import PetiteURLForms
 import validators
 import os
 from flask import redirect, render_template, request, send_from_directory, jsonify
-from app import create_app
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,

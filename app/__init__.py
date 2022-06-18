@@ -1,8 +1,7 @@
 from app.database import TinyURLDatabase
-from config import *
-import os
+from config import Config
 from flask import Flask
-
+import os
 
 def create_app():
     URI = os.environ['URI']
