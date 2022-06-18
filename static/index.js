@@ -174,8 +174,8 @@ $(document).ready(function(){
                             };
                       });
         }else if(partial_name.length < 7){
-             $("#unique_hash").html(alert1 + "Custom hash needs to be at least 7 characters long. It needs "
-                                    + needs_characters.toString() +" characters more." + alert3);
+             $("#unique_hash").html(alert1 + "Custom hash needs to be at least <strong>7</strong> characters long. It needs <strong>"
+                                    + needs_characters.toString() +"</strong> characters more." + alert3);
              response_answer = false;
         };
     });
