@@ -1,4 +1,4 @@
-from Database import PetiteUrlDatabase
+from database import Database
 from flask import Flask
 import os
 
@@ -10,7 +10,7 @@ def create_app():
 
 
 def create_database():
-    return PetiteUrlDatabase(os.environ['URI'])
+    return Database(os.environ['URI'])
 
 
 db = create_database()

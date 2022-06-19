@@ -8,7 +8,7 @@ import os
 SIZE_HASH = int(os.environ['size_hash'])
 
 
-class PetiteUrlDatabase:
+class Database:
 
     def __init__(self, uri):
         """
