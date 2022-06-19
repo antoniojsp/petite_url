@@ -1,7 +1,7 @@
 from flask import redirect, render_template, request, Blueprint
 from forms import PetiteURLForms
-from PetiteURL.database import db
-from PetiteURL.config import Config
+from database import db
+from config import Config
 ruta = Blueprint('routes', __name__, template_folder="../templates")
 
 

@@ -1,5 +1,5 @@
 from flask import request, jsonify, Blueprint
-from PetiteURL.database import db as database
+from database import db as database
 from utilities import is_url_alive
 import validators
 
