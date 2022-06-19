@@ -1,7 +1,7 @@
 from flask import redirect, render_template, request
 from forms import PetiteURLForms
 from PetiteURL.routes import ruta
-from PetiteURL import db as data
+from PetiteURL import db
 from PetiteURL import Config
 
 my_info = Config().dict()
@@ -9,13 +9,14 @@ my_info = Config().dict()
 
 @ruta.route('/', methods=["GET", "POST"])
 def index():
+    print(my_info)
     index_form = PetiteURLForms()
     return render_template("index.html", form=index_form, info=my_info), 200
 
 
 @ruta.route('/<shorten_url_hash>')
 def redirect_from_token(shorten_url_hash: str):
-    query_answer = data.query_url(shorten_url_hash)
+    query_answer = db.query_url(shorten_url_hash)
     result = f'{request.url_root}{shorten_url_hash}'
 
     if query_answer == "Not found":

@@ -15,6 +15,7 @@ def create_database():
 
 
 def get_personal_info():
+    print(Config().dict())
     return Config().dict()
 
 
