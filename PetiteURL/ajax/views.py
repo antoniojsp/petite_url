@@ -7,10 +7,10 @@ import validators
 from flask import Blueprint
 
 ruta = Blueprint('ajax', __name__)
-# from PetiteURL.ajax import views
 
 @ruta.route("/_submit")
 def _submit():
+    print("Hola")
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("expiration_date", type=str)
     custom_hash = request.args.get("custom_hash", type=str)
