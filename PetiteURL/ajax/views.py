@@ -1,16 +1,13 @@
-from flask import request, jsonify
-# from PetiteURL.ajax import ruta
+from flask import request, jsonify, Blueprint
 from PetiteURL.database import db as database
 from utilities import is_url_alive
 import validators
 
-from flask import Blueprint
-
 ruta = Blueprint('ajax', __name__)
+
 
 @ruta.route("/_submit")
 def _submit():
-    print("Hola")
     original_url = request.args.get("url", type=str)
     exp_date = request.args.get("expiration_date", type=str)
     custom_hash = request.args.get("custom_hash", type=str)
