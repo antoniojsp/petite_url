@@ -12,6 +12,8 @@ logging.basicConfig(filename='record.log',
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
 app, my_info, db = create_app()
+app = create_app()
+app.register_blueprint()
 
 
 @app.route('/', methods=["GET", "POST"])
