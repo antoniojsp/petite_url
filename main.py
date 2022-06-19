@@ -62,6 +62,7 @@ def _submit():
             shorten_url = "Duplicate"
             print("Error occurred", e)
 
+
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'
 
