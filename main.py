@@ -1,27 +1,19 @@
-from database import TinyURLDatabase
-from flask import Flask, redirect, render_template, request, flash, send_from_directory, url_for, jsonify
-from forms import PetiteURLForms
+from app import create_app
+from app.forms import PetiteURLForms
+from app.utilities import is_url_alive
+from flask import redirect, render_template, request, send_from_directory, jsonify
 import logging
-from personal_information import *
 import os
-from utilities import is_url_alive
 import validators
-
-# Environment variables (Secret keys)
-URI = os.environ['URI']
-SECRET_KEY = os.environ['secret_key']
 
 
 logging.basicConfig(filename='record.log',
                     level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 
-app = Flask(__name__)
-
-app.secret_key = SECRET_KEY
-my_info = MyPersonalInfo().dict()
-
-db = TinyURLDatabase(URI)
+app, my_info, db = create_app()
+app = create_app()
+app.register_blueprint()
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -45,7 +37,7 @@ def redirect_from_token(shorten_url_hash: str):
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
+    return send_from_directory(os.path.join(app.root_path, 'app/static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
@@ -71,6 +63,7 @@ def _submit():
         except LookupError as e:  # In case a duplicate custom_hash is sent to the server. JS also check for duplicates
             shorten_url = "Duplicate"
             print("Error occurred", e)
+
 
         app.logger.info(f'{original_url} inserted')
         result = f'{request.url_root}{shorten_url}'

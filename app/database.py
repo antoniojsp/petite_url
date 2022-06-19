@@ -46,6 +46,7 @@ class TinyURLDatabase:
                 mydict['hash_value'] = custom_hash
                 self.my_col.insert_one(mydict)
                 print("Custom hash has been recorded")
+
                 return custom_hash
             else:
                 raise LookupError("Duplicate: Hash value already in the database")
@@ -81,11 +82,11 @@ class TinyURLDatabase:
         if my_doc is None or self.__is_page_expired(my_doc['exp_date']):
             return "Not found"
 
-        self.__update_counter(my_query, my_doc)
+        self.__update_counter(my_doc, my_query)
 
         return my_doc["url_address"]
 
-    def __update_counter(self, my_query, my_doc):
+    def __update_counter(self, my_doc, my_query:dict):
         new_count = my_doc['count'] + 1
         update_field = {"$set": {"count": new_count}}
         self.my_col.update_one(my_query, update_field)
