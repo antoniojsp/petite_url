@@ -1,5 +1,5 @@
-from database import PetiteUrlDatabase
 from config import Config
+from database import PetiteUrlDatabase
 from flask import Flask
 import os
 
