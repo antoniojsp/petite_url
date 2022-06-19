@@ -1,9 +1,9 @@
-from app.forms import PetiteURLForms
-import os
-import logging
 from app import create_app
-from flask import redirect, render_template, request, send_from_directory, jsonify
+from app.forms import PetiteURLForms
 from app.utilities import is_url_alive
+from flask import redirect, render_template, request, send_from_directory, jsonify
+import logging
+import os
 import validators
 
 
