@@ -1,6 +1,5 @@
+from flask import redirect, render_template, request
 from forms import PetiteURLForms
-from flask import redirect, render_template, request, send_from_directory
-import os
 from PetiteURL.routes import ruta
 from PetiteURL import db as data
 from PetiteURL import Config
@@ -26,8 +25,3 @@ def redirect_from_token(shorten_url_hash: str):
     # PetiteURL.logger.info(f'Redirecting to ->  result')
     return redirect(query_answer, code=302)
 
-
-# @ruta.route('/favicon.ico')
-# def favicon():
-#     return send_from_directory(os.path.join(app.root_path, 'PetiteURL/static'),
-#                                'favicon.ico', mimetype='image/vnd.microsoft.icon')

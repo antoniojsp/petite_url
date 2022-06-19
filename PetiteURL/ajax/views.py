@@ -1,8 +1,8 @@
-from utilities import is_url_alive
 from flask import request, jsonify
-import validators
 from PetiteURL.ajax import ruta
 from PetiteURL import db as database
+from utilities import is_url_alive
+import validators
 
 
 @ruta.route("/_submit")
@@ -15,7 +15,6 @@ def _submit():
 
     # Validations. URL is legal and alive. Client use JS to do validations too but for extra protection
     if not is_legal_url:
-        # PetiteURL.logger.info(f'{original_url} is not a valid URL')
         result = 'Please, check that the URL is legal and try again.'
     elif not is_url_alive(original_url):
         result = "The website is either offline, forbidden or cannot be found."
