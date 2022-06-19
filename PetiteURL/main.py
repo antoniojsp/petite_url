@@ -1,8 +1,8 @@
 # from PetiteURL import create_app
 from flask import Flask
 import os
-from PetiteURL.ajax.views import ruta as ajax
-from PetiteURL.routes.views import ruta as routes
+from ajax.views import ruta as ajax
+from routes.views import ruta as routes
 
 app = Flask(__name__)
 app.secret_key = os.environ['secret_key']
