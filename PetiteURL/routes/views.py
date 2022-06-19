@@ -2,9 +2,9 @@ from flask import redirect, render_template, request
 from forms import PetiteURLForms
 from PetiteURL.routes import ruta
 from PetiteURL import db
-from PetiteURL import Config
+from PetiteURL import get_personal_info
 
-my_info = Config().dict()
+my_info = get_personal_info()
 
 
 @ruta.route('/', methods=["GET", "POST"])
