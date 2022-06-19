@@ -8,6 +8,7 @@ import os
 SIZE_HASH = int(os.environ['size_hash'])
 
 
+
 class Database:
 
     def __init__(self, uri):
@@ -119,6 +120,6 @@ class Database:
         return "".join(hash_result)
 
 
-
+db = Database(os.environ['URI'])
 
 

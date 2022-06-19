@@ -1,9 +1,14 @@
 from flask import redirect, render_template, request
 from forms import PetiteURLForms
-from PetiteURL.routes import ruta
-from PetiteURL import db
+# from PetiteURL.routes import ruta
+from PetiteURL.database import db
 from PetiteURL.config import Config
 import sys
+
+
+from flask import Blueprint
+ruta = Blueprint('routes', __name__, template_folder="../templates")
+# from PetiteURL.routes import views
 
 my_info = Config().dict()
 
@@ -13,6 +18,7 @@ def index():
     print(my_info)
     sys.stdout.flush()
     index_form = PetiteURLForms()
+    # return "aa"
     return render_template("index.html", form=index_form, info=my_info), 200
 
 

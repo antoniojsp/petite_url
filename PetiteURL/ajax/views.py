@@ -1,9 +1,13 @@
 from flask import request, jsonify
-from PetiteURL.ajax import ruta
-from PetiteURL import db as database
+# from PetiteURL.ajax import ruta
+from PetiteURL.database import db as database
 from utilities import is_url_alive
 import validators
 
+from flask import Blueprint
+
+ruta = Blueprint('ajax', __name__)
+# from PetiteURL.ajax import views
 
 @ruta.route("/_submit")
 def _submit():
