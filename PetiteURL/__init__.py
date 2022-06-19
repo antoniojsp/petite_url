@@ -1,4 +1,4 @@
-from database import PetiteUrlDatabase
+from Database import PetiteUrlDatabase
 from flask import Flask
 import os
 
