@@ -3,6 +3,7 @@ from forms import PetiteURLForms
 from PetiteURL.routes import ruta
 from PetiteURL import db
 from PetiteURL import get_personal_info
+import sys
 
 my_info = get_personal_info()
 
@@ -10,6 +11,7 @@ my_info = get_personal_info()
 @ruta.route('/', methods=["GET", "POST"])
 def index():
     print(my_info)
+    sys.stdout.flush()
     index_form = PetiteURLForms()
     return render_template("index.html", form=index_form, info=my_info), 200
 
