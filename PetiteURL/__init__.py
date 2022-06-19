@@ -13,6 +13,5 @@ def create_database():
     return PetiteUrlDatabase(os.environ['URI'])
 
 
-
 db = create_database()
 
