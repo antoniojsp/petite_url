@@ -1,4 +1,3 @@
-from config import Config
 from database import PetiteUrlDatabase
 from flask import Flask
 import os
@@ -13,9 +12,6 @@ def create_app():
 def create_database():
     return PetiteUrlDatabase(os.environ['URI'])
 
-
-def get_personal_info():
-    return Config().dict()
 
 
 db = create_database()
