@@ -55,14 +55,14 @@ class PetiteUrlDatabase:
                 # generate hash value and check that its uniqueness (combinations are in the order of 62^7)
                 url_hash_value = self.__generate_random_hash()
                 mydict['hash_value'] = url_hash_value
-                is_random_unique = self.is_hash_duplicated(url_hash_value)
+                is_random_unique = self.__is_hash_duplicated(url_hash_value)
 
         self.my_col.insert_one(mydict)
         print("Site recorded correctly")
 
         return url_hash_value
 
-    def is_hash_duplicated(self, hash_value: str) -> bool:
+    def __is_hash_duplicated(self, hash_value: str) -> bool:
         my_query = {"hash_value": hash_value}
         my_doc = self.my_col.find_one(my_query)
         return False if my_doc is None else True
