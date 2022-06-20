@@ -1,10 +1,10 @@
 from flask import request, jsonify, Blueprint
-from utilities import is_url_alive
+from app.utilities import is_url_alive
 import validators
-from database import PetiteUrlDatabase
+# from app.database import PetiteUrlDatabase
 import os
-
-db = PetiteUrlDatabase(os.environ['URI'])
+from app import db
+# db = PetiteUrlDatabase(os.environ['URI'])
 ruta = Blueprint('ajax', __name__)
 
 

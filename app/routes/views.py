@@ -1,11 +1,12 @@
 from flask import redirect, render_template, request, Blueprint
-from forms import PetiteURLForms
-from database import PetiteUrlDatabase
+from app.forms import PetiteURLForms
+from app.database import PetiteUrlDatabase
 import os
-from config import Config
+from app.config import Config
+from app import db
+# db = PetiteUrlDatabase(os.environ['URI'])
 
-db = PetiteUrlDatabase(os.environ['URI'])
-ruta = Blueprint('routes', __name__)
+ruta = Blueprint('routes', __name__, template_folder="../templates")
 my_info = Config().dict()
 
 # @ruta.route('/', methods=["GET", "POST"])
