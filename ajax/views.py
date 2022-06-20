@@ -1,7 +1,10 @@
 from flask import request, jsonify, Blueprint
-from database import db as database
 from utilities import is_url_alive
 import validators
+from database import PetiteUrlDatabase
+import os
+
+db = PetiteUrlDatabase(os.environ['URI'])
 
 ruta = Blueprint('ajax', __name__)
 
@@ -37,6 +40,6 @@ def _submit():
 @ruta.route("/_check_hash")
 def _check_name():
     partial_name = request.args.get("name", type=str)
-    result = database.is_hash_duplicated(partial_name)
+    result = db.is_hash_duplicated(partial_name)
 
     return jsonify(result={"response": result})
