@@ -70,7 +70,7 @@ var alert3 = '</button> <button type="button" id="clear_id" class="btn-close" da
 // Triggers
 $(document).ready(function() {
     $('form').submit(function(e) {
-
+        console.log("Entro");
         e.preventDefault();
         var input_url = $('#url').val();
         var information_package = {};
