@@ -5,7 +5,6 @@ import os
 from config import Config
 
 db = PetiteUrlDatabase(os.environ['URI'])
-
 ruta = Blueprint('routes', __name__)
 my_info = Config().dict()
 

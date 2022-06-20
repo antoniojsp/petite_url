@@ -5,7 +5,6 @@ from database import PetiteUrlDatabase
 import os
 
 db = PetiteUrlDatabase(os.environ['URI'])
-
 ruta = Blueprint('ajax', __name__)
 
 

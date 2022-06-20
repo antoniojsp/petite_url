@@ -1,6 +1,5 @@
 # from PetiteURL import create_app
 from flask import Flask
-from database import PetiteUrlDatabase
 import os
 from config import Config
 from ajax.views import ruta as ajax
