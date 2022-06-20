@@ -8,9 +8,7 @@ import os
 SIZE_HASH = int(os.environ['size_hash'])
 
 
-
 class PetiteUrlDatabase:
-
     def __init__(self, uri):
         """
         Connect Mongodb database and select collection
