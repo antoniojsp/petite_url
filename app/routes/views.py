@@ -1,7 +1,9 @@
 from app.forms import PetiteURLForms
 from app import db
 from app import my_info
-from flask import redirect, render_template, request, Blueprint
+from flask import redirect, render_template, request
+
+from flask import Blueprint
 
 ruta = Blueprint('routes', __name__)
 
@@ -24,6 +26,3 @@ def redirect_from_token(shorten_url_hash: str):
     # PetiteURL.logger.info(f'Redirecting to ->  result')
     return redirect(query_answer, code=302)
 
-#
-# ruta.add_url_rule('/', view_func=index, methods=["GET", "POST"])
-# ruta.add_url_rule('/<shorten_url_hash>', view_func=redirect_from_token)
