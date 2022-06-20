@@ -1,1 +1,1 @@
-web: gunicorn PetiteURL/main:app
+web: gunicorn main:app
