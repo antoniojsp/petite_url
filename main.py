@@ -5,7 +5,7 @@ from app.ajax.views import ruta as ajax
 from app.routes.views import ruta as routes
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="./app/templates", static_folder="./app/static")
 app.secret_key = os.environ['secret_key']
 
 app.register_blueprint(routes)

@@ -6,7 +6,7 @@ from app.config import Config
 from app import db
 # db = PetiteUrlDatabase(os.environ['URI'])
 
-ruta = Blueprint('routes', __name__, template_folder="../templates")
+ruta = Blueprint('routes', __name__)
 my_info = Config().dict()
 
 # @ruta.route('/', methods=["GET", "POST"])
