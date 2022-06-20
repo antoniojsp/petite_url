@@ -3,16 +3,16 @@ from flask import Flask
 from database import PetiteUrlDatabase
 import os
 from config import Config
-# from routes.views import ruta as routes
+from ajax.views import ruta as ajax
 from routes.views import ruta as routes
 
 
 app = Flask(__name__)
 app.secret_key = os.environ['secret_key']
-# db = PetiteUrlDatabase(os.environ['URI'])
 my_info = Config().dict()
 
 app.register_blueprint(routes)
+app.register_blueprint(ajax)
 
 
 if __name__ == '__main__':

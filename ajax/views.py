@@ -24,7 +24,7 @@ def _submit():
         result = "The website is either offline, forbidden or cannot be found."
     else:
         try:
-            shorten_url = database.insert(original_url, exp_date, custom_hash)
+            shorten_url = db.insert(original_url, exp_date, custom_hash)
         except LookupError as e:  # In case a duplicate custom_hash is sent to the server. JS also check for duplicates
             shorten_url = "Duplicate"
             print("Error occurred", e)
